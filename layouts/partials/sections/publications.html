@@ -1,0 +1,44 @@
+{{ if .Site.Params.publications.enable | default false }}
+{{- $publications := .Site.Params.publications -}}
+<section id="publications" class="py-5">
+    <div class="container">
+        <h3 class="text-center">{{ $publications.title | default "Publications" }}</h3>
+        {{ if $publications.description }}
+        <p class="text-center secondary-font mb-4">{{ $publications.description | markdownify }}</p>
+        {{ end }}
+        <div class="px-0 px-md-3">
+
+            {{ range $publications.groups }}
+            <div class="mb-5">
+                <h5 class="mb-3 border-bottom pb-2">{{ .type }}</h5>
+                {{ range .items }}
+                <div class="card mb-3 p-3">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <div style="flex: 1;">
+                            {{ if .url }}
+                            <a href="{{ .url }}" target="_blank" class="fw-bold text-decoration-none">{{ .title }}</a>
+                            {{ else }}
+                            <span class="fw-bold">{{ .title }}</span>
+                            {{ end }}
+                            <div class="secondary-font mt-1 fst-italic">{{ .authors }}</div>
+                            <div class="secondary-font mt-1">
+                                {{ if .journal }}<em>{{ .journal }}</em>{{ end }}
+                                {{ if .year }}, {{ .year }}{{ end }}
+                                {{ if .status }}<span class="badge bg-secondary ms-2">{{ .status }}</span>{{ end }}
+                            </div>
+                        </div>
+                        {{ if .url }}
+                        <div class="ms-3">
+                            <a href="{{ .url }}" target="_blank" class="btn btn-sm btn-outline-primary">↗</a>
+                        </div>
+                        {{ end }}
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+            {{ end }}
+
+        </div>
+    </div>
+</section>
+{{ end }}

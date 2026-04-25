@@ -1,0 +1,25 @@
+{{ if .Site.Params.achievements.enable | default false }}
+{{- $achievements := .Site.Params.achievements | default .Site.Params.achievements -}}
+<section id="achievements" class="py-5">
+    <div class="container">
+        <h3 class="text-center mb-4">{{ $achievements.title | default "Awards & Recognition" }}</h3>
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10">
+                <ul class="list-unstyled">
+                    {{ range $achievements.items }}
+                    <li class="mb-3 d-flex align-items-start">
+                        <span class="me-2 mt-1" style="color: var(--primary-color, #007bff); flex-shrink: 0;">&#8227;</span>
+                        <div>
+                            <span class="fw-bold">{{ .title }}</span>
+                            {{ if .content }}
+                            <span class="secondary-font"> — {{ .content }}</span>
+                            {{ end }}
+                        </div>
+                    </li>
+                    {{ end }}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
