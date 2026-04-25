@@ -62,6 +62,11 @@ Menus:
       url: /#pub-opeds
       parent: publications
       weight: 5
+    - identifier: talks
+      name: Talks
+      title: Talks & Lectures
+      url: /#talks
+      weight: 1
     - identifier: contact
       name: Contact
       title: Contact
@@ -146,6 +151,7 @@ params:
         - "Employment implications of energy transition"
         - "Carbon dioxide removal"
         - "R, Python, GAMS, QGIS"
+        - "Peer reviewer: Nature, Environmental Research Letters, Climate Policy, Energy Policy, Energy Research and Social Science, Climate Economics"
 
   # Experience
   experience:
@@ -370,7 +376,7 @@ params:
       - type: "Policy Blogs"
         anchor: "pub-blogs"
         items:
-          - title: "Why is Water-Based Cooling a Big Issue for AI Data Centres in India?"
+          - title: "Why India must plan for AI data centres’ energy and water footprint"
             authors: "A. Malik, S. Elango"
             journal: "CEEW Blog"
             year: 2026
@@ -416,6 +422,32 @@ params:
         content: "£1,250 bursary for the course 'Constructing and Analyzing High Resolution Climate Scenarios'."
       - title: "Certificate of Merit — CBSE (2009)"
         content: "Top 0.1% of all candidates in Physics in the All India Secondary School Examination."
+
+  # Talks & Lectures
+  talks:
+    enable: true
+    title: "Talks, Lectures & Panel Discussions"
+    items:
+      - "Guest lecture, Economics of Climate Change, WWF-India and OP Jindal University, Students of LL.M. ELECC 2025-2026 (Oct 2025)"
+      - "Moderator, Panel discussion on Decarbonisation of Economy – Leveraging Carbon Credits, Viksit Gujarat Regional Summit, Ganpat University, Mehsana (Oct 2025)"
+      - "Guest lecture, Energy Transition and Decarbonisation, IOCL Senior Management Programme with IIM Calcutta (Aug 2025)"
+      - "Speaker, India Emissions and Net Zero, Indian Energy Forum, New Delhi (Jul 2025)"
+      - "Guest lecture, Decision maker under uncertainty: Insights from modelling, National Thermal Power Corporation (May 2025)"
+      - "Panelist, Sustainable Futures Collaborative's Tufts Climate Panel Discussion, New Delhi (Mar 2025)"
+      - "Guest lecture, Introduction to Modelling, IIT Roorkee (Jan 2025)"
+      - "Speaker, Conference on Joint Response to Climate Crisis, SMU University, Seoul, South Korea (Sep 2024)"
+      - "Speaker, Lecture on Climate Change at Rajya Sabha (Upper House) to interns of Members of Parliament, New Delhi (Sep 2024)"
+      - "Speaker, IIT Delhi workshop on Energy and Well-being – Indian Case Study, New Delhi (Sep 2024)"
+      - "Speaker, Surya Foundation Think Tank Strengthening Some Key Areas for Viksit Bharat 2047, New Delhi (Sep 2024)"
+      - "Speaker and Panelist, Carbon Markets in India, Centre for Social and Economic Progress, New Delhi (Aug 2024)"
+      - "Speaker, State Dialogue on Accelerating Energy Efficiency in Gujarat, Vadodara (Aug 2024)"
+      - "Guest speaker, Webinar on Role of ETS in India's Net-Zero targets, Carbon Markets Association of India, Delhi (Feb 2024)"
+      - "Expert speaker, Accelerating the Just Transition of MSMEs: Capacity Development of Policymakers Program, School of Public Policy and UNDP, Lucknow (Feb 2024)"
+      - "Panelist, Impact of Net-Zero Transition Policies on Clean Jobs, Skilling Needs and Interstate Migration, ICRIER, New Delhi (Jan 2024)"
+      - "Speaker, Implications of India's ETS on its net-zero target, Niti Aayog, New Delhi (Jan 2024)"
+      - "Oral presentation, Role of ETS in India's Net-zero targets: A modelling-based assessment, IAMC Annual Conference, Venice (Nov 2023)"
+      - "Oral presentation, Assumptions on employment factor approach in energy scenarios, IAMC Annual Conference, Online (Dec 2020)"
+      - "Poster presentation, Not (yet) another coal story: Power-sector lock-ins in India, IAMC Annual Conference, Seville (Nov 2018)"
 
   # Contact
   contact:

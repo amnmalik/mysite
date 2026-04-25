@@ -1,0 +1,20 @@
+{{ if .Site.Params.talks.enable | default false }}
+{{- $talks := .Site.Params.talks -}}
+<section id="talks" class="py-5">
+    <div class="container">
+        <h3 class="text-center mb-4">{{ $talks.title | default "Talks & Lectures" }}</h3>
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10">
+                <ul class="list-unstyled">
+                    {{ range $talks.items }}
+                    <li class="mb-3 d-flex align-items-start">
+                        <span class="me-2 mt-1" style="color: var(--primary-color, #007bff); flex-shrink: 0;">&#8227;</span>
+                        <span class="secondary-font">{{ . }}</span>
+                    </li>
+                    {{ end }}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
