@@ -1,0 +1,31 @@
+{{ if .Site.Params.consulting.enable | default false }}
+{{- $consulting := .Site.Params.consulting -}}
+<section id="consulting" class="py-5">
+    <div class="container">
+        <h3 class="text-center mb-2">{{ $consulting.title | default "Consulting" }}</h3>
+        {{ if $consulting.intro }}
+        <div class="row justify-content-center mb-4">
+            <div class="col-lg-8 col-md-10 text-center secondary-font">
+                {{ $consulting.intro | markdownify }}
+            </div>
+        </div>
+        {{ end }}
+        <div class="row justify-content-center">
+            {{ range $consulting.services }}
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100 p-4">
+                    <div class="mb-2" style="font-size: 1.5rem;">{{ .icon }}</div>
+                    <h5 class="fw-bold mb-2">{{ .name }}</h5>
+                    <div class="secondary-font">{{ .description }}</div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+        {{ if $consulting.cta }}
+        <div class="text-center mt-3 secondary-font">
+            {{ $consulting.cta | markdownify }}
+        </div>
+        {{ end }}
+    </div>
+</section>
+{{ end }}

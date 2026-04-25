@@ -27,11 +27,16 @@ markup:
 
 Menus:
   main:
+    - identifier: consulting
+      name: Consulting
+      title: Consulting
+      url: /#consulting
+      weight: 1
     - identifier: publications
       name: Publications
       title: Publications
       url: /#publications
-      weight: 1
+      weight: 2
     - identifier: journal-articles
       name: Journal Articles
       title: Journal Articles
@@ -66,12 +71,12 @@ Menus:
       name: Talks
       title: Talks & Lectures
       url: /#talks
-      weight: 1
+      weight: 3
     - identifier: contact
       name: Contact
       title: Contact
       url: /#contact
-      weight: 2
+      weight: 4
 
 params:
   title: "Aman Malik"
@@ -92,7 +97,7 @@ params:
     align: ms-auto
     brandName: "Aman Malik"
     showBrandLogo: false
-    disableSearch: false
+    disableSearch: true
     stickyNavBar:
       enable: true
       showOnScrollUp: true
@@ -110,7 +115,7 @@ params:
     enable: true
     intro: "Hi, I'm"
     title: "Aman Malik."
-    subtitle: "I work on energy, climate, and the systems that connect them."
+    subtitle: "Energy & climate policy researcher specialising in India's decarbonisation."
     content: "A researcher and policy analyst specialising in India's energy transition, carbon markets, and climate-related financial risk. I combine modelling-based research with policy engagement to inform real-world decisions on decarbonisation."
     image: https://avatars.githubusercontent.com/amnmalik
     bottomImage:
@@ -118,7 +123,7 @@ params:
     button:
       enable: true
       name: "CV"
-      url: "#"
+      url: "/files/CV_Aman_Malik.pdf"
       download: true
       newPage: false
     socialLinks:
@@ -139,7 +144,7 @@ params:
     content: |-
       I am an energy and climate policy researcher with a PhD from the Technical University of Berlin and the Potsdam Institute for Climate Impact Research. My work sits at the intersection of quantitative modelling and policy — using energy system models to inform decisions on India's decarbonisation, carbon markets, and climate-related financial risk.
 
-      I have worked at the [Council on Energy, Environment and Water (CEEW)](https://www.ceew.in/aman-malik) in New Delhi, and previously as a researcher and postdoctoral fellow at the [Potsdam Institute for Climate Impact Research (PIK)](https://www.pik-potsdam.de) in Germany. I am currently available for consulting engagements in energy modelling, climate policy analysis, and transition risk.
+      Until recently I was a Programme Lead at the Low Carbon Economy team at the [Council on Energy, Environment and Water (CEEW)](https://www.ceew.in/aman-malik) in New Delhi, and previously worked as a researcher and postdoctoral fellow at the [Potsdam Institute for Climate Impact Research (PIK)](https://www.pik-potsdam.de) in Germany. I take on consulting engagements in energy modelling, climate policy analysis, and transition risk.
     skills:
       enable: true
       title: "Areas of expertise:"
@@ -151,8 +156,31 @@ params:
         - "Integrated Assessment Models"
         - "Employment implications of energy transition"
         - "Carbon dioxide removal"
-        - "R, Python, GAMS, QGIS"   
-        - "Peer reviewer: Nature, Environmental Research Letters, Climate Policy, Energy Policy, Energy Research and Social Science, Climate Economics"
+        - "R, Python, GAMS, QGIS"
+        - "Peer reviewer: Nature, Nature Commuications, Environmental Research Letters, Climate Policy, Energy Policy, Energy Research and Social Science, Climate Economics"
+
+  # Consulting
+  consulting:
+    enable: true
+    title: "Consulting"
+    intro: "I work with governments, financial institutions, research organisations, and think tanks on questions at the intersection of energy systems, climate policy, and economics. Engagements typically involve one or more of the following:"
+    services:
+      - name: "Energy System Modelling"
+        icon: "⚡"
+        description: "Scenario development and modelling using tools such as GCAM, REMIND, and state-level energy models. Applications include net-zero pathways, power sector planning, and policy impact assessment."
+      - name: "Carbon Markets & ETS"
+        icon: "🌍"
+        description: "Policy design and analysis of carbon pricing mechanisms, emission trading schemes, and carbon credit frameworks — with particular expertise in the Indian context."
+      - name: "Transition Risk & Climate Finance"
+        icon: "📊"
+        description: "Country-specific scenario development to inform climate-related financial risk assessment for banks, regulators, and institutional investors."
+      - name: "Policy Analysis & Research"
+        icon: "📝"
+        description: "Evidence-based policy briefs, research reports, and strategic analysis on India's energy transition, decarbonisation strategies, and climate commitments."
+      - name: "Training & Capacity Building"
+        icon: "🎓"
+        description: "Guest lectures, workshops, and executive training on energy economics, climate modelling, and decarbonisation policy for government officials, financial institutions, and academic audiences."
+    cta: "Get in touch at [aman.malik@posteo.net](mailto:aman.malik@posteo.net) to discuss a potential engagement."
 
   # Experience
   experience:
@@ -164,11 +192,11 @@ params:
           - name: "Programme Lead, Low Carbon Economy"
             date: "Jun 2023 - Feb 2026"
             content: |
-              Leading research on India's energy and climate transition within the Low Carbon Economy team.
+              Led research on India's energy and climate transition within the Low Carbon Economy team.
 
               - Modelling-based research on India's Carbon Credit Trading Scheme (CCTS)
-              - Developing India's first detailed state-level energy model on GCAM
-              - Leading work on transition risk in the financial sector
+              - Developed India's first detailed state-level energy model on GCAM
+              - Led work on transition risk in the financial sector
               - Part of CEEW's expert team for the Reserve Bank of India's Climate-related Information System (2024-2026)
           - name: "Consultant"
             date: "Oct 2022 - May 2023"
@@ -186,7 +214,7 @@ params:
           - name: "Researcher"
             date: "Oct 2017 - Dec 2021"
             content: |
-              PhD researcher in the Energy Systems group, Research Department III — Transformation Pathways.
+              PhD researcher in the International Climate Policy Team, Energy Systems group, Research Department III — Transformation Pathways.
 
               - Developed and applied energy system models to assess India's power sector decarbonisation
               - Contributed to multi-model studies on global climate policy and emissions pathways
@@ -197,7 +225,7 @@ params:
         jobs:
           - name: "Consultant"
             date: "Jun 2017 - Aug 2017"
-            content: "Short-term consultancy in New Delhi, India."
+            content: "Implementation of NAMA - preparing RDF guidelines and Climate Change Adaptation in Rural Areas of India (CCA - RAI)"
 
       - company: "Climate Analytics"
         companyUrl: "https://climateanalytics.org"
@@ -377,7 +405,7 @@ params:
       - type: "Policy Blogs"
         anchor: "pub-blogs"
         items:
-          - title: "Why India must plan for AI data centres’ energy and water footprint"
+          - title: "Why India must plan for AI data centres' energy and water footprint"
             authors: "A. Malik, S. Elango"
             journal: "CEEW Blog"
             year: 2026
@@ -407,7 +435,7 @@ params:
     enable: true
     title: "Awards & Recognition"
     items:
-      - title: "Expert Committee, RBI Climate-related Information System (2024-)"
+      - title: "Expert Committee, RBI Climate-related Information System (2024-2026)"
         content: "Part of CEEW's team on the Reserve Bank of India's Expert Committee on Climate-related Information System."
       - title: "IOP Trusted Reviewer (2023)"
         content: "Recognised by IOP Publishing for exceptionally high level of peer review consistency."
@@ -418,11 +446,7 @@ params:
       - title: "Merit Scholarship — University of Hamburg (2016)"
         content: "Merit scholarship worth €3,250 awarded during MSc studies."
       - title: "Expedition Grant — Students on Ice Antarctic Expedition (2011)"
-        content: "US$8,500 grant from Indraprastha University and National Center for Antarctic and Ocean Research."
-      - title: "Bursary — University of Oxford (2012-13)"
-        content: "£1,250 bursary for the course 'Constructing and Analyzing High Resolution Climate Scenarios'."
-      - title: "Certificate of Merit — CBSE (2009)"
-        content: "Top 0.1% of all candidates in Physics in the All India Secondary School Examination."
+        content: "US$8,500 grant from Indraprastha University and National Center for Antarctic and Ocean Research for the Antarctic University Expedition."
 
   # Talks & Lectures
   talks:
