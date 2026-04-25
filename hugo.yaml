@@ -91,6 +91,7 @@ params:
   navbar:
     align: ms-auto
     brandName: "Aman Malik"
+    showBrandLogo: false
     disableSearch: false
     stickyNavBar:
       enable: true
@@ -150,7 +151,7 @@ params:
         - "Integrated Assessment Models"
         - "Employment implications of energy transition"
         - "Carbon dioxide removal"
-        - "R, Python, GAMS, QGIS"
+        - "R, Python, GAMS, QGIS"   
         - "Peer reviewer: Nature, Environmental Research Letters, Climate Policy, Energy Policy, Energy Research and Social Science, Climate Economics"
 
   # Experience
@@ -161,14 +162,14 @@ params:
         companyUrl: "https://www.ceew.in/aman-malik"
         jobs:
           - name: "Programme Lead, Low Carbon Economy"
-            date: "Jun 2023 - present"
+            date: "Jun 2023 - Feb 2026"
             content: |
               Leading research on India's energy and climate transition within the Low Carbon Economy team.
 
               - Modelling-based research on India's Carbon Credit Trading Scheme (CCTS)
-              - Developing India's first detailed state-level energy model
+              - Developing India's first detailed state-level energy model on GCAM
               - Leading work on transition risk in the financial sector
-              - Part of CEEW's expert team for the Reserve Bank of India's Climate-related Information System (2024-)
+              - Part of CEEW's expert team for the Reserve Bank of India's Climate-related Information System (2024-2026)
           - name: "Consultant"
             date: "Oct 2022 - May 2023"
             content: "Consulting engagement with CEEW prior to joining as Programme Lead."
@@ -428,7 +429,7 @@ params:
     enable: true
     title: "Talks, Lectures & Panel Discussions"
     items:
-       - "Guest lecture, Economics and Geopolitics of Energy, WWF-India and OP Jindal University, Students of LL.M. ELECC 2025-2026 (Apr 2026)"
+      - "Guest lecture, Economics and Geopolitics of Energy, WWF-India and OP Jindal University, Students of LL.M. ELECC 2025-2026 (Apr 2026)"
       - "Panelist, Session on carbon removal in Article 6, CO2 Forward Carbon Removal Summit, Carbon Removal Alliance of India, Delhi (Dec 2025)"
       - "Guest lecture, Economics of Climate Change, WWF-India and OP Jindal University, Students of LL.M. ELECC 2025-2026 (Oct 2025)"
       - "Moderator, Panel discussion on Decarbonisation of Economy – Leveraging Carbon Credits, Viksit Gujarat Regional Summit, Ganpat University, Mehsana (Oct 2025)"
