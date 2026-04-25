@@ -9,7 +9,7 @@
         <div class="px-0 px-md-3">
 
             {{ range $publications.groups }}
-            <div class="mb-5">
+            <div class="mb-5" id="{{ .anchor }}">
                 <h5 class="mb-3 border-bottom pb-2">{{ .type }}</h5>
                 {{ range .items }}
                 <div class="card mb-3 p-3">

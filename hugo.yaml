@@ -32,6 +32,36 @@ Menus:
       title: Publications
       url: /#publications
       weight: 1
+    - identifier: journal-articles
+      name: Journal Articles
+      title: Journal Articles
+      url: /#pub-journal
+      parent: publications
+      weight: 1
+    - identifier: reports
+      name: Reports & Book Chapters
+      title: Reports & Book Chapters
+      url: /#pub-reports
+      parent: publications
+      weight: 2
+    - identifier: working-papers
+      name: Working Papers
+      title: Working Papers
+      url: /#pub-working
+      parent: publications
+      weight: 3
+    - identifier: policy-blogs
+      name: Policy Blogs
+      title: Policy Blogs
+      url: /#pub-blogs
+      parent: publications
+      weight: 4
+    - identifier: opeds
+      name: Op-eds & Media
+      title: Op-eds & Media
+      url: /#pub-opeds
+      parent: publications
+      weight: 5
     - identifier: contact
       name: Contact
       title: Contact
@@ -219,6 +249,7 @@ params:
     description: "Peer-reviewed research in energy systems, climate policy, and India's decarbonisation. Full list on [Google Scholar](https://scholar.google.com/citations?user=inKL_TUAAAAJ&hl=en)."
     groups:
       - type: "Peer-reviewed Journal Articles"
+        anchor: "pub-journal"
         items:
           - title: "Challenges to Deep-Decarbonization to Achieve Net Zero for India: A Review"
             authors: "P. Das and A. Malik"
@@ -300,6 +331,7 @@ params:
             url: "https://doi.org/10.1016/j.enpol.2019.04.020"
 
       - type: "Reports & Book Chapters"
+        anchor: "pub-reports"
         items:
           - title: "Roadmap for a net zero power sector in Gujarat"
             authors: "CEEW, Ahmedabad University, and UNOPS"
@@ -327,6 +359,7 @@ params:
             url: "https://www.ceew.in/publications/energy-emissions-modelling-analysis-for-building-climate-change-policy-in-indian-states"
 
       - type: "Working Papers & Preprints"
+        anchor: "pub-working"
         items:
           - title: "Toward Next-Generation Climate Modeling in India: Lessons and Pathways for Action"
             authors: "M. George, P. Das, V. Chaturvedi, A. Malik, J. Rajbanshi, C. Arora, A. Dey, Z. Khan, U. Kumar, N. Kumari, P. Chandrasekaran, M. Sandhani, S. Sharma"
@@ -335,6 +368,7 @@ params:
             url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6197918"
 
       - type: "Policy Blogs"
+        anchor: "pub-blogs"
         items:
           - title: "Why is Water-Based Cooling a Big Issue for AI Data Centres in India?"
             authors: "A. Malik, S. Elango"
@@ -348,6 +382,7 @@ params:
             url: "https://www.ceew.in/blogs/how-energy-system-modelling-tools-can-inform-design-of-indian-carbon-emission-trading-scheme"
 
       - type: "Op-eds & Media"
+        anchor: "pub-opeds"
         items:
           - title: "4 Factors to Influence Our Emissions Trading System"
             authors: "A. Malik, V. Chaturvedi"
