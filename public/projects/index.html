@@ -28,17 +28,17 @@
 
 
 
-<meta property="og:url" content="http://localhost:1313/tags/">
+<meta property="og:url" content="http://localhost:1313/projects/">
   <meta property="og:site_name" content="Aman Malik">
-  <meta property="og:title" content="Tags">
-  <meta property="og:description" content="Energy &amp; climate policy researcher, modeller, and writer based in India.">
+  <meta property="og:title" content="Projects">
+  <meta property="og:description" content="Mapping, expeditions, and things built along the way.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="website">
 
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Tags">
-  <meta name="twitter:description" content="Energy &amp; climate policy researcher, modeller, and writer based in India.">
+  <meta name="twitter:title" content="Projects">
+  <meta name="twitter:description" content="Mapping, expeditions, and things built along the way.">
 
 
 
@@ -106,16 +106,11 @@
 
 
 
-<meta name="description" content="Tags of Aman Malik">
-<link rel="stylesheet" href="/css/list.css" media="all">
-
 
   
   
 
   <title>
-Tags | Aman Malik
-
   </title>
 </head>
 
@@ -349,90 +344,163 @@ Tags | Aman Malik
     </nav>
 </header>
 <div id="content">
-<div class="container pt-5" id="list-page">
-    <h2 class="text-center pb-2">Tags</h2>
-    <div class="row">
-        
-        <div class="col-lg-4 col-md-6 my-3">
-            <div class="card h-100">
-                
-                <div class="card-body bg-transparent p-4 shadow-sm">
-                    <a href="/tags/leaflet/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="Leaflet">Leaflet</h5>
-                    </a>
-                    <div class="card-text secondary-font">
-                        <p></p>
-                    </div>
-                </div>
-                <div class="mt-auto post-footer bg-transparent py-3">
-                    <span class="float-start bg-transparent">January 2, 2024</span>
-                    <a href="/tags/leaflet/" class="float-end btn btn-outline-info btn-sm">Read</a>
-                </div>
-            </div>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap');
+
+  .projects-page {
+    min-height: 100vh;
+    background: #f7f4ef;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  .projects-hero {
+    padding: 60px 24px 40px;
+    max-width: 900px;
+    margin: 0 auto;
+    border-bottom: 1px solid #e2dbd0;
+  }
+
+  .projects-back {
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #9a8c7e;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 24px;
+  }
+
+  .projects-back:hover { color: #7a5c3a; text-decoration: none; }
+
+  .projects-title {
+    font-family: 'Lora', serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 400;
+    color: #1a1612;
+    margin-bottom: 12px;
+  }
+
+  .projects-desc {
+    font-size: 1rem;
+    color: #6b5e4e;
+    font-weight: 300;
+    line-height: 1.7;
+  }
+
+  .projects-grid {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+  }
+
+  .project-card {
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    text-decoration: none;
+    display: block;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  }
+
+  .project-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.10);
+    text-decoration: none;
+  }
+
+  .project-card-header {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    background: linear-gradient(135deg, #3a2d1e 0%, #7a5c3a 100%);
+  }
+
+  .project-card-body {
+    padding: 20px;
+  }
+
+  .project-card-title {
+    font-family: 'Lora', serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #1a1612;
+    margin-bottom: 8px;
+  }
+
+  .project-card-desc {
+    font-size: 0.875rem;
+    line-height: 1.65;
+    color: #6b5e4e;
+    font-weight: 300;
+    margin-bottom: 12px;
+  }
+
+  .project-card-link {
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #7a5c3a;
+    font-weight: 500;
+  }
+
+  .projects-empty {
+    padding: 60px 0;
+    text-align: center;
+    color: #9a8c7e;
+    font-family: 'Lora', serif;
+    font-style: italic;
+    font-size: 1.1rem;
+    grid-column: 1 / -1;
+  }
+</style>
+
+<div class="projects-page">
+  <div class="projects-hero">
+    <a href="/beyond-work/" class="projects-back">← Beyond Work</a>
+    <h1 class="projects-title">Projects</h1>
+    <p class="projects-desc">Mapping, expeditions, and things built along the way.</p>
+  </div>
+
+  <div class="projects-grid">
+    
+    
+      
+      <a href="http://localhost:1313/projects/activity-dashboard/" class="project-card">
+        <div class="project-card-header">
+          🧭
         </div>
-        
-        <div class="col-lg-4 col-md-6 my-3">
-            <div class="card h-100">
-                
-                <div class="card-body bg-transparent p-4 shadow-sm">
-                    <a href="/tags/mapping/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="Mapping">Mapping</h5>
-                    </a>
-                    <div class="card-text secondary-font">
-                        <p></p>
-                    </div>
-                </div>
-                <div class="mt-auto post-footer bg-transparent py-3">
-                    <span class="float-start bg-transparent">January 2, 2024</span>
-                    <a href="/tags/mapping/" class="float-end btn btn-outline-info btn-sm">Read</a>
-                </div>
-            </div>
+        <div class="project-card-body">
+          <h2 class="project-card-title">Activity Dashboard</h2>
+          
+          <p class="project-card-desc">An interactive map to visualise all my trails and expeditions — with switchable terrain layers and personal GPS traces.</p>
+          
+          <span class="project-card-link">Explore →</span>
         </div>
-        
-        <div class="col-lg-4 col-md-6 my-3">
-            <div class="card h-100">
-                
-                <div class="card-body bg-transparent p-4 shadow-sm">
-                    <a href="/tags/open-source/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="Open-Source">Open-Source</h5>
-                    </a>
-                    <div class="card-text secondary-font">
-                        <p></p>
-                    </div>
-                </div>
-                <div class="mt-auto post-footer bg-transparent py-3">
-                    <span class="float-start bg-transparent">January 2, 2024</span>
-                    <a href="/tags/open-source/" class="float-end btn btn-outline-info btn-sm">Read</a>
-                </div>
-            </div>
+      </a>
+      
+      <a href="http://localhost:1313/projects/openstreetmap/" class="project-card">
+        <div class="project-card-header">
+          🗺️
         </div>
-        
-        <div class="row justify-content-center">
-            <div class="col-auto m-3">
-                
-    <ul class="pagination pagination-default">
-      <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="First" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;&laquo;</span></a>
-      </li>
-      <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="Previous" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;</span></a>
-      </li>
-      <li class="page-item active">
-        <a aria-current="page" aria-label="Page 1" class="page-link" role="button">1</a>
-      </li>
-      <li class="page-item">
-        <a href="/tags/page/2/" aria-label="Page 2" class="page-link" role="button">2</a>
-      </li>
-      <li class="page-item">
-        <a href="/tags/page/2/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
-      </li>
-      <li class="page-item">
-        <a href="/tags/page/2/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
-      </li>
-    </ul>
-            </div>
+        <div class="project-card-body">
+          <h2 class="project-card-title">Mapping the World with OpenStreetMap</h2>
+          
+          <p class="project-card-desc">Contributing to the world&rsquo;s largest open map — trails, roads, and places across India and beyond.</p>
+          
+          <span class="project-card-link">Explore →</span>
         </div>
-    </div>
+      </a>
+      
+    
+  </div>
 </div>
 
   </div><footer>

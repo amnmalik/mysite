@@ -72,11 +72,16 @@ Menus:
       title: Talks & Lectures
       url: /#talks
       weight: 3
+    - identifier: beyond-work
+      name: Beyond Work
+      title: Beyond Work
+      url: /beyond-work/
+      weight: 4
     - identifier: contact
       name: Contact
       title: Contact
       url: /#contact
-      weight: 4
+      weight: 5
 
 params:
   title: "Aman Malik"
@@ -157,7 +162,7 @@ params:
         - "Employment implications of energy transition"
         - "Carbon dioxide removal"
         - "R, Python, GAMS, QGIS"
-        - "Peer reviewer: Nature, Nature Commuications, Environmental Research Letters, Climate Policy, Energy Policy, Energy Research and Social Science, Climate Economics"
+        - "Peer reviewer: Nature, Nature Communications, Environmental Research Letters, Climate Policy, Energy Policy, Energy Research and Social Science, Climate Economics"
 
   # Consulting
   consulting:
@@ -473,8 +478,9 @@ params:
       - "Panelist, Impact of Net-Zero Transition Policies on Clean Jobs, Skilling Needs and Interstate Migration, ICRIER, New Delhi (Jan 2024)"
       - "Speaker, Implications of India's ETS on its net-zero target, Niti Aayog, New Delhi (Jan 2024)"
       - "Oral presentation, Role of ETS in India's Net-zero targets: A modelling-based assessment, IAMC Annual Conference, Venice (Nov 2023)"
-      - "Oral presentation, Assumptions on employment factor approach in energy scenarios, IAMC Annual Conference, Online (Dec 2020)"
-      - "Poster presentation, Not (yet) another coal story: Power-sector lock-ins in India, IAMC Annual Conference, Seville (Nov 2018)"
+      - "Defense presentation, Barriers to power sector decarbonisation in India, TU Berlin (Mar 2022) — [Slides](https://github.com/amnmalik/PhdDefense/blob/master/malikamanDefense_v4_2022_03_26.pdf)"
+      - "Oral presentation, Assumptions on employment factor approach in energy scenarios, IAMC Annual Conference, Online (Dec 2020) — [Slides](https://github.com/amnmalik/PhdSummary/blob/master/posters_talks_presentations/IAMC-final_malik_aman_2020.pdf)"
+      - "Poster presentation, Not (yet) another coal story: Power-sector lock-ins in India, IAMC Annual Conference, Seville (Nov 2018) — [Slides](https://github.com/amnmalik/PhdSummary/blob/master/posters_talks_presentations/Poster_IAMC__en_V8.pdf)"
 
   # Contact
   contact:

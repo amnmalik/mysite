@@ -1,0 +1,211 @@
+{{ define "main" }}
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap');
+
+  .bw-single {
+    min-height: 100vh;
+    background: #f7f4ef;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  .bw-single-inner {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 60px 24px 100px;
+  }
+
+  .bw-single-back {
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #9a8c7e;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 40px;
+  }
+
+  .bw-single-back:hover { color: #4a7c59; text-decoration: none; }
+
+  .bw-single-meta {
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #9a8c7e;
+    margin-bottom: 16px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .bw-single-tag {
+    background: #e8e0d5;
+    padding: 2px 8px;
+    border-radius: 2px;
+    font-size: 10px;
+  }
+
+  .bw-single-title {
+    font-family: 'Lora', serif;
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    font-weight: 500;
+    color: #1a1612;
+    line-height: 1.2;
+    margin-bottom: 40px;
+  }
+
+  .bw-single-divider {
+    width: 40px;
+    height: 2px;
+    background: #c4a882;
+    margin-bottom: 40px;
+  }
+
+  /* Content typography */
+  .bw-single-content {
+    color: #2a2218;
+    line-height: 1.8;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+
+  .bw-single-content p {
+    margin-bottom: 1.5rem;
+  }
+
+  .bw-single-content h2 {
+    font-family: 'Lora', serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #1a1612;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e2dbd0;
+  }
+
+  .bw-single-content h3 {
+    font-family: 'Lora', serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #3a2d1e;
+    margin-top: 1.8rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .bw-single-content a {
+    color: #4a7c59;
+    text-decoration: none;
+    border-bottom: 1px solid #c4a882;
+    transition: border-color 0.15s;
+  }
+
+  .bw-single-content a:hover {
+    border-color: #4a7c59;
+    text-decoration: none;
+  }
+
+  .bw-single-content ul {
+    padding-left: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .bw-single-content ul li {
+    margin-bottom: 0.5rem;
+  }
+
+  .bw-single-content strong {
+    font-weight: 500;
+    color: #1a1612;
+  }
+  .bw-single-content img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin: 24px 0;
+  }
+
+  /* Stats table */
+  .bw-single-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+  }
+
+  .bw-single-content table td {
+    padding: 10px 16px;
+    border-bottom: 1px solid #e2dbd0;
+    vertical-align: top;
+  }
+
+  .bw-single-content table td:first-child {
+    color: #6b5e4e;
+    font-size: 0.85rem;
+    letter-spacing: 0.02em;
+    width: 45%;
+  }
+
+  .bw-single-content table td:last-child {
+    font-weight: 500;
+    color: #1a1612;
+  }
+
+  .bw-single-content table tr:last-child td {
+    border-bottom: none;
+  }
+
+  /* Hide table header row (our markdown table has empty headers) */
+  .bw-single-content table thead {
+    display: none;
+  }
+
+  .bw-single-footer {
+    margin-top: 60px;
+    padding-top: 24px;
+    border-top: 1px solid #e2dbd0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .bw-single-footer-back {
+    font-size: 0.85rem;
+    color: #9a8c7e;
+    text-decoration: none;
+  }
+
+  .bw-single-footer-back:hover { color: #4a7c59; text-decoration: none; }
+</style>
+
+<div class="bw-single">
+  <div class="bw-single-inner">
+
+    <a href="{{ .Parent.Permalink }}" class="bw-single-back">← {{ .Parent.Title }}</a>
+
+    <div class="bw-single-meta">
+      <span>{{ .Date.Format "January 2006" }}</span>
+      {{ with .Params.tags }}
+        {{ range . }}
+        <span class="bw-single-tag">{{ . }}</span>
+        {{ end }}
+      {{ end }}
+    </div>
+
+    <h1 class="bw-single-title">{{ .Title }}</h1>
+    <div class="bw-single-divider"></div>
+
+    <div class="bw-single-content">
+      {{ .Content }}
+    </div>
+
+    <div class="bw-single-footer">
+      <a href="{{ .Parent.Permalink }}" class="bw-single-footer-back">← Back to {{ .Parent.Title }}</a>
+    </div>
+
+  </div>
+</div>
+{{ end }}

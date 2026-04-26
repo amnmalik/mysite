@@ -1,0 +1,149 @@
+{{ define "main" }}
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap');
+
+  .projects-page {
+    min-height: 100vh;
+    background: #f7f4ef;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  .projects-hero {
+    padding: 60px 24px 40px;
+    max-width: 900px;
+    margin: 0 auto;
+    border-bottom: 1px solid #e2dbd0;
+  }
+
+  .projects-back {
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #9a8c7e;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 24px;
+  }
+
+  .projects-back:hover { color: #7a5c3a; text-decoration: none; }
+
+  .projects-title {
+    font-family: 'Lora', serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 400;
+    color: #1a1612;
+    margin-bottom: 12px;
+  }
+
+  .projects-desc {
+    font-size: 1rem;
+    color: #6b5e4e;
+    font-weight: 300;
+    line-height: 1.7;
+  }
+
+  .projects-grid {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+  }
+
+  .project-card {
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    text-decoration: none;
+    display: block;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  }
+
+  .project-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.10);
+    text-decoration: none;
+  }
+
+  .project-card-header {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    background: linear-gradient(135deg, #3a2d1e 0%, #7a5c3a 100%);
+  }
+
+  .project-card-body {
+    padding: 20px;
+  }
+
+  .project-card-title {
+    font-family: 'Lora', serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #1a1612;
+    margin-bottom: 8px;
+  }
+
+  .project-card-desc {
+    font-size: 0.875rem;
+    line-height: 1.65;
+    color: #6b5e4e;
+    font-weight: 300;
+    margin-bottom: 12px;
+  }
+
+  .project-card-link {
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #7a5c3a;
+    font-weight: 500;
+  }
+
+  .projects-empty {
+    padding: 60px 0;
+    text-align: center;
+    color: #9a8c7e;
+    font-family: 'Lora', serif;
+    font-style: italic;
+    font-size: 1.1rem;
+    grid-column: 1 / -1;
+  }
+</style>
+
+<div class="projects-page">
+  <div class="projects-hero">
+    <a href="/beyond-work/" class="projects-back">← Beyond Work</a>
+    <h1 class="projects-title">Projects</h1>
+    <p class="projects-desc">Mapping, expeditions, and things built along the way.</p>
+  </div>
+
+  <div class="projects-grid">
+    {{ $pages := .Pages }}
+    {{ if $pages }}
+      {{ range $pages.ByDate.Reverse }}
+      <a href="{{ .Permalink }}" class="project-card">
+        <div class="project-card-header">
+          {{ with .Params.icon }}{{ . }}{{ else }}🗺️{{ end }}
+        </div>
+        <div class="project-card-body">
+          <h2 class="project-card-title">{{ .Title }}</h2>
+          {{ with .Summary }}
+          <p class="project-card-desc">{{ . }}</p>
+          {{ end }}
+          <span class="project-card-link">Explore →</span>
+        </div>
+      </a>
+      {{ end }}
+    {{ else }}
+      <p class="projects-empty">Projects coming soon.</p>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

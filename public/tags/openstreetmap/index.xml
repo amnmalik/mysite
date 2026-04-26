@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Openstreetmap on Aman Malik</title>
+    <link>http://localhost:1313/tags/openstreetmap/</link>
+    <description>Recent content in Openstreetmap on Aman Malik</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/openstreetmap/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mapping the World with OpenStreetMap</title>
+      <link>http://localhost:1313/projects/openstreetmap/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/openstreetmap/</guid>
+      <description>Contributing to the world&amp;rsquo;s largest open map — trails, roads, and places across India and beyond.</description>
+    </item>
+  </channel>
+</rss>

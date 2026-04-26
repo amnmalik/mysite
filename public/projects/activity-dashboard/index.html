@@ -28,17 +28,24 @@
 
 
 
-<meta property="og:url" content="http://localhost:1313/tags/">
+<meta property="og:url" content="http://localhost:1313/projects/activity-dashboard/">
   <meta property="og:site_name" content="Aman Malik">
-  <meta property="og:title" content="Tags">
-  <meta property="og:description" content="Energy &amp; climate policy researcher, modeller, and writer based in India.">
+  <meta property="og:title" content="Activity Dashboard">
+  <meta property="og:description" content="An interactive map to visualise all my trails and expeditions — with switchable terrain layers and personal GPS traces.">
   <meta property="og:locale" content="en_us">
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="projects">
+    <meta property="article:published_time" content="2024-01-02T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-01-02T00:00:00+00:00">
+    <meta property="article:tag" content="Mapping">
+    <meta property="article:tag" content="Strava">
+    <meta property="article:tag" content="Leaflet">
+    <meta property="article:tag" content="Open-Source">
 
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Tags">
-  <meta name="twitter:description" content="Energy &amp; climate policy researcher, modeller, and writer based in India.">
+  <meta name="twitter:title" content="Activity Dashboard">
+  <meta name="twitter:description" content="An interactive map to visualise all my trails and expeditions — with switchable terrain layers and personal GPS traces.">
 
 
 
@@ -106,16 +113,11 @@
 
 
 
-<meta name="description" content="Tags of Aman Malik">
-<link rel="stylesheet" href="/css/list.css" media="all">
-
 
   
   
 
   <title>
-Tags | Aman Malik
-
   </title>
 </head>
 
@@ -349,90 +351,248 @@ Tags | Aman Malik
     </nav>
 </header>
 <div id="content">
-<div class="container pt-5" id="list-page">
-    <h2 class="text-center pb-2">Tags</h2>
-    <div class="row">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap');
+
+  .bw-single {
+    min-height: 100vh;
+    background: #f7f4ef;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  .bw-single-inner {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 60px 24px 100px;
+  }
+
+  .bw-single-back {
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #9a8c7e;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 40px;
+  }
+
+  .bw-single-back:hover { color: #4a7c59; text-decoration: none; }
+
+  .bw-single-meta {
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #9a8c7e;
+    margin-bottom: 16px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .bw-single-tag {
+    background: #e8e0d5;
+    padding: 2px 8px;
+    border-radius: 2px;
+    font-size: 10px;
+  }
+
+  .bw-single-title {
+    font-family: 'Lora', serif;
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    font-weight: 500;
+    color: #1a1612;
+    line-height: 1.2;
+    margin-bottom: 40px;
+  }
+
+  .bw-single-divider {
+    width: 40px;
+    height: 2px;
+    background: #c4a882;
+    margin-bottom: 40px;
+  }
+
+   
+  .bw-single-content {
+    color: #2a2218;
+    line-height: 1.8;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+
+  .bw-single-content p {
+    margin-bottom: 1.5rem;
+  }
+
+  .bw-single-content h2 {
+    font-family: 'Lora', serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #1a1612;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e2dbd0;
+  }
+
+  .bw-single-content h3 {
+    font-family: 'Lora', serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #3a2d1e;
+    margin-top: 1.8rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .bw-single-content a {
+    color: #4a7c59;
+    text-decoration: none;
+    border-bottom: 1px solid #c4a882;
+    transition: border-color 0.15s;
+  }
+
+  .bw-single-content a:hover {
+    border-color: #4a7c59;
+    text-decoration: none;
+  }
+
+  .bw-single-content ul {
+    padding-left: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .bw-single-content ul li {
+    margin-bottom: 0.5rem;
+  }
+
+  .bw-single-content strong {
+    font-weight: 500;
+    color: #1a1612;
+  }
+  .bw-single-content img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin: 24px 0;
+  }
+
+   
+  .bw-single-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+  }
+
+  .bw-single-content table td {
+    padding: 10px 16px;
+    border-bottom: 1px solid #e2dbd0;
+    vertical-align: top;
+  }
+
+  .bw-single-content table td:first-child {
+    color: #6b5e4e;
+    font-size: 0.85rem;
+    letter-spacing: 0.02em;
+    width: 45%;
+  }
+
+  .bw-single-content table td:last-child {
+    font-weight: 500;
+    color: #1a1612;
+  }
+
+  .bw-single-content table tr:last-child td {
+    border-bottom: none;
+  }
+
+   
+  .bw-single-content table thead {
+    display: none;
+  }
+
+  .bw-single-footer {
+    margin-top: 60px;
+    padding-top: 24px;
+    border-top: 1px solid #e2dbd0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .bw-single-footer-back {
+    font-size: 0.85rem;
+    color: #9a8c7e;
+    text-decoration: none;
+  }
+
+  .bw-single-footer-back:hover { color: #4a7c59; text-decoration: none; }
+</style>
+
+<div class="bw-single">
+  <div class="bw-single-inner">
+
+    <a href="http://localhost:1313/projects/" class="bw-single-back">← Projects</a>
+
+    <div class="bw-single-meta">
+      <span>January 2024</span>
+      
         
-        <div class="col-lg-4 col-md-6 my-3">
-            <div class="card h-100">
-                
-                <div class="card-body bg-transparent p-4 shadow-sm">
-                    <a href="/tags/leaflet/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="Leaflet">Leaflet</h5>
-                    </a>
-                    <div class="card-text secondary-font">
-                        <p></p>
-                    </div>
-                </div>
-                <div class="mt-auto post-footer bg-transparent py-3">
-                    <span class="float-start bg-transparent">January 2, 2024</span>
-                    <a href="/tags/leaflet/" class="float-end btn btn-outline-info btn-sm">Read</a>
-                </div>
-            </div>
-        </div>
+        <span class="bw-single-tag">mapping</span>
         
-        <div class="col-lg-4 col-md-6 my-3">
-            <div class="card h-100">
-                
-                <div class="card-body bg-transparent p-4 shadow-sm">
-                    <a href="/tags/mapping/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="Mapping">Mapping</h5>
-                    </a>
-                    <div class="card-text secondary-font">
-                        <p></p>
-                    </div>
-                </div>
-                <div class="mt-auto post-footer bg-transparent py-3">
-                    <span class="float-start bg-transparent">January 2, 2024</span>
-                    <a href="/tags/mapping/" class="float-end btn btn-outline-info btn-sm">Read</a>
-                </div>
-            </div>
-        </div>
+        <span class="bw-single-tag">strava</span>
         
-        <div class="col-lg-4 col-md-6 my-3">
-            <div class="card h-100">
-                
-                <div class="card-body bg-transparent p-4 shadow-sm">
-                    <a href="/tags/open-source/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="Open-Source">Open-Source</h5>
-                    </a>
-                    <div class="card-text secondary-font">
-                        <p></p>
-                    </div>
-                </div>
-                <div class="mt-auto post-footer bg-transparent py-3">
-                    <span class="float-start bg-transparent">January 2, 2024</span>
-                    <a href="/tags/open-source/" class="float-end btn btn-outline-info btn-sm">Read</a>
-                </div>
-            </div>
-        </div>
+        <span class="bw-single-tag">leaflet</span>
         
-        <div class="row justify-content-center">
-            <div class="col-auto m-3">
-                
-    <ul class="pagination pagination-default">
-      <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="First" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;&laquo;</span></a>
-      </li>
-      <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="Previous" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;</span></a>
-      </li>
-      <li class="page-item active">
-        <a aria-current="page" aria-label="Page 1" class="page-link" role="button">1</a>
-      </li>
-      <li class="page-item">
-        <a href="/tags/page/2/" aria-label="Page 2" class="page-link" role="button">2</a>
-      </li>
-      <li class="page-item">
-        <a href="/tags/page/2/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
-      </li>
-      <li class="page-item">
-        <a href="/tags/page/2/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
-      </li>
-    </ul>
-            </div>
-        </div>
+        <span class="bw-single-tag">open-source</span>
+        
+      
     </div>
+
+    <h1 class="bw-single-title">Activity Dashboard</h1>
+    <div class="bw-single-divider"></div>
+
+    <div class="bw-single-content">
+      <p>Most apps that track outdoor activity do one thing well and everything else poorly. Strava is great for social fitness but terrible for visualising a 17-day bicycle expedition across a mountain range. GPS apps fragment your tracks across devices and sessions. None of them let you overlay your own routes on a topographic map and actually <em>read</em> the terrain.</p>
+<p>So I built my own.</p>
+<h2 id="what-it-does">What it does</h2>
+<p>The Activity Dashboard is a single-page web application that pulls together all my outdoor activity — bicycle expeditions, hikes, trail runs — and displays them on an interactive map. Key features:</p>
+<ul>
+<li><strong>Strava integration</strong> — imports all activities automatically via the Strava API, with GPS routes, distance, elevation, pace, and duration</li>
+<li><strong>GPX file import</strong> — for activities not on Strava, including older expeditions and traces recorded with OsmAnd</li>
+<li><strong>9 switchable map layers</strong> — including OpenTopoMap, Thunderforest Outdoors, ESRI Satellite, CartoDB, and OpenStreetMap, so you can see your routes against the terrain that matters</li>
+<li><strong>Elevation profiles</strong> — per-activity charts showing ascent and descent</li>
+<li><strong>Filters</strong> — by activity type, difficulty, and data source</li>
+<li><strong>Offline-capable</strong> — data is cached locally so the map works without a constant connection</li>
+</ul>
+<h2 id="why-i-built-it">Why I built it</h2>
+<p>I wanted one place where I could see everything — the 3,900 km Berlin to Lisbon ride, the 800 km Zanskar loop, the North Cape expedition — all on the same map, zoomable, layered against real topography. Something that would let me revisit a route and actually understand the landscape I moved through, not just see a coloured line on a grey background.</p>
+<p>It is also a way of making my trails available to others. Anyone looking at a route I have done in the Kullu valley or Changthang can zoom in, see the terrain, and understand what the road or trail actually looks like.</p>
+<h2 id="how-it-was-built">How it was built</h2>
+<p>The dashboard is a single HTML file — no framework, no build step, just vanilla JavaScript, CSS, and a few carefully chosen libraries:</p>
+<ul>
+<li><a href="https://leafletjs.com/"><strong>Leaflet.js</strong></a> — for map rendering and layer management</li>
+<li><a href="https://developers.strava.com/"><strong>Strava API</strong></a> — OAuth 2.0 authentication to pull activity data</li>
+<li><a href="https://www.thunderforest.com/"><strong>Thunderforest</strong></a> — for the outdoor and cycling tile layers</li>
+<li><a href="https://opentopomap.org/"><strong>OpenTopoMap</strong></a>, ESRI, CartoDB, and OSM — free tile layers requiring no API key</li>
+</ul>
+<p>The design principle was simplicity — a tool I would actually use, that loads fast, works on a phone in the field, and does not require an internet connection once the data is cached.</p>
+<h2 id="status">Status</h2>
+<p>The dashboard is live and accessible below. It is built as a standalone HTML file — no backend infrastructure, no framework, just a single page that loads fast and works on any device.</p>
+<p><a href="/hikes/">Open the Activity Dashboard →</a></p>
+<p><em><a href="mailto:aman.malik@posteo.net">Drop me a line</a> if you are interested in the code or want to build something similar.</em></p>
+
+    </div>
+
+    <div class="bw-single-footer">
+      <a href="http://localhost:1313/projects/" class="bw-single-footer-back">← Back to Projects</a>
+    </div>
+
+  </div>
 </div>
 
   </div><footer>

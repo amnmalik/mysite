@@ -28,17 +28,23 @@
 
 
 
-<meta property="og:url" content="http://localhost:1313/tags/">
+<meta property="og:url" content="http://localhost:1313/projects/openstreetmap/">
   <meta property="og:site_name" content="Aman Malik">
-  <meta property="og:title" content="Tags">
-  <meta property="og:description" content="Energy &amp; climate policy researcher, modeller, and writer based in India.">
+  <meta property="og:title" content="Mapping the World with OpenStreetMap">
+  <meta property="og:description" content="Contributing to the world’s largest open map — trails, roads, and places across India and beyond.">
   <meta property="og:locale" content="en_us">
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="projects">
+    <meta property="article:published_time" content="2024-01-01T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-01-01T00:00:00+00:00">
+    <meta property="article:tag" content="Mapping">
+    <meta property="article:tag" content="Openstreetmap">
+    <meta property="article:tag" content="Open-Data">
 
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Tags">
-  <meta name="twitter:description" content="Energy &amp; climate policy researcher, modeller, and writer based in India.">
+  <meta name="twitter:title" content="Mapping the World with OpenStreetMap">
+  <meta name="twitter:description" content="Contributing to the world’s largest open map — trails, roads, and places across India and beyond.">
 
 
 
@@ -106,16 +112,11 @@
 
 
 
-<meta name="description" content="Tags of Aman Malik">
-<link rel="stylesheet" href="/css/list.css" media="all">
-
 
   
   
 
   <title>
-Tags | Aman Malik
-
   </title>
 </head>
 
@@ -349,90 +350,298 @@ Tags | Aman Malik
     </nav>
 </header>
 <div id="content">
-<div class="container pt-5" id="list-page">
-    <h2 class="text-center pb-2">Tags</h2>
-    <div class="row">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap');
+
+  .bw-single {
+    min-height: 100vh;
+    background: #f7f4ef;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  .bw-single-inner {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 60px 24px 100px;
+  }
+
+  .bw-single-back {
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #9a8c7e;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 40px;
+  }
+
+  .bw-single-back:hover { color: #4a7c59; text-decoration: none; }
+
+  .bw-single-meta {
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #9a8c7e;
+    margin-bottom: 16px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .bw-single-tag {
+    background: #e8e0d5;
+    padding: 2px 8px;
+    border-radius: 2px;
+    font-size: 10px;
+  }
+
+  .bw-single-title {
+    font-family: 'Lora', serif;
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    font-weight: 500;
+    color: #1a1612;
+    line-height: 1.2;
+    margin-bottom: 40px;
+  }
+
+  .bw-single-divider {
+    width: 40px;
+    height: 2px;
+    background: #c4a882;
+    margin-bottom: 40px;
+  }
+
+   
+  .bw-single-content {
+    color: #2a2218;
+    line-height: 1.8;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+
+  .bw-single-content p {
+    margin-bottom: 1.5rem;
+  }
+
+  .bw-single-content h2 {
+    font-family: 'Lora', serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #1a1612;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e2dbd0;
+  }
+
+  .bw-single-content h3 {
+    font-family: 'Lora', serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #3a2d1e;
+    margin-top: 1.8rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .bw-single-content a {
+    color: #4a7c59;
+    text-decoration: none;
+    border-bottom: 1px solid #c4a882;
+    transition: border-color 0.15s;
+  }
+
+  .bw-single-content a:hover {
+    border-color: #4a7c59;
+    text-decoration: none;
+  }
+
+  .bw-single-content ul {
+    padding-left: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .bw-single-content ul li {
+    margin-bottom: 0.5rem;
+  }
+
+  .bw-single-content strong {
+    font-weight: 500;
+    color: #1a1612;
+  }
+  .bw-single-content img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin: 24px 0;
+  }
+
+   
+  .bw-single-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+  }
+
+  .bw-single-content table td {
+    padding: 10px 16px;
+    border-bottom: 1px solid #e2dbd0;
+    vertical-align: top;
+  }
+
+  .bw-single-content table td:first-child {
+    color: #6b5e4e;
+    font-size: 0.85rem;
+    letter-spacing: 0.02em;
+    width: 45%;
+  }
+
+  .bw-single-content table td:last-child {
+    font-weight: 500;
+    color: #1a1612;
+  }
+
+  .bw-single-content table tr:last-child td {
+    border-bottom: none;
+  }
+
+   
+  .bw-single-content table thead {
+    display: none;
+  }
+
+  .bw-single-footer {
+    margin-top: 60px;
+    padding-top: 24px;
+    border-top: 1px solid #e2dbd0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .bw-single-footer-back {
+    font-size: 0.85rem;
+    color: #9a8c7e;
+    text-decoration: none;
+  }
+
+  .bw-single-footer-back:hover { color: #4a7c59; text-decoration: none; }
+</style>
+
+<div class="bw-single">
+  <div class="bw-single-inner">
+
+    <a href="http://localhost:1313/projects/" class="bw-single-back">← Projects</a>
+
+    <div class="bw-single-meta">
+      <span>January 2024</span>
+      
         
-        <div class="col-lg-4 col-md-6 my-3">
-            <div class="card h-100">
-                
-                <div class="card-body bg-transparent p-4 shadow-sm">
-                    <a href="/tags/leaflet/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="Leaflet">Leaflet</h5>
-                    </a>
-                    <div class="card-text secondary-font">
-                        <p></p>
-                    </div>
-                </div>
-                <div class="mt-auto post-footer bg-transparent py-3">
-                    <span class="float-start bg-transparent">January 2, 2024</span>
-                    <a href="/tags/leaflet/" class="float-end btn btn-outline-info btn-sm">Read</a>
-                </div>
-            </div>
-        </div>
+        <span class="bw-single-tag">mapping</span>
         
-        <div class="col-lg-4 col-md-6 my-3">
-            <div class="card h-100">
-                
-                <div class="card-body bg-transparent p-4 shadow-sm">
-                    <a href="/tags/mapping/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="Mapping">Mapping</h5>
-                    </a>
-                    <div class="card-text secondary-font">
-                        <p></p>
-                    </div>
-                </div>
-                <div class="mt-auto post-footer bg-transparent py-3">
-                    <span class="float-start bg-transparent">January 2, 2024</span>
-                    <a href="/tags/mapping/" class="float-end btn btn-outline-info btn-sm">Read</a>
-                </div>
-            </div>
-        </div>
+        <span class="bw-single-tag">openstreetmap</span>
         
-        <div class="col-lg-4 col-md-6 my-3">
-            <div class="card h-100">
-                
-                <div class="card-body bg-transparent p-4 shadow-sm">
-                    <a href="/tags/open-source/" class="primary-font card-title">
-                        <h5 class="card-title bg-transparent" title="Open-Source">Open-Source</h5>
-                    </a>
-                    <div class="card-text secondary-font">
-                        <p></p>
-                    </div>
-                </div>
-                <div class="mt-auto post-footer bg-transparent py-3">
-                    <span class="float-start bg-transparent">January 2, 2024</span>
-                    <a href="/tags/open-source/" class="float-end btn btn-outline-info btn-sm">Read</a>
-                </div>
-            </div>
-        </div>
+        <span class="bw-single-tag">open-data</span>
         
-        <div class="row justify-content-center">
-            <div class="col-auto m-3">
-                
-    <ul class="pagination pagination-default">
-      <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="First" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;&laquo;</span></a>
-      </li>
-      <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="Previous" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;</span></a>
-      </li>
-      <li class="page-item active">
-        <a aria-current="page" aria-label="Page 1" class="page-link" role="button">1</a>
-      </li>
-      <li class="page-item">
-        <a href="/tags/page/2/" aria-label="Page 2" class="page-link" role="button">2</a>
-      </li>
-      <li class="page-item">
-        <a href="/tags/page/2/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
-      </li>
-      <li class="page-item">
-        <a href="/tags/page/2/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
-      </li>
-    </ul>
-            </div>
-        </div>
+      
     </div>
+
+    <h1 class="bw-single-title">Mapping the World with OpenStreetMap</h1>
+    <div class="bw-single-divider"></div>
+
+    <div class="bw-single-content">
+      <p><a href="https://www.openstreetmap.org/user/amnmalik">OpenStreetMap</a> (OSM) is the Wikipedia of maps — a free, editable map of the world built entirely by volunteers. I have been contributing since April 2020, with a focus on mapping trails, roads, and places in the Indian Himalayas and other areas I have travelled through.</p>
+<h2 id="by-the-numbers">By the numbers</h2>
+<p><em>Stats as of April 2026, sourced from <a href="https://hdyc.neis-one.org/?amnmalik">How did you contribute to OpenStreetMap?</a></em></p>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Member since</strong></td>
+          <td>April 2020</td>
+      </tr>
+      <tr>
+          <td><strong>Mapping days</strong></td>
+          <td>250</td>
+      </tr>
+      <tr>
+          <td><strong>Total map changes</strong></td>
+          <td>253,458</td>
+      </tr>
+      <tr>
+          <td><strong>Changesets</strong></td>
+          <td>1,118</td>
+      </tr>
+      <tr>
+          <td><strong>Nodes created</strong></td>
+          <td>193,480</td>
+      </tr>
+      <tr>
+          <td><strong>Ways created</strong></td>
+          <td>8,161</td>
+      </tr>
+      <tr>
+          <td><strong>Countries mapped</strong></td>
+          <td>13</td>
+      </tr>
+      <tr>
+          <td><strong>Rank in India</strong></td>
+          <td>#580</td>
+      </tr>
+  </tbody>
+</table>
+<p><img src="activity.png" alt="My mapping activity area centred on the Kullu valley, Himachal Pradesh"></p>
+<h2 id="where-i-map">Where I map</h2>
+<p>The bulk of my contributions — over 251,000 changes — are in India, with a particular focus on the Kullu valley and surrounding areas in Himachal Pradesh, where I live. I have also mapped in Nepal, Germany, Sweden, Spain, Portugal, France, and several other countries visited during my bicycle expeditions.</p>
+<p>My primary activity area covers the Kullu valley — trails, roads, villages, natural features, and infrastructure that are often missing or incomplete on commercial maps.</p>
+<h2 id="what-i-map">What I map</h2>
+<p>Most of my edits focus on:</p>
+<ul>
+<li><strong>Trails and mountain paths</strong> — particularly high-altitude routes in Himachal Pradesh that are essential for trekkers and locals but absent from most maps</li>
+<li><strong>Roads and highways</strong> — surface tagging, connectivity, and accuracy in remote areas</li>
+<li><strong>Places and amenities</strong> — villages, water sources, shelters, and points of interest</li>
+<li><strong>Natural features</strong> — rivers, peaks, landuse, and terrain</li>
+</ul>
+<h2 id="how-i-map">How I map</h2>
+<p>I map in two ways — as an armchair mapper and as a self-recorder in the field.</p>
+<p><strong>Armchair mapping</strong> means editing from a desk using openly available data sources rather than personal surveys. For this I rely on a combination of:</p>
+<ul>
+<li><strong>Satellite imagery</strong> — openly licensed imagery from <a href="https://www.esri.com">ESRI</a> and <a href="https://www.microsoft.com/en-us/maps">Microsoft</a> available directly within OSM editors, useful for tracing roads, buildings, and landuse</li>
+<li><strong>Survey of India maps</strong> — particularly useful for names and locations of villages, rivers, and peaks in India. Two excellent sources are the <a href="https://ramseraph.github.io/opendata/maps/SOI/sheets">SOI sheet index</a> and the <a href="https://storage.googleapis.com/soi_data/index.html">SOI data archive</a></li>
+<li><strong>PMGSY road data</strong> — the Pradhan Mantri Gram Sadak Yojana database of rural roads, which I have worked on integrating into OSM. See my <a href="https://github.com/amnmalik/PMGSY-OSM-road-integration">PMGSY-OSM integration project</a> on GitHub</li>
+<li><strong>Public GPS traces</strong> — recordings uploaded by other OSM contributors, available on the <a href="https://www.openstreetmap.org/traces">OSM traces portal</a>, which help verify road alignments and trail routes in areas with poor imagery</li>
+</ul>
+<p><strong>Field recording</strong> means going out with a GPS device and recording tracks directly on trails and roads I travel through — on foot, by bicycle, or by other means. These traces then become the basis for accurate trail mapping, particularly in high-altitude areas where satellite imagery resolution is poor and existing data is sparse.</p>
+<p><img src="osmand.jpeg" alt="OsmAnd running on my phone during a field recording session"></p>
+<h2 id="tools">Tools</h2>
+<p>I primarily use:</p>
+<ul>
+<li><a href="https://josm.openstreetmap.de/"><strong>JOSM</strong></a> — a powerful desktop editor, my main tool for complex edits (623 changesets)</li>
+<li><a href="https://apps.apple.com/app/go-map/id592990211"><strong>Go Map!!</strong></a> — an iOS editor for on-the-go mapping (396 changesets)</li>
+<li><a href="https://osmand.net/"><strong>OsmAnd</strong></a> — for navigation and recording GPS traces in the field (56 changesets)</li>
+<li><a href="https://www.openstreetmap.org/edit"><strong>iD editor</strong></a> — the browser-based editor for quick edits (43 changesets)</li>
+</ul>
+<p><img src="josm.webp" alt="JOSM desktop editor showing a mapping session in the Kullu valley"></p>
+<h2 id="get-involved">Get involved</h2>
+<p>If you&rsquo;re interested in contributing to OpenStreetMap — particularly in mapping the Himalayas — feel free to reach out. The <a href="https://www.openstreetmap.org">#kulluosm</a> community is always looking for more mappers.</p>
+<p>→ <a href="https://www.openstreetmap.org/user/amnmalik">View my OSM profile</a></p>
+
+    </div>
+
+    <div class="bw-single-footer">
+      <a href="http://localhost:1313/projects/" class="bw-single-footer-back">← Back to Projects</a>
+    </div>
+
+  </div>
 </div>
 
   </div><footer>
