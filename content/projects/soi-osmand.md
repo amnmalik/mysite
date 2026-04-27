@@ -120,11 +120,8 @@ A district like Kullu with ~25 sheets produces an MBTiles of around 1.1 GB which
 
 ## Step 5: Copy to OsmAnd on iPhone
 
-The easiest method is iTunes File Sharing:
-
-1. Connect your iPhone to your PC and open iTunes
-2. Select your device → **File Sharing** → find **OsmAnd** in the list
-3. Drag your `.sqlitedb` file into the OsmAnd documents area
+1. Copy/Transfer the sqlitedb to yur phone.
+2. When prompted to open using which app, select OsmAnd
 
 ## Step 6: Enable as Overlay in OsmAnd
 
