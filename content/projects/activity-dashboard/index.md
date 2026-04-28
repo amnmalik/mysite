@@ -10,6 +10,8 @@ Most apps that track outdoor activity do one thing well and everything else poor
 
 So I built my own.
 
+![The Activity Dashboard showing expedition routes on an interactive map](activity.jpg)
+
 ## What it does
 
 The Activity Dashboard is a single-page web application that pulls together all my outdoor activity — bicycle expeditions, hikes, trail runs — and displays them on an interactive map. Key features:
@@ -23,7 +25,7 @@ The Activity Dashboard is a single-page web application that pulls together all 
 
 ## Why I built it
 
-I wanted one place where I could see everything — the 3,900 km Berlin to Lisbon ride, the 800 km Zanskar loop, the North Cape expedition — all on the same map, zoomable, layered against real topography. Something that would let me revisit a route and actually understand the landscape I moved through, not just see a coloured line on a grey background.
+I wanted one place where I could see all my acitivities  all on the same map, zoomable, layered against real topography. Something that would let me revisit a route and actually understand the landscape I moved through, not just see a coloured line on a grey background.
 
 It is also a way of making my trails available to others. Anyone looking at a route I have done in the Kullu valley or Changthang can zoom in, see the terrain, and understand what the road or trail actually looks like.
 
@@ -36,7 +38,7 @@ The dashboard is a single HTML file — no framework, no build step, just vanill
 - [**Thunderforest**](https://www.thunderforest.com/) — for the outdoor and cycling tile layers
 - [**OpenTopoMap**](https://opentopomap.org/), ESRI, CartoDB, and OSM — free tile layers requiring no API key
 
-The design principle was simplicity — a tool I would actually use, that loads fast, works on a phone in the field, and does not require an internet connection once the data is cached.
+The design principle was simplicity — a tool I would actually use, that loads fast, and does not require an internet connection once the data is cached.
 
 ## Status
 

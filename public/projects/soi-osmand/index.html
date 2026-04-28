@@ -31,7 +31,7 @@
 <meta property="og:url" content="http://localhost:1313/projects/soi-osmand/">
   <meta property="og:site_name" content="Aman Malik">
   <meta property="og:title" content="Survey of India Topo Maps on OsmAnd">
-  <meta property="og:description" content="How to get offline Survey of India 1:50,000 topographic maps working as an overlay on OsmAnd for iPhone.">
+  <meta property="og:description" content="How to get offline Survey of India 1:50,000 topographic maps working as an overlay on OsmAnd.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="projects">
@@ -47,7 +47,7 @@
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Survey of India Topo Maps on OsmAnd">
-  <meta name="twitter:description" content="How to get offline Survey of India 1:50,000 topographic maps working as an overlay on OsmAnd for iPhone.">
+  <meta name="twitter:description" content="How to get offline Survey of India 1:50,000 topographic maps working as an overlay on OsmAnd.">
 
 
 
@@ -476,10 +476,11 @@
   }
   .bw-single-content img {
     width: 100%;
-    max-width: 100%;
+    max-width: 580px;
     height: auto;
     border-radius: 4px;
-    margin: 24px 0;
+    margin: 24px auto;
+    display: block;
   }
 
    
@@ -642,11 +643,9 @@
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>python3 mbtiles2osmand.py --jpg <span style="color:#ae81ff">60</span> district_50k.mbtiles district_50k.sqlitedb
 </span></span></code></pre></div><p>A district like Kullu with ~25 sheets produces an MBTiles of around 1.1 GB which compresses down to roughly 150 MB as a SQLitedb — very manageable.</p>
 <h2 id="step-5-copy-to-osmand-on-iphone">Step 5: Copy to OsmAnd on iPhone</h2>
-<p>The easiest method is iTunes File Sharing:</p>
 <ol>
-<li>Connect your iPhone to your PC and open iTunes</li>
-<li>Select your device → <strong>File Sharing</strong> → find <strong>OsmAnd</strong> in the list</li>
-<li>Drag your <code>.sqlitedb</code> file into the OsmAnd documents area</li>
+<li>Copy/Transfer the sqlitedb to yur phone.</li>
+<li>When prompted to open using which app, select OsmAnd</li>
 </ol>
 <h2 id="step-6-enable-as-overlay-in-osmand">Step 6: Enable as Overlay in OsmAnd</h2>
 <ol>
@@ -663,6 +662,27 @@
 <li>Not all sheets are available — some remote high-altitude areas in Lahaul-Spiti may be missing</li>
 <li>The tiles are in WebP format internally; the JPEG conversion step handles this during the mbtiles2osmand conversion</li>
 </ul>
+<h2 id="ready-made-maps">Ready-made maps</h2>
+<p>If you don&rsquo;t want to go through the full workflow, I have pre-processed SQLitedb files available for download for some districts in Himachal Pradesh. These are ready to copy directly to OsmAnd.</p>
+<table>
+  <thead>
+      <tr>
+          <th>District</th>
+          <th>Coverage</th>
+          <th>Size</th>
+          <th>Download</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Kullu</td>
+          <td>Full district at 1:50,000</td>
+          <td>162 MB</td>
+          <td><a href="https://pub-aba69cd42a7b4d7aa8b5444fae551046.r2.dev/sqlitemaps/kullu_50k.sqlitedb">Download</a></td>
+      </tr>
+  </tbody>
+</table>
+<p>More districts will be added over time. If you need a specific area, feel free to <a href="mailto:aman.malik@posteo.net">get in touch</a>.</p>
 
     </div>
 

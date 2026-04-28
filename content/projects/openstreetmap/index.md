@@ -4,6 +4,7 @@ date: 2024-01-01
 summary: "Contributing to the world's largest open map — trails, roads, and places across India and beyond."
 icon: "🗺️"
 tags: ["mapping", "openstreetmap", "open-data"]
+thumbnail: activity.png
 ---
 
 [OpenStreetMap](https://www.openstreetmap.org/user/amnmalik) (OSM) is the Wikipedia of maps — a free, editable map of the world built entirely by volunteers. I have been contributing since April 2020, with a focus on mapping trails, roads, and places in the Indian Himalayas and other areas I have travelled through.

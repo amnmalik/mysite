@@ -42,7 +42,31 @@
     color: #6b5e4e;
     font-weight: 300;
     line-height: 1.7;
+    margin-bottom: 20px;
   }
+
+  .tag-filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 16px;
+  }
+
+  .tag-pill {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 500;
+    border: 1px solid #e2dbd0;
+    background: transparent;
+    color: #6b5e4e;
+    cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+    transition: all 0.15s ease;
+  }
+
+  .tag-pill:hover { border-color: #7a5c3a; color: #7a5c3a; }
+  .tag-pill.active { background: #7a5c3a; color: #fff; border-color: #7a5c3a; }
 
   .projects-grid {
     max-width: 900px;
@@ -69,8 +93,29 @@
     text-decoration: none;
   }
 
+  .project-card.hidden { display: none; }
+
   .project-card-header {
-    height: 120px;
+    height: 160px;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(135deg, #3a2d1e 0%, #7a5c3a 100%);
+  }
+
+  .project-card-header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+
+  .project-card:hover .project-card-header img {
+    transform: scale(1.04);
+  }
+
+  .project-card-header-fallback {
+    height: 160px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -115,6 +160,15 @@
     font-size: 1.1rem;
     grid-column: 1 / -1;
   }
+
+  .no-results {
+    padding: 40px 0;
+    text-align: center;
+    color: #9a8c7e;
+    font-style: italic;
+    grid-column: 1 / -1;
+    display: none;
+  }
 </style>
 
 <div class="projects-page">
@@ -122,16 +176,26 @@
     <a href="/beyond-work/" class="projects-back">← Beyond Work</a>
     <h1 class="projects-title">Projects</h1>
     <p class="projects-desc">Mapping, expeditions, and things built along the way.</p>
+    <div class="tag-filter" id="tagFilter"></div>
   </div>
 
-  <div class="projects-grid">
+  <div class="projects-grid" id="projectsGrid">
     {{ $pages := .Pages }}
     {{ if $pages }}
       {{ range $pages.ByDate.Reverse }}
-      <a href="{{ .Permalink }}" class="project-card">
+      {{ $page := . }}
+      {{ $thumb := "" }}
+      {{ with .Params.thumbnail }}{{ $thumb = . }}{{ else }}{{ with .Resources.ByType "image" }}{{ with index . 0 }}{{ $thumb = .Name }}{{ end }}{{ end }}{{ end }}
+      <a href="{{ .Permalink }}" class="project-card" data-tags="{{ delimit .Params.tags "," }}">
+        {{ if $thumb }}
         <div class="project-card-header">
-          {{ with .Params.icon }}{{ . }}{{ else }}🗺️{{ end }}
+          <img src="{{ $page.RelPermalink }}{{ $thumb }}" alt="{{ $page.Title }}">
         </div>
+        {{ else }}
+        <div class="project-card-header-fallback">
+          {{ with $page.Params.icon }}{{ . }}{{ else }}🗺️{{ end }}
+        </div>
+        {{ end }}
         <div class="project-card-body">
           <h2 class="project-card-title">{{ .Title }}</h2>
           {{ with .Summary }}
@@ -141,9 +205,54 @@
         </div>
       </a>
       {{ end }}
+      <p class="no-results" id="noResults">No projects found for this tag.</p>
     {{ else }}
       <p class="projects-empty">Projects coming soon.</p>
     {{ end }}
   </div>
 </div>
+
+<script>
+  let activeTag = null;
+
+  const cards = document.querySelectorAll('.project-card[data-tags]');
+  const allTags = new Set();
+  cards.forEach(c => {
+    const tags = c.dataset.tags.split(',').map(t => t.trim()).filter(Boolean);
+    tags.forEach(t => allTags.add(t));
+  });
+
+  const filter = document.getElementById('tagFilter');
+  if (allTags.size > 0) {
+    const allPill = document.createElement('button');
+    allPill.className = 'tag-pill active';
+    allPill.textContent = 'All';
+    allPill.onclick = () => setTag(null, allPill);
+    filter.appendChild(allPill);
+
+    [...allTags].sort().forEach(tag => {
+      const pill = document.createElement('button');
+      pill.className = 'tag-pill';
+      pill.textContent = tag;
+      pill.dataset.tag = tag;
+      pill.onclick = () => setTag(tag, pill);
+      filter.appendChild(pill);
+    });
+  }
+
+  function setTag(tag, el) {
+    activeTag = tag;
+    document.querySelectorAll('.tag-pill').forEach(p => p.classList.remove('active'));
+    el.classList.add('active');
+    let visible = 0;
+    cards.forEach(c => {
+      const tags = c.dataset.tags.split(',').map(t => t.trim());
+      const show = !activeTag || tags.includes(activeTag);
+      c.classList.toggle('hidden', !show);
+      if (show) visible++;
+    });
+    const noResults = document.getElementById('noResults');
+    if (noResults) noResults.style.display = visible === 0 ? 'block' : 'none';
+  }
+</script>
 {{ end }}

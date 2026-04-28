@@ -1,7 +1,7 @@
 ---
 title: "Survey of India Topo Maps on OsmAnd"
 date: 2026-04-26
-summary: "How to get offline Survey of India 1:50,000 topographic maps working as an overlay on OsmAnd for iPhone."
+summary: "How to get offline Survey of India 1:50,000 topographic maps working as an overlay on OsmAnd."
 icon: "🗺️"
 tags: ["maps", "osmand", "india", "topo", "offline", "himachal"]
 ---
@@ -138,3 +138,14 @@ The SOI topo layer will now appear over OsmAnd's base map, giving you contour li
 - The maps are updated weekly on the source website
 - Not all sheets are available — some remote high-altitude areas in Lahaul-Spiti may be missing
 - The tiles are in WebP format internally; the JPEG conversion step handles this during the mbtiles2osmand conversion
+
+
+## Ready-made maps
+
+If you don't want to go through the full workflow, I have pre-processed SQLitedb files available for download for some districts in Himachal Pradesh. These are ready to copy directly to OsmAnd.
+
+| District | Coverage | Size | Download |
+|---|---|---|---|
+| Kullu | Full district at 1:50,000 | 162 MB | [Download](https://pub-aba69cd42a7b4d7aa8b5444fae551046.r2.dev/sqlitemaps/kullu_50k.sqlitedb) |
+
+More districts will be added over time. If you need a specific area, feel free to [get in touch](mailto:aman.malik@posteo.net).
