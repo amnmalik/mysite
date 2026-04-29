@@ -214,6 +214,7 @@ params:
     enable: true
     items:
       - company: "Council on Energy, Environment and Water (CEEW)"
+        logo: "/images/logos/ceew.jpg"
         companyUrl: "https://www.ceew.in/aman-malik"
         jobs:
           - name: "Programme Lead, Low Carbon Economy"
@@ -231,6 +232,7 @@ params:
             content: "Consulting engagement with CEEW prior to joining as Programme Lead."
 
       - company: "Potsdam Institute for Climate Impact Research (PIK)"
+        logo: "/images/logos/pik.png"
         companyUrl: "https://www.pik-potsdam.de"
         jobs:
           - name: "Guest Scientist"
@@ -249,6 +251,7 @@ params:
               - Published research in Nature Communications, Nature Climate Change, Environmental Research Letters, and Energy Policy
 
       - company: "GIZ (Deutsche Gesellschaft für Internationale Zusammenarbeit)"
+        logo: "/images/logos/giz.png"
         companyUrl: "https://www.giz.de"
         jobs:
           - name: "Consultant"
@@ -256,6 +259,7 @@ params:
             content: "Implementation of NAMA - preparing RDF guidelines and Climate Change Adaptation in Rural Areas of India (CCA - RAI)"
 
       - company: "Climate Analytics"
+        logo: "/images/logos/climate-analytics.svg"
         companyUrl: "https://climateanalytics.org"
         jobs:
           - name: "Student Assistant"
