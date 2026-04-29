@@ -17,6 +17,8 @@ Going further up and away from the stream that I was following, I reached the Na
 
 ![Deodar forest along the Naggar-Jana road](Deodar_forest.jpeg)
 
+{{< pullquote >}}The village looks very idyllic, nestled solitarily in the valley.{{< /pullquote >}}
+
 Nathan is a beautiful village containing dozens of old kath kuni houses, with their typical "floating in the air" balconies and arched lookout points. Many of the archways are coloured an ochre red - might this be the red soil that is used throughout the valley? Clothes and blankets hang out to dry, women comb their long wet hair glistening in the sun, and cows chomp through their straw. The village looks very idyllic, nestled solitarily in the valley. From there I wanted to explore the village of Shansher that's marked on OSM, and asked someone for directions. They only knew of a temple and told me to go further up, where I'd find a dirt track - follow it until a big stone and then turn into the forest.
 
 ![A kath kuni house in Nathan](nathan_house.jpeg)

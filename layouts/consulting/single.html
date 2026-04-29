@@ -1,0 +1,80 @@
+{{ define "main" }}
+<style>
+  .consulting-single {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 60px 24px 80px;
+    font-family: var(--font-family, sans-serif);
+  }
+
+  .consulting-back {
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--secondary-color, #6c757d);
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 32px;
+  }
+
+  .consulting-back:hover { text-decoration: none; opacity: 0.7; }
+
+  .consulting-single h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--primary-color, #007bff);
+  }
+
+  .consulting-single-desc {
+    font-size: 1.05rem;
+    color: var(--secondary-text, #6c757d);
+    margin-bottom: 40px;
+    line-height: 1.7;
+  }
+
+  .consulting-single-content h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--border-color, #dee2e6);
+  }
+
+  .consulting-single-content p,
+  .consulting-single-content li {
+    line-height: 1.8;
+    color: var(--text-color, #343a40);
+  }
+
+  .consulting-single-content ul {
+    padding-left: 1.4rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .consulting-single-content a {
+    color: var(--primary-color, #007bff);
+  }
+
+  .consulting-single-content strong {
+    font-weight: 600;
+  }
+
+  .consulting-single-content hr {
+    margin: 2rem 0;
+    border-color: var(--border-color, #dee2e6);
+  }
+</style>
+
+<div class="consulting-single">
+  <a href="/#consulting" class="consulting-back">← Consulting</a>
+  <h1>{{ .Title }}</h1>
+  {{ with .Params.description }}
+  <p class="consulting-single-desc">{{ . }}</p>
+  {{ end }}
+  <div class="consulting-single-content">
+    {{ .Content }}
+  </div>
+</div>
+{{ end }}

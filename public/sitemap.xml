@@ -74,8 +74,40 @@
     <loc>http://localhost:1313/tags/open-data/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/austria/</loc>
+    <lastmod>2019-02-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/europe/</loc>
+    <lastmod>2019-02-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/expedition/</loc>
+    <lastmod>2019-02-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/writing/a-few-days-on-the-ice/</loc>
+    <lastmod>2019-02-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/ice-climbing/</loc>
+    <lastmod>2019-02-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/mountains/</loc>
+    <lastmod>2019-02-16T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/beyond-work/</loc>
   </url><url>
+    <loc>http://localhost:1313/consulting/carbon-markets-ets/</loc>
+  </url><url>
     <loc>http://localhost:1313/categories/</loc>
+  </url><url>
+    <loc>http://localhost:1313/consulting/</loc>
+  </url><url>
+    <loc>http://localhost:1313/consulting/energy-system-modelling/</loc>
+  </url><url>
+    <loc>http://localhost:1313/consulting/policy-analysis-government-engagement/</loc>
+  </url><url>
+    <loc>http://localhost:1313/consulting/research-review/</loc>
+  </url><url>
+    <loc>http://localhost:1313/consulting/training-capacity-building/</loc>
+  </url><url>
+    <loc>http://localhost:1313/consulting/transition-risk-climate-finance/</loc>
   </url>
 </urlset>

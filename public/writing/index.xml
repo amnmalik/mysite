@@ -15,5 +15,12 @@
       <guid>http://localhost:1313/writing/nathan/</guid>
       <description>A Sunday afternoon on the less-explored Left Bank of the Beas - through Baranigran, Nathan, and the forests between Naggar and Jana.</description>
     </item>
+    <item>
+      <title>Ice Climbing in Praxmar</title>
+      <link>http://localhost:1313/writing/a-few-days-on-the-ice/</link>
+      <pubDate>Sat, 16 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/writing/a-few-days-on-the-ice/</guid>
+      <description>Eight days of learning and practicing ice climbing in the Stubai Alps, Austria</description>
+    </item>
   </channel>
 </rss>

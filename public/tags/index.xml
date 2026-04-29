@@ -79,10 +79,31 @@
       <description></description>
     </item>
     <item>
+      <title>Leaflet</title>
+      <link>http://localhost:1313/tags/leaflet/</link>
+      <pubDate>Tue, 02 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/leaflet/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Mapping</title>
       <link>http://localhost:1313/tags/mapping/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 02 Jan 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/mapping/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Open-Source</title>
+      <link>http://localhost:1313/tags/open-source/</link>
+      <pubDate>Tue, 02 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/open-source/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Strava</title>
+      <link>http://localhost:1313/tags/strava/</link>
+      <pubDate>Tue, 02 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/strava/</guid>
       <description></description>
     </item>
     <item>
@@ -93,24 +114,38 @@
       <description></description>
     </item>
     <item>
-      <title>Leaflet</title>
-      <link>http://localhost:1313/tags/leaflet/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/leaflet/</guid>
+      <title>Austria</title>
+      <link>http://localhost:1313/tags/austria/</link>
+      <pubDate>Sat, 16 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/austria/</guid>
       <description></description>
     </item>
     <item>
-      <title>Open-Source</title>
-      <link>http://localhost:1313/tags/open-source/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/open-source/</guid>
+      <title>Europe</title>
+      <link>http://localhost:1313/tags/europe/</link>
+      <pubDate>Sat, 16 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/europe/</guid>
       <description></description>
     </item>
     <item>
-      <title>Strava</title>
-      <link>http://localhost:1313/tags/strava/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/strava/</guid>
+      <title>Expedition</title>
+      <link>http://localhost:1313/tags/expedition/</link>
+      <pubDate>Sat, 16 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/expedition/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ice-Climbing</title>
+      <link>http://localhost:1313/tags/ice-climbing/</link>
+      <pubDate>Sat, 16 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/ice-climbing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mountains</title>
+      <link>http://localhost:1313/tags/mountains/</link>
+      <pubDate>Sat, 16 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/mountains/</guid>
       <description></description>
     </item>
   </channel>

@@ -12,12 +12,20 @@
         {{ end }}
         <div class="row justify-content-center">
             {{ range $consulting.services }}
+            {{ $service := . }}
+            {{ $slug := .name | urlize }}
             <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card h-100 p-4">
+                <a href="/consulting/{{ $slug }}/" class="text-decoration-none">
+                <div class="card h-100 p-4" style="transition: transform 0.15s ease, box-shadow 0.15s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 8px 24px rgba(0,0,0,0.10)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
                     <div class="mb-2" style="font-size: 1.5rem;">{{ .icon }}</div>
-                    <h5 class="fw-bold mb-2">{{ .name }}</h5>
-                    <div class="secondary-font">{{ .description }}</div>
+                    <h5 class="fw-bold mb-2" style="color: #1a1a2e;">{{ .name }}</h5>
+                    <div class="mb-3" style="color: #555; font-size: 0.9rem; line-height: 1.7;">{{ .description }}</div>
+                    {{ if $service.image }}
+                    <img src="{{ $service.image }}" alt="{{ $service.name }}" style="width: 100%; border-radius: 6px; object-fit: cover; max-height: 180px;">
+                    {{ end }}
+                    <div class="mt-auto pt-3" style="font-size: 0.8rem; font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase; color: var(--primary-color, #007bff);">Learn more →</div>
                 </div>
+                </a>
             </div>
             {{ end }}
         </div>

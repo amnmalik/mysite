@@ -3,6 +3,21 @@
 <section id="talks" class="py-5">
     <div class="container">
         <h3 class="text-center mb-4">{{ $talks.title | default "Talks & Lectures" }}</h3>
+
+        {{ if $talks.photos }}
+        <div class="row justify-content-center mb-5">
+            <div class="col-lg-10">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px;">
+                    {{ range $talks.photos }}
+                    <div style="overflow: hidden; border-radius: 6px; height: 160px;">
+                        <img src="{{ . }}" style="width: 100%; height: 100%; object-fit: cover; object-position: center top;" alt="Talk or lecture">
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+        {{ end }}
+
         <div class="row justify-content-center">
             <div class="col-lg-8 col-md-10">
                 <ul class="list-unstyled">

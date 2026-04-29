@@ -32,11 +32,21 @@ Menus:
       title: Consulting
       url: /#consulting
       weight: 1
+    - identifier: experience
+      name: Experience
+      title: Experience
+      url: /#experience
+      weight: 2
+    - identifier: education
+      name: Education
+      title: Education
+      url: /#education
+      weight: 3
     - identifier: publications
       name: Publications
       title: Publications
       url: /#publications
-      weight: 2
+      weight: 4
     - identifier: journal-articles
       name: Journal Articles
       title: Journal Articles
@@ -67,30 +77,41 @@ Menus:
       url: /#pub-opeds
       parent: publications
       weight: 5
+    - identifier: awards
+      name: Awards & Recognition
+      title: Awards & Recognition
+      url: /#achievements
+      weight: 5
     - identifier: talks
       name: Talks
       title: Talks & Lectures
       url: /#talks
-      weight: 3
+      weight: 6
     - identifier: beyond-work
       name: Beyond Work
       title: Beyond Work
       url: /beyond-work/
-      weight: 4
+      weight: 7
     - identifier: contact
       name: Contact
       title: Contact
-      url: /#contact
-      weight: 5
+      weight: 8
 
 params:
   title: "Aman Malik"
   description: "Energy & climate policy researcher, modeller, and writer based in India."
   favicon: "/fav.png"
 
+  customCSS:
+    - css/custom.css
+
   useBootstrapCDN: false
   mathjax: false
   animate: true
+
+  theme:
+    disableThemeToggle: false
+    defaultTheme: "light"
 
   font:
     fontSize: 1rem
@@ -109,10 +130,10 @@ params:
     enableSeparator: false
     menus:
       disableAbout: false
-      disableExperience: false
-      disableEducation: false
+      disableExperience: true
+      disableEducation: true
       disableProjects: true
-      disableAchievements: false
+      disableAchievements: true
       disableContact: true
 
   # Hero
@@ -122,7 +143,7 @@ params:
     title: "Aman Malik."
     subtitle: "Energy & climate policy researcher specialising in India's decarbonisation."
     content: "A researcher and policy analyst specialising in India's energy transition, carbon markets, and climate-related financial risk. I combine modelling-based research with policy engagement to inform real-world decisions on decarbonisation."
-    image: https://avatars.githubusercontent.com/amnmalik
+    image: /images/linkedin1.jpg
     bottomImage:
       enable: true
     button:
@@ -145,7 +166,7 @@ params:
   about:
     enable: true
     title: "About Me"
-    image: https://avatars.githubusercontent.com/amnmalik
+    image: /images/linkedin3.jpg
     content: |-
       I am an energy and climate policy researcher with a PhD from the Technical University of Berlin and the Potsdam Institute for Climate Impact Research. My work sits at the intersection of quantitative modelling and policy — using energy system models to inform decisions on India's decarbonisation, carbon markets, and climate-related financial risk.
 
@@ -162,30 +183,31 @@ params:
         - "Employment implications of energy transition"
         - "Carbon dioxide removal"
         - "R, Python, GAMS, QGIS"
-        - "Peer reviewer: Nature, Nature Communications, Environmental Research Letters, Climate Policy, Energy Policy, Energy Research and Social Science, Climate Economics"
-
+   
   # Consulting
   consulting:
     enable: true
     title: "Consulting"
-    intro: "I work with governments, financial institutions, research organisations, and think tanks on questions at the intersection of energy systems, climate policy, and economics. Engagements typically involve one or more of the following:"
+    intro: "I work with governments, financial institutions, research organisations, and think-tanks on questions at the intersection of energy systems, climate policy, and economics. Engagements typically involve one or more of the following:"
     services:
       - name: "Energy System Modelling"
         icon: "⚡"
         description: "Scenario development and modelling using tools such as GCAM, REMIND, and state-level energy models. Applications include net-zero pathways, power sector planning, and policy impact assessment."
       - name: "Carbon Markets & ETS"
         icon: "🌍"
-        description: "Policy design and analysis of carbon pricing mechanisms, emission trading schemes, and carbon credit frameworks — with particular expertise in the Indian context."
+        description: "Policy design and analysis of carbon pricing mechanisms like emission trading schemes, and carbon credit frameworks — with particular expertise in the Indian context."
       - name: "Transition Risk & Climate Finance"
         icon: "📊"
         description: "Country-specific scenario development to inform climate-related financial risk assessment for banks, regulators, and institutional investors."
-      - name: "Policy Analysis & Research"
+      - name: "Policy Analysis & Government Engagement"
         icon: "📝"
-        description: "Evidence-based policy briefs, research reports, and strategic analysis on India's energy transition, decarbonisation strategies, and climate commitments."
+        description: "Evidence-based policy briefs, research reports on India's energy transition and decarbonisation — delivered directly to government ministries, regulatory bodies, and multilateral institutions including Niti Aayog, the Reserve Bank of India, and the Ministry of Power."
       - name: "Training & Capacity Building"
         icon: "🎓"
         description: "Guest lectures, workshops, and executive training on energy economics, climate modelling, and decarbonisation policy for government officials, financial institutions, and academic audiences."
-    cta: "Get in touch at [aman.malik@posteo.net](mailto:aman.malik@posteo.net) to discuss a potential engagement."
+      - name: "Research Review"
+        icon: "🔍"
+        description: "Peer review of research papers and reports for leading international journals including Nature, Environmental Research Letters, Climate Policy, Energy Policy, Energy Research and Social Science, and Climate Economics."
 
   # Experience
   experience:
@@ -458,6 +480,11 @@ params:
   talks:
     enable: true
     title: "Talks, Lectures & Panel Discussions"
+    photos:
+      - /images/linkedin1.jpg
+      - /images/linkedin2.jpg
+      - /images/linkedin4.jpg
+      - /images/linkedin5.jpg
     items:
       - "Guest lecture, Economics and Geopolitics of Energy, WWF-India and OP Jindal University, Students of LL.M. ELECC 2025-2026 (Apr 2026)"
       - "Panelist, Session on carbon removal in Article 6, CO2 Forward Carbon Removal Summit, Carbon Removal Alliance of India, Delhi (Dec 2025)"
