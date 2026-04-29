@@ -272,6 +272,7 @@ params:
     index: false
     items:
       - title: "Dr. rer. nat. (PhD) in Energy & Climate Policy"
+        logo: "/images/logos/tub.svg"
         school:
           name: "Technical University of Berlin & Potsdam Institute for Climate Impact Research"
           url: "https://www.pik-potsdam.de"
@@ -286,6 +287,7 @@ params:
           url: "https://depositonce.tu-berlin.de/items/25cc825f-904f-4403-a092-7d6190f92149"
 
       - title: "M.Sc. Integrated Climate System Sciences"
+        logo: "/images/logos/hamburg.svg"
         school:
           name: "University of Hamburg"
           url: "https://www.uni-hamburg.de"
@@ -303,6 +305,7 @@ params:
           url: "https://github.com/amnmalik/Master-thesis"
 
       - title: "B.Tech. Chemical Engineering"
+        logo: "/images/logos/ggsipu.png"
         school:
           name: "Guru Gobind Singh Indraprastha University, New Delhi"
           url: "https://www.ipu.ac.in"
