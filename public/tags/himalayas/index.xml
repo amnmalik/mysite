@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Himalayas on Aman Malik</title>
+    <link>http://localhost:1313/tags/himalayas/</link>
+    <description>Recent content in Himalayas on Aman Malik</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 20 Sep 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/himalayas/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>An Alphabetical Ode to the Cyclists</title>
+      <link>http://localhost:1313/writing/alphabetical-ode-cyclists/</link>
+      <pubDate>Fri, 20 Sep 2013 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/writing/alphabetical-ode-cyclists/</guid>
+      <description>A poem written somewhere on the road between Shimla and Keylong — each line starting with the next letter of the alphabet.</description>
+    </item>
+    <item>
+      <title>Shimla to Narkanda: All is Not Well</title>
+      <link>http://localhost:1313/writing/shimla-to-keylong/</link>
+      <pubDate>Wed, 18 Sep 2013 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/writing/shimla-to-keylong/</guid>
+      <description>Days 1 and 2 of a bicycle trip from Shimla to Keylong — a forgotten quick-release, a flat tyre in the first kilometre, and the first brutal climb that made everything feel impossible.</description>
+    </item>
+    <item>
+      <title>Everything is Not Money</title>
+      <link>http://localhost:1313/writing/taleport/</link>
+      <pubDate>Thu, 01 Aug 2013 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/writing/taleport/</guid>
+      <description>A night camping in a stranger&amp;rsquo;s field on the Manali-Kaza route, with no money, a cold wind from Rohtang Pass, and more kindness than we deserved.</description>
+    </item>
+    <item>
+      <title>Alone at the Base Camp</title>
+      <link>http://localhost:1313/writing/alone-at-base-camp/</link>
+      <pubDate>Fri, 01 Jul 2011 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/writing/alone-at-base-camp/</guid>
+      <description>Lost among the boulders at 3,900 metres on the way back to camp, with a growing headache, rain coming in, and no sight of the tents.</description>
+    </item>
+    <item>
+      <title>My First Trek to the Himalayas</title>
+      <link>http://localhost:1313/writing/first-trek-himalayas/</link>
+      <pubDate>Mon, 09 Aug 2010 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/writing/first-trek-himalayas/</guid>
+      <description>Five friends, a rented tent from the Indian Mountaineering Foundation, and a bus to Govind Ghat — the beginning of a trek to the Valley of Flowers and Hemkund Sahib.</description>
+    </item>
+  </channel>
+</rss>

@@ -389,6 +389,22 @@
   .tag-pill:hover { border-color: #4a7c59; color: #4a7c59; }
   .tag-pill.active { background: #4a7c59; color: #fff; border-color: #4a7c59; }
 
+  .year-pill {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 500;
+    border: 1px solid #c4a882;
+    background: transparent;
+    color: #7a5c3a;
+    cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+    transition: all 0.15s ease;
+  }
+
+  .year-pill:hover { border-color: #7a5c3a; color: #7a5c3a; background: #faf5ee; }
+  .year-pill.active { background: #c4a882; color: #fff; border-color: #c4a882; }
+
   .writing-list {
     max-width: 760px;
     margin: 0 auto;
@@ -400,7 +416,8 @@
     grid-template-columns: 1fr;
     padding: 32px 0;
     border-bottom: 1px solid #e2dbd0;
-    text-decoration: none;
+    text-decoration: none !important;
+    color: #2a2218 !important;
     transition: all 0.15s ease;
     gap: 16px;
   }
@@ -410,11 +427,9 @@
     align-items: start;
   }
 
-  .writing-post:hover { text-decoration: none; }
+  .writing-post:hover { text-decoration: none; color: inherit; }
   .writing-post:hover .writing-post-title { color: #4a7c59; }
   .writing-post.hidden { display: none; }
-
-  .writing-post-content {}
 
   .writing-post-thumb {
     width: 180px;
@@ -428,7 +443,7 @@
     font-size: 11px;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    color: #9a8c7e;
+    color: #9a8c7e !important;
     margin-bottom: 10px;
     display: flex;
     gap: 16px;
@@ -451,7 +466,7 @@
     font-family: 'Lora', serif;
     font-size: 1.4rem;
     font-weight: 500;
-    color: #1a1612;
+    color: #1a1612 !important;
     margin-bottom: 10px;
     transition: color 0.15s ease;
     line-height: 1.3;
@@ -459,7 +474,7 @@
 
   .writing-post-summary {
     font-size: 0.95rem;
-    color: #6b5e4e;
+    color: #6b5e4e !important;
     font-weight: 300;
     line-height: 1.7;
     margin-bottom: 12px;
@@ -469,7 +484,7 @@
     font-size: 0.8rem;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: #4a7c59;
+    color: #4a7c59 !important;
     font-weight: 500;
   }
 
@@ -508,6 +523,7 @@
     <h1 class="writing-title">Writing</h1>
     <p class="writing-desc">Expedition stories, field notes, and musings from the road.</p>
     <div class="tag-filter" id="tagFilter"></div>
+    <div class="tag-filter" id="yearFilter" style="margin-top: 8px;"></div>
   </div>
 
   <div class="writing-list" id="writingList">
@@ -517,7 +533,7 @@
       
       
       
-      <a href="http://localhost:1313/writing/nathan/" class="writing-post has-thumb" data-tags="kullu,hiking,left-bank,openstreetmap,himachal">
+      <div onclick="window.location='http:\/\/localhost:1313\/writing\/nathan\/'" style="cursor:pointer" class="writing-post has-thumb" data-tags="kullu,hiking,left-bank,openstreetmap,himachal" data-year="2026">
         <div class="writing-post-content">
           <div class="writing-post-meta">
             <span>27 Apr 2026</span>
@@ -540,12 +556,12 @@
         
         <img class="writing-post-thumb" src="/writing/nathan/Deodar_forest.jpeg" alt="The Left Bank">
         
-      </a>
+      </div>
       
       
       
       
-      <a href="http://localhost:1313/writing/a-few-days-on-the-ice/" class="writing-post" data-tags="ice-climbing,austria,mountains,expedition,europe">
+      <div onclick="window.location='http:\/\/localhost:1313\/writing\/a-few-days-on-the-ice\/'" style="cursor:pointer" class="writing-post" data-tags="ice-climbing,austria,mountains,expedition,europe" data-year="2019">
         <div class="writing-post-content">
           <div class="writing-post-meta">
             <span>16 Feb 2019</span>
@@ -566,46 +582,416 @@
           <span class="writing-post-read">Read →</span>
         </div>
         
-      </a>
+      </div>
       
-      <p class="no-results" id="noResults">No posts found for this tag.</p>
+      
+      
+      
+      <div onclick="window.location='http:\/\/localhost:1313\/writing\/agumbe\/'" style="cursor:pointer" class="writing-post" data-tags="karnataka,rainforest,wildlife,agumbe,volunteering,india" data-year="2014">
+        <div class="writing-post-content">
+          <div class="writing-post-meta">
+            <span>1 Jun 2014</span>
+            
+              
+              <span class="writing-post-tag" onclick="filterByTag(event, 'karnataka')">karnataka</span>
+              
+              <span class="writing-post-tag" onclick="filterByTag(event, 'rainforest')">rainforest</span>
+              
+              <span class="writing-post-tag" onclick="filterByTag(event, 'wildlife')">wildlife</span>
+              
+            
+          </div>
+          <h2 class="writing-post-title">Agumbe: Into the Rainforest</h2>
+          
+          <p class="writing-post-summary">Two weeks volunteering at the Agumbe Rainforest Research Station in Karnataka — King Cobras, leeches, camera traps, and the strange quiet of a forest at night.</p>
+          
+          <span class="writing-post-read">Read →</span>
+        </div>
+        
+      </div>
+      
+      
+      
+      
+      <div onclick="window.location='http:\/\/localhost:1313\/writing\/alphabetical-ode-cyclists\/'" style="cursor:pointer" class="writing-post" data-tags="poetry,cycling,himalayas,himachal-pradesh" data-year="2013">
+        <div class="writing-post-content">
+          <div class="writing-post-meta">
+            <span>20 Sep 2013</span>
+            
+              
+              <span class="writing-post-tag" onclick="filterByTag(event, 'poetry')">poetry</span>
+              
+              <span class="writing-post-tag" onclick="filterByTag(event, 'cycling')">cycling</span>
+              
+              <span class="writing-post-tag" onclick="filterByTag(event, 'himalayas')">himalayas</span>
+              
+            
+          </div>
+          <h2 class="writing-post-title">An Alphabetical Ode to the Cyclists</h2>
+          
+          <p class="writing-post-summary">A poem written somewhere on the road between Shimla and Keylong — each line starting with the next letter of the alphabet.</p>
+          
+          <span class="writing-post-read">Read →</span>
+        </div>
+        
+      </div>
+      
+      
+      
+      
+      <div onclick="window.location='http:\/\/localhost:1313\/writing\/shimla-to-keylong\/'" style="cursor:pointer" class="writing-post has-thumb" data-tags="cycling,himalayas,shimla,himachal-pradesh,bikepacking,india" data-year="2013">
+        <div class="writing-post-content">
+          <div class="writing-post-meta">
+            <span>18 Sep 2013</span>
+            
+              
+              <span class="writing-post-tag" onclick="filterByTag(event, 'cycling')">cycling</span>
+              
+              <span class="writing-post-tag" onclick="filterByTag(event, 'himalayas')">himalayas</span>
+              
+              <span class="writing-post-tag" onclick="filterByTag(event, 'shimla')">shimla</span>
+              
+            
+          </div>
+          <h2 class="writing-post-title">Shimla to Narkanda: All is Not Well</h2>
+          
+          <p class="writing-post-summary">Days 1 and 2 of a bicycle trip from Shimla to Keylong — a forgotten quick-release, a flat tyre in the first kilometre, and the first brutal climb that made everything feel impossible.</p>
+          
+          <span class="writing-post-read">Read →</span>
+        </div>
+        
+        <img class="writing-post-thumb" src="/writing/shimla-to-keylong/image1.png" alt="Shimla to Narkanda: All is Not Well">
+        
+      </div>
+      
+      
+      
+      
+      <div onclick="window.location='http:\/\/localhost:1313\/writing\/taleport\/'" style="cursor:pointer" class="writing-post" data-tags="bikepacking,himalayas,spiti,cycling,india" data-year="2013">
+        <div class="writing-post-content">
+          <div class="writing-post-meta">
+            <span>1 Aug 2013</span>
+            
+              
+              <span class="writing-post-tag" onclick="filterByTag(event, 'bikepacking')">bikepacking</span>
+              
+              <span class="writing-post-tag" onclick="filterByTag(event, 'himalayas')">himalayas</span>
+              
+              <span class="writing-post-tag" onclick="filterByTag(event, 'spiti')">spiti</span>
+              
+            
+          </div>
+          <h2 class="writing-post-title">Everything is Not Money</h2>
+          
+          <p class="writing-post-summary">A night camping in a stranger&rsquo;s field on the Manali-Kaza route, with no money, a cold wind from Rohtang Pass, and more kindness than we deserved.</p>
+          
+          <span class="writing-post-read">Read →</span>
+        </div>
+        
+      </div>
+      
+      
+      
+      
+      <div onclick="window.location='http:\/\/localhost:1313\/writing\/ooty\/'" style="cursor:pointer" class="writing-post" data-tags="ooty,tamil-nadu,solo-travel,india,hiking" data-year="2013">
+        <div class="writing-post-content">
+          <div class="writing-post-meta">
+            <span>26 May 2013</span>
+            
+              
+              <span class="writing-post-tag" onclick="filterByTag(event, 'ooty')">ooty</span>
+              
+              <span class="writing-post-tag" onclick="filterByTag(event, 'tamil-nadu')">tamil-nadu</span>
+              
+              <span class="writing-post-tag" onclick="filterByTag(event, 'solo-travel')">solo-travel</span>
+              
+            
+          </div>
+          <h2 class="writing-post-title">Ooty Trip Notes</h2>
+          
+          <p class="writing-post-summary">Two days in Ooty alone — forest permits refused, a sunset from a college terrace, and breakfast for Rs. 50.</p>
+          
+          <span class="writing-post-read">Read →</span>
+        </div>
+        
+      </div>
+      
+      
+      
+      
+      <div onclick="window.location='http:\/\/localhost:1313\/writing\/solo-cycling-bharatpur\/'" style="cursor:pointer" class="writing-post" data-tags="cycling,solo,bharatpur,rajasthan,india" data-year="2012">
+        <div class="writing-post-content">
+          <div class="writing-post-meta">
+            <span>4 Nov 2012</span>
+            
+              
+              <span class="writing-post-tag" onclick="filterByTag(event, 'cycling')">cycling</span>
+              
+              <span class="writing-post-tag" onclick="filterByTag(event, 'solo')">solo</span>
+              
+              <span class="writing-post-tag" onclick="filterByTag(event, 'bharatpur')">bharatpur</span>
+              
+            
+          </div>
+          <h2 class="writing-post-title">Solo Cycling to Bharatpur</h2>
+          
+          <p class="writing-post-summary">205 km alone on a bicycle from Delhi to Keoladeo National Park — 12 hours, 10 of them pedalling, the last 50 genuinely gruelling.</p>
+          
+          <span class="writing-post-read">Read →</span>
+        </div>
+        
+      </div>
+      
+      
+      
+      
+      <div onclick="window.location='http:\/\/localhost:1313\/writing\/trek-to-the-parvati-valley\/'" style="cursor:pointer" class="writing-post has-thumb" data-tags="trekking,himachal pradesh,parvati valley,india,adventure" data-year="2012">
+        <div class="writing-post-content">
+          <div class="writing-post-meta">
+            <span>13 Jun 2012</span>
+            
+              
+              <span class="writing-post-tag" onclick="filterByTag(event, 'trekking')">trekking</span>
+              
+              <span class="writing-post-tag" onclick="filterByTag(event, 'himachal pradesh')">himachal pradesh</span>
+              
+              <span class="writing-post-tag" onclick="filterByTag(event, 'parvati valley')">parvati valley</span>
+              
+            
+          </div>
+          <h2 class="writing-post-title">Trek to the Parvati Valley</h2>
+          
+          <p class="writing-post-summary">A thirteen-day trek through one of Himachal Pradesh&rsquo;s most remote and beautiful valleys — from Barsheni to Mantalai Lake at 4,100 metres.</p>
+          
+          <span class="writing-post-read">Read →</span>
+        </div>
+        
+        <img class="writing-post-thumb" src="/writing/trek-to-the-parvati-valley/image3.png" alt="Trek to the Parvati Valley">
+        
+      </div>
+      
+      
+      
+      
+      <div onclick="window.location='http:\/\/localhost:1313\/writing\/keval\/'" style="cursor:pointer" class="writing-post" data-tags="trekking,himachal pradesh,parvati valley,india,shepherds" data-year="2012">
+        <div class="writing-post-content">
+          <div class="writing-post-meta">
+            <span>1 Jun 2012</span>
+            
+              
+              <span class="writing-post-tag" onclick="filterByTag(event, 'trekking')">trekking</span>
+              
+              <span class="writing-post-tag" onclick="filterByTag(event, 'himachal pradesh')">himachal pradesh</span>
+              
+              <span class="writing-post-tag" onclick="filterByTag(event, 'parvati valley')">parvati valley</span>
+              
+            
+          </div>
+          <h2 class="writing-post-title">Keval</h2>
+          
+          <p class="writing-post-summary">A day in the Parvati Valley with Keval, a young Gaddi shepherd — fire, chai, and a landscape that belongs to someone else entirely.</p>
+          
+          <span class="writing-post-read">Read →</span>
+        </div>
+        
+      </div>
+      
+      
+      
+      
+      <div onclick="window.location='http:\/\/localhost:1313\/writing\/alone-at-base-camp\/'" style="cursor:pointer" class="writing-post" data-tags="himalayas,trekking,chhota-sigri,glacier,solo" data-year="2011">
+        <div class="writing-post-content">
+          <div class="writing-post-meta">
+            <span>1 Jul 2011</span>
+            
+              
+              <span class="writing-post-tag" onclick="filterByTag(event, 'himalayas')">himalayas</span>
+              
+              <span class="writing-post-tag" onclick="filterByTag(event, 'trekking')">trekking</span>
+              
+              <span class="writing-post-tag" onclick="filterByTag(event, 'chhota-sigri')">chhota-sigri</span>
+              
+            
+          </div>
+          <h2 class="writing-post-title">Alone at the Base Camp</h2>
+          
+          <p class="writing-post-summary">Lost among the boulders at 3,900 metres on the way back to camp, with a growing headache, rain coming in, and no sight of the tents.</p>
+          
+          <span class="writing-post-read">Read →</span>
+        </div>
+        
+      </div>
+      
+      
+      
+      
+      <div onclick="window.location='http:\/\/localhost:1313\/writing\/ushuaia\/'" style="cursor:pointer" class="writing-post" data-tags="antarctica,ushuaia,argentina,expedition,travel" data-year="2011">
+        <div class="writing-post-content">
+          <div class="writing-post-meta">
+            <span>1 Jun 2011</span>
+            
+              
+              <span class="writing-post-tag" onclick="filterByTag(event, 'antarctica')">antarctica</span>
+              
+              <span class="writing-post-tag" onclick="filterByTag(event, 'ushuaia')">ushuaia</span>
+              
+              <span class="writing-post-tag" onclick="filterByTag(event, 'argentina')">argentina</span>
+              
+            
+          </div>
+          <h2 class="writing-post-title">Welcome to the Southernmost City in the World</h2>
+          
+          <p class="writing-post-summary">Arriving in Ushuaia at the start of a student expedition to Antarctica — the dinner table, the Beagle Channel, and the feeling of being 19,000 km from home.</p>
+          
+          <span class="writing-post-read">Read →</span>
+        </div>
+        
+      </div>
+      
+      
+      
+      
+      <div onclick="window.location='http:\/\/localhost:1313\/writing\/ronge-island-glaciology\/'" style="cursor:pointer" class="writing-post" data-tags="antarctica,expedition,glacier,glaciology,students-on-ice" data-year="2011">
+        <div class="writing-post-content">
+          <div class="writing-post-meta">
+            <span>20 Feb 2011</span>
+            
+              
+              <span class="writing-post-tag" onclick="filterByTag(event, 'antarctica')">antarctica</span>
+              
+              <span class="writing-post-tag" onclick="filterByTag(event, 'expedition')">expedition</span>
+              
+              <span class="writing-post-tag" onclick="filterByTag(event, 'glacier')">glacier</span>
+              
+            
+          </div>
+          <h2 class="writing-post-title">Ronge Island: The Glaciology Team</h2>
+          
+          <p class="writing-post-summary">A morning on the Ronge Island glacier with the Students on Ice glaciology group — digging snow pits, measuring density profiles, and standing inside a landscape too beautiful to photograph.</p>
+          
+          <span class="writing-post-read">Read →</span>
+        </div>
+        
+      </div>
+      
+      
+      
+      
+      <div onclick="window.location='http:\/\/localhost:1313\/writing\/antarctica\/'" style="cursor:pointer" class="writing-post has-thumb" data-tags="antarctica,expedition,students-on-ice,polar,climate" data-year="2011">
+        <div class="writing-post-content">
+          <div class="writing-post-meta">
+            <span>14 Feb 2011</span>
+            
+              
+              <span class="writing-post-tag" onclick="filterByTag(event, 'antarctica')">antarctica</span>
+              
+              <span class="writing-post-tag" onclick="filterByTag(event, 'expedition')">expedition</span>
+              
+              <span class="writing-post-tag" onclick="filterByTag(event, 'students-on-ice')">students-on-ice</span>
+              
+            
+          </div>
+          <h2 class="writing-post-title">Students on Ice: An Antarctic Expedition</h2>
+          
+          <p class="writing-post-summary">On 14 February 2011, I was one of 53 students selected from around the world to join the Students on Ice educational expedition to Antarctica.</p>
+          
+          <span class="writing-post-read">Read →</span>
+        </div>
+        
+        <img class="writing-post-thumb" src="/writing/antarctica/flag.png" alt="Students on Ice: An Antarctic Expedition">
+        
+      </div>
+      
+      
+      
+      
+      <div onclick="window.location='http:\/\/localhost:1313\/writing\/first-trek-himalayas\/'" style="cursor:pointer" class="writing-post" data-tags="himalayas,trekking,valley-of-flowers,uttarakhand,india" data-year="2010">
+        <div class="writing-post-content">
+          <div class="writing-post-meta">
+            <span>9 Aug 2010</span>
+            
+              
+              <span class="writing-post-tag" onclick="filterByTag(event, 'himalayas')">himalayas</span>
+              
+              <span class="writing-post-tag" onclick="filterByTag(event, 'trekking')">trekking</span>
+              
+              <span class="writing-post-tag" onclick="filterByTag(event, 'valley-of-flowers')">valley-of-flowers</span>
+              
+            
+          </div>
+          <h2 class="writing-post-title">My First Trek to the Himalayas</h2>
+          
+          <p class="writing-post-summary">Five friends, a rented tent from the Indian Mountaineering Foundation, and a bus to Govind Ghat — the beginning of a trek to the Valley of Flowers and Hemkund Sahib.</p>
+          
+          <span class="writing-post-read">Read →</span>
+        </div>
+        
+      </div>
+      
+      <p class="no-results" id="noResults">No posts found.</p>
     
   </div>
 </div>
 
 <script>
   let activeTag = null;
+  let activeYear = null;
 
-  
   const posts = document.querySelectorAll('.writing-post[data-tags]');
+
   const allTags = new Set();
+  const allYears = new Set();
   posts.forEach(p => {
-    const tags = p.dataset.tags.split(',').map(t => t.trim()).filter(Boolean);
-    tags.forEach(t => allTags.add(t));
+    (p.dataset.tags || '').split(',').map(t => t.trim()).filter(Boolean).forEach(t => allTags.add(t));
+    if (p.dataset.year) allYears.add(p.dataset.year);
   });
 
   
-  const filter = document.getElementById('tagFilter');
+  const tagFilter = document.getElementById('tagFilter');
   if (allTags.size > 0) {
     const allPill = document.createElement('button');
     allPill.className = 'tag-pill active';
-    allPill.textContent = 'All';
+    allPill.textContent = 'All tags';
     allPill.onclick = () => setTag(null, allPill);
-    filter.appendChild(allPill);
-
+    tagFilter.appendChild(allPill);
     [...allTags].sort().forEach(tag => {
       const pill = document.createElement('button');
       pill.className = 'tag-pill';
       pill.textContent = tag;
       pill.dataset.tag = tag;
       pill.onclick = () => setTag(tag, pill);
-      filter.appendChild(pill);
+      tagFilter.appendChild(pill);
+    });
+  }
+
+  
+  const yearFilter = document.getElementById('yearFilter');
+  if (allYears.size > 0) {
+    const allYearPill = document.createElement('button');
+    allYearPill.className = 'year-pill active';
+    allYearPill.textContent = 'All years';
+    allYearPill.onclick = () => setYear(null, allYearPill);
+    yearFilter.appendChild(allYearPill);
+    [...allYears].sort((a,b) => b - a).forEach(year => {
+      const pill = document.createElement('button');
+      pill.className = 'year-pill';
+      pill.textContent = year;
+      pill.dataset.year = year;
+      pill.onclick = () => setYear(year, pill);
+      yearFilter.appendChild(pill);
     });
   }
 
   function setTag(tag, el) {
     activeTag = tag;
     document.querySelectorAll('.tag-pill').forEach(p => p.classList.remove('active'));
+    el.classList.add('active');
+    applyFilter();
+  }
+
+  function setYear(year, el) {
+    activeYear = year;
+    document.querySelectorAll('.year-pill').forEach(p => p.classList.remove('active'));
     el.classList.add('active');
     applyFilter();
   }
@@ -624,8 +1010,11 @@
   function applyFilter() {
     let visible = 0;
     posts.forEach(p => {
-      const tags = p.dataset.tags.split(',').map(t => t.trim());
-      const show = !activeTag || tags.includes(activeTag);
+      const tags = (p.dataset.tags || '').split(',').map(t => t.trim());
+      const year = p.dataset.year;
+      const tagOk = !activeTag || tags.includes(activeTag);
+      const yearOk = !activeYear || year === activeYear;
+      const show = tagOk && yearOk;
       p.classList.toggle('hidden', !show);
       if (show) visible++;
     });

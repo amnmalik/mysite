@@ -65,7 +65,7 @@
       <description></description>
     </item>
     <item>
-      <title>Osmand</title>
+      <title>OsmAnd</title>
       <link>http://localhost:1313/tags/osmand/</link>
       <pubDate>Thu, 30 Apr 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/osmand/</guid>
@@ -181,6 +181,244 @@
       <link>http://localhost:1313/tags/mountains/</link>
       <pubDate>Sat, 16 Feb 2019 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/mountains/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Agumbe</title>
+      <link>http://localhost:1313/tags/agumbe/</link>
+      <pubDate>Sun, 01 Jun 2014 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/agumbe/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Karnataka</title>
+      <link>http://localhost:1313/tags/karnataka/</link>
+      <pubDate>Sun, 01 Jun 2014 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/karnataka/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rainforest</title>
+      <link>http://localhost:1313/tags/rainforest/</link>
+      <pubDate>Sun, 01 Jun 2014 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/rainforest/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Volunteering</title>
+      <link>http://localhost:1313/tags/volunteering/</link>
+      <pubDate>Sun, 01 Jun 2014 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/volunteering/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Wildlife</title>
+      <link>http://localhost:1313/tags/wildlife/</link>
+      <pubDate>Sun, 01 Jun 2014 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/wildlife/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cycling</title>
+      <link>http://localhost:1313/tags/cycling/</link>
+      <pubDate>Fri, 20 Sep 2013 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/cycling/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Himachal-Pradesh</title>
+      <link>http://localhost:1313/tags/himachal-pradesh/</link>
+      <pubDate>Fri, 20 Sep 2013 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/himachal-pradesh/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Himalayas</title>
+      <link>http://localhost:1313/tags/himalayas/</link>
+      <pubDate>Fri, 20 Sep 2013 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/himalayas/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Poetry</title>
+      <link>http://localhost:1313/tags/poetry/</link>
+      <pubDate>Fri, 20 Sep 2013 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/poetry/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bikepacking</title>
+      <link>http://localhost:1313/tags/bikepacking/</link>
+      <pubDate>Wed, 18 Sep 2013 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/bikepacking/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Shimla</title>
+      <link>http://localhost:1313/tags/shimla/</link>
+      <pubDate>Wed, 18 Sep 2013 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/shimla/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Spiti</title>
+      <link>http://localhost:1313/tags/spiti/</link>
+      <pubDate>Thu, 01 Aug 2013 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/spiti/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ooty</title>
+      <link>http://localhost:1313/tags/ooty/</link>
+      <pubDate>Sun, 26 May 2013 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/ooty/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Solo-Travel</title>
+      <link>http://localhost:1313/tags/solo-travel/</link>
+      <pubDate>Sun, 26 May 2013 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/solo-travel/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tamil-Nadu</title>
+      <link>http://localhost:1313/tags/tamil-nadu/</link>
+      <pubDate>Sun, 26 May 2013 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/tamil-nadu/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bharatpur</title>
+      <link>http://localhost:1313/tags/bharatpur/</link>
+      <pubDate>Sun, 04 Nov 2012 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/bharatpur/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rajasthan</title>
+      <link>http://localhost:1313/tags/rajasthan/</link>
+      <pubDate>Sun, 04 Nov 2012 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/rajasthan/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Solo</title>
+      <link>http://localhost:1313/tags/solo/</link>
+      <pubDate>Sun, 04 Nov 2012 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/solo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Adventure</title>
+      <link>http://localhost:1313/tags/adventure/</link>
+      <pubDate>Wed, 13 Jun 2012 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/adventure/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Parvati Valley</title>
+      <link>http://localhost:1313/tags/parvati-valley/</link>
+      <pubDate>Wed, 13 Jun 2012 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/parvati-valley/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Trekking</title>
+      <link>http://localhost:1313/tags/trekking/</link>
+      <pubDate>Wed, 13 Jun 2012 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/trekking/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Shepherds</title>
+      <link>http://localhost:1313/tags/shepherds/</link>
+      <pubDate>Fri, 01 Jun 2012 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/shepherds/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Chhota-Sigri</title>
+      <link>http://localhost:1313/tags/chhota-sigri/</link>
+      <pubDate>Fri, 01 Jul 2011 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/chhota-sigri/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Glacier</title>
+      <link>http://localhost:1313/tags/glacier/</link>
+      <pubDate>Fri, 01 Jul 2011 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/glacier/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Antarctica</title>
+      <link>http://localhost:1313/tags/antarctica/</link>
+      <pubDate>Wed, 01 Jun 2011 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/antarctica/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Argentina</title>
+      <link>http://localhost:1313/tags/argentina/</link>
+      <pubDate>Wed, 01 Jun 2011 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/argentina/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Travel</title>
+      <link>http://localhost:1313/tags/travel/</link>
+      <pubDate>Wed, 01 Jun 2011 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/travel/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ushuaia</title>
+      <link>http://localhost:1313/tags/ushuaia/</link>
+      <pubDate>Wed, 01 Jun 2011 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/ushuaia/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Glaciology</title>
+      <link>http://localhost:1313/tags/glaciology/</link>
+      <pubDate>Sun, 20 Feb 2011 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/glaciology/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Students-on-Ice</title>
+      <link>http://localhost:1313/tags/students-on-ice/</link>
+      <pubDate>Sun, 20 Feb 2011 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/students-on-ice/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Climate</title>
+      <link>http://localhost:1313/tags/climate/</link>
+      <pubDate>Mon, 14 Feb 2011 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/climate/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Polar</title>
+      <link>http://localhost:1313/tags/polar/</link>
+      <pubDate>Mon, 14 Feb 2011 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/polar/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Uttarakhand</title>
+      <link>http://localhost:1313/tags/uttarakhand/</link>
+      <pubDate>Mon, 09 Aug 2010 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/uttarakhand/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Valley-of-Flowers</title>
+      <link>http://localhost:1313/tags/valley-of-flowers/</link>
+      <pubDate>Mon, 09 Aug 2010 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/valley-of-flowers/</guid>
       <description></description>
     </item>
   </channel>

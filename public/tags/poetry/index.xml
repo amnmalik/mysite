@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Poetry on Aman Malik</title>
+    <link>http://localhost:1313/tags/poetry/</link>
+    <description>Recent content in Poetry on Aman Malik</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 20 Sep 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/poetry/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>An Alphabetical Ode to the Cyclists</title>
+      <link>http://localhost:1313/writing/alphabetical-ode-cyclists/</link>
+      <pubDate>Fri, 20 Sep 2013 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/writing/alphabetical-ode-cyclists/</guid>
+      <description>A poem written somewhere on the road between Shimla and Keylong — each line starting with the next letter of the alphabet.</description>
+    </item>
+  </channel>
+</rss>

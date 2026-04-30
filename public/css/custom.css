@@ -24,6 +24,21 @@
     page-break-inside: avoid !important;
 }
 
+/* Writing list — fix blue link color inherited from theme */
+a.writing-post,
+a.writing-post:hover,
+a.writing-post:visited,
+a.writing-post:active {
+    color: inherit !important;
+    text-decoration: none !important;
+}
+
+a.writing-post .writing-post-title { color: #1a1612 !important; }
+a.writing-post:hover .writing-post-title { color: #4a7c59 !important; }
+a.writing-post .writing-post-summary { color: #6b5e4e !important; }
+a.writing-post .writing-post-meta { color: #9a8c7e !important; }
+a.writing-post .writing-post-read { color: #4a7c59 !important; }
+
 /* Pullquote shortcode */
 .pullquote {
     margin: 2.5rem 0;
