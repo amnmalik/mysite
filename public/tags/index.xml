@@ -6,20 +6,83 @@
     <description>Recent content in Tags on Aman Malik</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 28 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 30 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DEM</title>
+      <link>http://localhost:1313/tags/dem/</link>
+      <pubDate>Thu, 30 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/dem/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Elevation</title>
+      <link>http://localhost:1313/tags/elevation/</link>
+      <pubDate>Thu, 30 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/elevation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>GIS</title>
+      <link>http://localhost:1313/tags/gis/</link>
+      <pubDate>Thu, 30 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/gis/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Hiking</title>
       <link>http://localhost:1313/tags/hiking/</link>
-      <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 30 Apr 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/hiking/</guid>
       <description></description>
     </item>
     <item>
       <title>Himachal</title>
       <link>http://localhost:1313/tags/himachal/</link>
-      <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 30 Apr 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/himachal/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Himalaya</title>
+      <link>http://localhost:1313/tags/himalaya/</link>
+      <pubDate>Thu, 30 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/himalaya/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mapping</title>
+      <link>http://localhost:1313/tags/mapping/</link>
+      <pubDate>Thu, 30 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/mapping/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Maps</title>
+      <link>http://localhost:1313/tags/maps/</link>
+      <pubDate>Thu, 30 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/maps/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Osmand</title>
+      <link>http://localhost:1313/tags/osmand/</link>
+      <pubDate>Thu, 30 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/osmand/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Survey-of-India</title>
+      <link>http://localhost:1313/tags/survey-of-india/</link>
+      <pubDate>Thu, 30 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/survey-of-india/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Topo</title>
+      <link>http://localhost:1313/tags/topo/</link>
+      <pubDate>Thu, 30 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/topo/</guid>
       <description></description>
     </item>
     <item>
@@ -30,24 +93,10 @@
       <description></description>
     </item>
     <item>
-      <title>Maps</title>
-      <link>http://localhost:1313/tags/maps/</link>
-      <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/maps/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Openstreetmap</title>
       <link>http://localhost:1313/tags/openstreetmap/</link>
       <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/openstreetmap/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Osmand</title>
-      <link>http://localhost:1313/tags/osmand/</link>
-      <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/osmand/</guid>
       <description></description>
     </item>
     <item>
@@ -72,24 +121,10 @@
       <description></description>
     </item>
     <item>
-      <title>Topo</title>
-      <link>http://localhost:1313/tags/topo/</link>
-      <pubDate>Sun, 26 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/topo/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Leaflet</title>
       <link>http://localhost:1313/tags/leaflet/</link>
       <pubDate>Tue, 02 Jan 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/leaflet/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Mapping</title>
-      <link>http://localhost:1313/tags/mapping/</link>
-      <pubDate>Tue, 02 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/mapping/</guid>
       <description></description>
     </item>
     <item>

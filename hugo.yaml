@@ -143,7 +143,7 @@ params:
     title: "Aman Malik."
     subtitle: "Energy & climate policy researcher specialising in India's decarbonisation."
     content: "A researcher and policy analyst specialising in India's energy transition, carbon markets, and climate-related financial risk. I combine modelling-based research with policy engagement to inform real-world decisions on decarbonisation."
-    image: /images/linkedin1.jpg
+    image: /images/amanmalik-bio.jpg
     bottomImage:
       enable: true
     button:
@@ -168,7 +168,7 @@ params:
     title: "About Me"
     image: /images/linkedin3.jpg
     content: |-
-      I am an energy and climate policy researcher with a PhD from the Technical University of Berlin and the Potsdam Institute for Climate Impact Research. My work sits at the intersection of quantitative modelling and policy — using energy system models to inform decisions on India's decarbonisation, carbon markets, and climate-related financial risk.
+      I am an energy and climate policy researcher with nine years of experience. I've a PhD from the Technical University of Berlin and the Potsdam Institute for Climate Impact Research. My work sits at the intersection of quantitative modelling and policy — using energy system models to inform decisions on India's decarbonisation, carbon markets, and climate-related financial risk.
 
       Until recently I was a Programme Lead at the Low Carbon Economy team at the [Council on Energy, Environment and Water (CEEW)](https://www.ceew.in/aman-malik) in New Delhi, and previously worked as a researcher and postdoctoral fellow at the [Potsdam Institute for Climate Impact Research (PIK)](https://www.pik-potsdam.de) in Germany. I take on consulting engagements in energy modelling, climate policy analysis, and transition risk.
     skills:
