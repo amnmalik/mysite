@@ -17,6 +17,13 @@ Building the next generation of energy and climate analysts requires more than t
 - Guest lectures at **IIT Roorkee**, **IIT Delhi**, **WWF-India and OP Jindal University** (LL.M. ELECC programme), **National Thermal Power Corporation (NTPC)**, and **IOCL Senior Management Programme with IIM Calcutta**, ""
 - Expert speaker at the **UNDP and School of Public Policy** capacity development programme for policymakers on just transition of MSMEs
 
+## Main topics
+- Carbon pricing in India
+- Challenges to achieve net-zero in India
+- Scenarios and scenario analysis for the financial sector
+- Introduction to Climate Science and Climate Change
+- Economics of Climate Change and Climate Policy
+- Just transition concepts in climate change
 
 ## Who I work with
 
