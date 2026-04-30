@@ -51,8 +51,4 @@ The sun with its quiet red and yellow colours eventually descended into the hill
 
 I went out again to see the shops nearby and get a feeling of the surrounding topography and landmarks. An assortment of things made up my dinner: bun omelette, vada, idli sambhar, some fresh dal vadas and cake. Let's call it a day now, shall we?
 
----
 
-## 27 May — Dodabetta and Lovedale
-
-Up and ready by 7:40 AM I started my hike to Dodabetta, some 9 km away. Even though I had thought of having a late breakfast, my hunger pangs took the better of me and I stopped at one of the few shops that had opened. Breakfast consisted of pongal, vada, coconut chutney and sambhar — everything for Rs. 50 only.
