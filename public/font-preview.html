@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Font Preview — Aman Malik</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,600&family=Roboto:wght@300;400;500&family=Playfair+Display:wght@400;600&family=Source+Sans+3:wght@300;400;600&family=Libre+Baskerville:wght@400;700&family=Lato:wght@300;400;700&family=Raleway:wght@400;600&family=Merriweather:wght@300;400&family=Inter:wght@300;400;500;600&family=Spectral:wght@300;400;500&family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #e8e8e6; font-family: sans-serif; padding: 40px 24px; }
+  h1 { text-align: center; font-family: sans-serif; font-size: 13px; letter-spacing: 0.15em; text-transform: uppercase; color: #888; margin-bottom: 40px; }
+
+  .option {
+    background: #fff;
+    border-radius: 8px;
+    padding: 36px 48px;
+    margin-bottom: 20px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    border-left: 4px solid transparent;
+  }
+
+  .option.current { border-left-color: #888; background: #fafafa; }
+  .option.highlight { border-left-color: #2d6a4f; }
+
+  .option-label {
+    font-family: monospace;
+    font-size: 11px;
+    color: #999;
+    margin-bottom: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .badge {
+    font-size: 10px;
+    padding: 2px 8px;
+    border-radius: 10px;
+    background: #eee;
+    color: #666;
+  }
+  .badge.rec { background: #e8f5e9; color: #2d6a4f; }
+  .badge.cur { background: #f0f0f0; color: #888; }
+
+  .nav-preview {
+    font-size: 12px;
+    color: #444;
+    margin-bottom: 20px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #eee;
+    letter-spacing: 0.02em;
+  }
+  .nav-preview span { margin-right: 18px; }
+
+  .hero-name { font-size: 2.8rem; line-height: 1.1; margin-bottom: 8px; color: #111; }
+  .hero-sub { font-size: 1.35rem; color: #555; margin-bottom: 14px; line-height: 1.45; }
+  .section-title { font-size: 1.1rem; color: #111; margin-bottom: 8px; font-weight: 600; }
+  .body-text { font-size: 0.9rem; line-height: 1.75; color: #444; max-width: 580px; }
+
+  /* CURRENT: Alata + Roboto */
+  .opt0 .hero-name, .opt0 .section-title { font-family: 'Alata', sans-serif; }
+  .opt0 .hero-sub, .opt0 .body-text, .opt0 .nav-preview { font-family: 'Roboto', sans-serif; font-weight: 300; }
+
+  /* 1: Playfair Display + Source Sans */
+  .opt1 .hero-name, .opt1 .section-title { font-family: 'Playfair Display', serif; font-weight: 600; }
+  .opt1 .hero-sub, .opt1 .body-text, .opt1 .nav-preview { font-family: 'Source Sans 3', sans-serif; font-weight: 300; }
+
+  /* 2: Libre Baskerville + Lato */
+  .opt2 .hero-name, .opt2 .section-title { font-family: 'Libre Baskerville', serif; font-weight: 700; }
+  .opt2 .hero-sub, .opt2 .body-text, .opt2 .nav-preview { font-family: 'Lato', sans-serif; font-weight: 300; }
+
+  /* 3: Raleway + Merriweather */
+  .opt3 .hero-name, .opt3 .section-title { font-family: 'Raleway', sans-serif; font-weight: 600; }
+  .opt3 .hero-sub, .opt3 .body-text, .opt3 .nav-preview { font-family: 'Merriweather', serif; font-weight: 300; }
+
+  /* 4: Inter + Spectral */
+  .opt4 .hero-name, .opt4 .section-title { font-family: 'Inter', sans-serif; font-weight: 600; }
+  .opt4 .hero-sub, .opt4 .body-text, .opt4 .nav-preview { font-family: 'Spectral', serif; font-weight: 300; }
+
+  /* 5: DM Serif Display + DM Sans */
+  .opt5 .hero-name, .opt5 .section-title { font-family: 'DM Serif Display', serif; font-weight: 400; }
+  .opt5 .hero-sub, .opt5 .body-text, .opt5 .nav-preview { font-family: 'DM Sans', sans-serif; font-weight: 300; }
+</style>
+</head>
+<body>
+
+<h1>Font Preview — Aman Malik Website</h1>
+
+<div class="option current opt0">
+  <div class="option-label">
+    <span>CURRENT — Alata (headings) + Roboto (body)</span>
+    <span class="badge cur">Current</span>
+  </div>
+  <div class="nav-preview"><span>About Me</span><span>Consulting</span><span>Experience</span><span>Publications</span><span>Beyond Work</span></div>
+  <div class="hero-name">Aman Malik.</div>
+  <div class="hero-sub">Energy & climate policy researcher specialising in India's decarbonisation.</div>
+  <div class="section-title">Consulting</div>
+  <div class="body-text">Scenario development and modelling using tools such as GCAM, REMIND, and state-level energy models. Applications include net-zero pathways, power sector planning, and policy impact assessment.</div>
+</div>
+
+<div class="option opt1">
+  <div class="option-label">
+    <span>OPTION 1 — Playfair Display (headings) + Source Sans 3 (body)</span>
+    <span class="badge">Classic academic</span>
+  </div>
+  <div class="nav-preview"><span>About Me</span><span>Consulting</span><span>Experience</span><span>Publications</span><span>Beyond Work</span></div>
+  <div class="hero-name">Aman Malik.</div>
+  <div class="hero-sub">Energy & climate policy researcher specialising in India's decarbonisation.</div>
+  <div class="section-title">Consulting</div>
+  <div class="body-text">Scenario development and modelling using tools such as GCAM, REMIND, and state-level energy models. Applications include net-zero pathways, power sector planning, and policy impact assessment.</div>
+</div>
+
+<div class="option opt2">
+  <div class="option-label">
+    <span>OPTION 2 — Libre Baskerville (headings) + Lato (body)</span>
+    <span class="badge">Warm and readable</span>
+  </div>
+  <div class="nav-preview"><span>About Me</span><span>Consulting</span><span>Experience</span><span>Publications</span><span>Beyond Work</span></div>
+  <div class="hero-name">Aman Malik.</div>
+  <div class="hero-sub">Energy & climate policy researcher specialising in India's decarbonisation.</div>
+  <div class="section-title">Consulting</div>
+  <div class="body-text">Scenario development and modelling using tools such as GCAM, REMIND, and state-level energy models. Applications include net-zero pathways, power sector planning, and policy impact assessment.</div>
+</div>
+
+<div class="option opt3">
+  <div class="option-label">
+    <span>OPTION 3 — Raleway (headings) + Merriweather (body)</span>
+    <span class="badge">Modern heading, serious body</span>
+  </div>
+  <div class="nav-preview"><span>About Me</span><span>Consulting</span><span>Experience</span><span>Publications</span><span>Beyond Work</span></div>
+  <div class="hero-name">Aman Malik.</div>
+  <div class="hero-sub">Energy & climate policy researcher specialising in India's decarbonisation.</div>
+  <div class="section-title">Consulting</div>
+  <div class="body-text">Scenario development and modelling using tools such as GCAM, REMIND, and state-level energy models. Applications include net-zero pathways, power sector planning, and policy impact assessment.</div>
+</div>
+
+<div class="option highlight opt4">
+  <div class="option-label">
+    <span>OPTION 4 — Inter (headings) + Spectral (body)</span>
+    <span class="badge rec">Recommended</span>
+  </div>
+  <div class="nav-preview"><span>About Me</span><span>Consulting</span><span>Experience</span><span>Publications</span><span>Beyond Work</span></div>
+  <div class="hero-name">Aman Malik.</div>
+  <div class="hero-sub">Energy & climate policy researcher specialising in India's decarbonisation.</div>
+  <div class="section-title">Consulting</div>
+  <div class="body-text">Scenario development and modelling using tools such as GCAM, REMIND, and state-level energy models. Applications include net-zero pathways, power sector planning, and policy impact assessment.</div>
+</div>
+
+<div class="option opt5">
+  <div class="option-label">
+    <span>OPTION 5 — DM Serif Display (headings) + DM Sans (body)</span>
+    <span class="badge">Already used in Beyond Work</span>
+  </div>
+  <div class="nav-preview"><span>About Me</span><span>Consulting</span><span>Experience</span><span>Publications</span><span>Beyond Work</span></div>
+  <div class="hero-name">Aman Malik.</div>
+  <div class="hero-sub">Energy & climate policy researcher specialising in India's decarbonisation.</div>
+  <div class="section-title">Consulting</div>
+  <div class="body-text">Scenario development and modelling using tools such as GCAM, REMIND, and state-level energy models. Applications include net-zero pathways, power sector planning, and policy impact assessment.</div>
+</div>
+
+</body>
+</html>

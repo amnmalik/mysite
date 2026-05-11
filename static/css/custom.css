@@ -1,50 +1,86 @@
-/* Alternating section backgrounds */
-#about { background-color: #ffffff !important; }
-#consulting { background-color: #f0f4f8 !important; }
-#experience { background-color: #ffffff !important; }
-#education { background-color: #f0f4f8 !important; }
-#publications { background-color: #ffffff !important; }
-#achievements { background-color: #f0f4f8 !important; }
-#talks { background-color: #ffffff !important; }
-#contact { background-color: #f0f4f8 !important; }
+/* ============================================================
+   CUSTOM CSS — Aman Malik Website
+   ============================================================ */
 
-/* Skills three-column layout */
-#about .content ul {
-    columns: 3 !important;
-    -webkit-columns: 3 !important;
-    -moz-columns: 3 !important;
-    column-gap: 1.5rem !important;
-    list-style-position: inside !important;
-    padding-left: 0 !important;
+/* 1. ROOT BACKGROUND — set everywhere */
+html,
+body {
+    background-color: #f5f2ed !important;
 }
 
-#about .content ul li {
-    break-inside: avoid !important;
-    -webkit-column-break-inside: avoid !important;
-    page-break-inside: avoid !important;
+/* Bootstrap overrides body bg to white. This kills it. */
+body.light,
+body.light * {
+    background-color: inherit;
 }
 
-/* Writing list — fix blue link color inherited from theme */
-a.writing-post,
-a.writing-post:hover,
-a.writing-post:visited,
-a.writing-post:active {
-    color: inherit !important;
-    text-decoration: none !important;
+/* 2. SECTIONS — all same cream, no boxes */
+section,
+section *:not(.card):not(.card-body):not(img):not(svg):not(path):not(circle):not(rect):not(canvas):not(.nav-link.active) {
+    background-color: transparent !important;
+    box-shadow: none !important;
 }
 
-a.writing-post .writing-post-title { color: #1a1612 !important; }
-a.writing-post:hover .writing-post-title { color: #4a7c59 !important; }
-a.writing-post .writing-post-summary { color: #6b5e4e !important; }
-a.writing-post .writing-post-meta { color: #9a8c7e !important; }
-a.writing-post .writing-post-read { color: #4a7c59 !important; }
+/* 3. ROOT HTML explicitly */
+:root {
+    --background-color: #f5f2ed !important;
+    --secondary-background-color: #f5f2ed !important;
+    --secondary-color: #ede9e1 !important;
+}
 
-/* Pullquote shortcode */
+/* 4. CARDS — give them a slightly warm tone so they stand out subtly */
+.card {
+    background-color: #ede9e1 !important;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06) !important;
+    border: 1px solid #ddd8cf !important;
+}
+
+.card-body {
+    background-color: #ede9e1 !important;
+}
+
+/* 5. NAV ACTIVE TAB in experience */
+#experience .nav-link.active {
+    background-color: #e2dbd0 !important;
+}
+
+/* 6. EXPERIENCE CONTAINER — remove box */
+#experience .experience-container {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+}
+
+/* 7. FONTS — Playfair Display + Source Sans 3 */
+.primary-font,
+h1, h2, h3, h4, h5, h6,
+.navbar-brand {
+    font-family: 'Playfair Display', Georgia, serif !important;
+}
+
+body,
+p, li, span,
+.secondary-font,
+.nav-link,
+input, textarea, select, button {
+    font-family: 'Source Sans 3', system-ui, sans-serif !important;
+}
+
+
+
+/* 9. WRITING LIST — fix blue inherited link colour */
+.writing-post { color: #2a2218 !important; }
+.writing-post-title { color: #1a1612 !important; }
+.writing-post-summary { color: #6b5e4e !important; }
+.writing-post-meta { color: #9a8c7e !important; }
+.writing-post-read { color: #4a7c59 !important; }
+
+/* 10. PULLQUOTE */
 .pullquote {
     margin: 2.5rem 0;
     padding: 1.5rem 2rem;
     border-left: 3px solid #c4a882;
-    background: #faf7f2;
+    background: rgba(196, 168, 130, 0.08) !important;
     border-radius: 0 4px 4px 0;
 }
 
@@ -56,4 +92,58 @@ a.writing-post .writing-post-read { color: #4a7c59 !important; }
     color: #3a2d1e;
     line-height: 1.7;
     margin: 0;
+}
+
+/* 11. DARK MODE — ensure text remains visible */
+body.dark,
+body.dark section,
+body.dark section *,
+body.dark .navbar,
+body.dark .nav-link,
+body.dark h1, body.dark h2, body.dark h3,
+body.dark h4, body.dark h5, body.dark h6,
+body.dark p, body.dark li, body.dark span, body.dark a {
+    color: var(--text-color-dark, #e4e6eb) !important;
+}
+
+body.dark {
+    background-color: var(--background-color-dark, #18191a) !important;
+}
+
+body.dark section,
+body.dark section *:not(.card):not(.card-body):not(img):not(svg):not(path) {
+    background-color: transparent !important;
+}
+
+body.dark .card,
+body.dark .card-body {
+    background-color: var(--secondary-background-color-dark, #212529) !important;
+    border-color: #333 !important;
+    color: #e4e6eb !important;
+}
+
+body.dark .exp-item {
+    border-color: rgba(255,255,255,0.1) !important;
+}
+
+body.dark .exp-company-name,
+body.dark .exp-job-title,
+body.dark .exp-job-date,
+body.dark .exp-job-content,
+body.dark .exp-job-content * {
+    color: #e4e6eb !important;
+}
+
+body.dark .writing-post-title { color: #e4e6eb !important; }
+body.dark .writing-post-summary { color: #b0b3b8 !important; }
+body.dark .writing-post-meta { color: #888 !important; }
+/* Hero text size reduction */
+#hero h1 {
+    /* Reduced from 56px max to 42px max */
+    font-size: clamp(28px, 4vw, 42px) !important;
+}
+
+#hero h2 {
+    /* Reduced from 40px max to 28px max */
+    font-size: clamp(20px, 3vw, 30px) !important;
 }

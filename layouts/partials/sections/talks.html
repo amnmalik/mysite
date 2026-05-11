@@ -1,5 +1,21 @@
 {{ if .Site.Params.talks.enable | default false }}
 {{- $talks := .Site.Params.talks -}}
+<style>
+.talks-year-group { border-bottom: 1px solid rgba(0,0,0,0.08); }
+.talks-year-header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 14px 0; cursor: pointer; user-select: none;
+}
+.talks-year-label { font-weight: 600; font-size: 1rem; font-family: 'Playfair Display', serif; }
+.talks-year-count { font-size: 0.8rem; color: #aaa; margin-left: 8px; font-weight: 400; }
+.talks-chevron { font-size: 0.7rem; color: #aaa; transition: transform 0.2s ease; flex-shrink: 0; }
+.talks-year-group.open .talks-chevron { transform: rotate(180deg); }
+.talks-year-body { display: none; padding: 4px 0 16px 0; }
+.talks-year-group.open .talks-year-body { display: block; }
+.talks-item { display: flex; align-items: start; gap: 10px; margin-bottom: 12px; font-size: 0.95rem; line-height: 1.6; }
+.talks-bullet { color: var(--primary-color, #007bff); flex-shrink: 0; margin-top: 2px; }
+</style>
+
 <section id="talks" class="py-5">
     <div class="container">
         <h3 class="text-center mb-4">{{ $talks.title | default "Talks & Lectures" }}</h3>
@@ -20,16 +36,49 @@
 
         <div class="row justify-content-center">
             <div class="col-lg-8 col-md-10">
-                <ul class="list-unstyled">
-                    {{ range $talks.items }}
-                    <li class="mb-3 d-flex align-items-start">
-                        <span class="me-2 mt-1" style="color: var(--primary-color, #007bff); flex-shrink: 0;">&#8227;</span>
-                        <span class="secondary-font">{{ . | markdownify }}</span>
-                    </li>
+
+                {{ $years := slice "2026" "2025" "2024" "2023" "2022" "2021" "2020" "2019" "2018" "2017" }}
+                {{ $allItems := $talks.items }}
+
+                {{ range $years }}
+                {{ $year := . }}
+                {{ $sc := newScratch }}
+                {{ $sc.Set "items" (slice) }}
+                {{ range $allItems }}
+                    {{ if findRE (printf `\b%s\b` $year) . }}
+                        {{ $sc.Add "items" (slice .) }}
                     {{ end }}
-                </ul>
+                {{ end }}
+                {{ $yearTalks := $sc.Get "items" }}
+
+                {{ if gt (len $yearTalks) 0 }}
+                <div class="talks-year-group">
+                    <div class="talks-year-header" onclick="toggleTalksYear(this)">
+                        <div>
+                            <span class="talks-year-label">{{ $year }}</span>
+                        </div>
+                        <span class="talks-chevron">▼</span>
+                    </div>
+                    <div class="talks-year-body">
+                        {{ range $yearTalks }}
+                        <div class="talks-item">
+                            <span class="talks-bullet">&#8227;</span>
+                            <span>{{ . | markdownify }}</span>
+                        </div>
+                        {{ end }}
+                    </div>
+                </div>
+                {{ end }}
+                {{ end }}
+
             </div>
         </div>
     </div>
 </section>
+
+<script>
+function toggleTalksYear(header) {
+    header.parentElement.classList.toggle('open');
+}
+</script>
 {{ end }}

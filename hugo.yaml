@@ -36,17 +36,17 @@ Menus:
       name: Experience
       title: Experience
       url: /#experience
-      weight: 2
+      weight: 6
     - identifier: education
       name: Education
       title: Education
       url: /#education
-      weight: 3
+      weight: 7
     - identifier: publications
       name: Publications
       title: Publications
       url: /#publications
-      weight: 4
+      weight: 2
     - identifier: journal-articles
       name: Journal Articles
       title: Journal Articles
@@ -86,16 +86,16 @@ Menus:
       name: Talks
       title: Talks & Lectures
       url: /#talks
-      weight: 6
+      weight: 3
     - identifier: beyond-work
       name: Beyond Work
       title: Beyond Work
       url: /beyond-work/
-      weight: 7
+      weight: 4
     - identifier: contact
       name: Contact
       title: Contact
-      weight: 8
+      weight: 9
 
 params:
   title: "Aman Malik"
@@ -104,6 +104,11 @@ params:
 
   customCSS:
     - css/custom.css
+
+  color:
+    backgroundColor: "#f5f2ed"
+    secondaryBackgroundColor: "#f5f2ed"
+    secondaryColor: "#ede9e1"
 
   useBootstrapCDN: false
   mathjax: false
@@ -141,11 +146,11 @@ params:
     enable: true
     intro: "Hi, I'm"
     title: "Aman Malik."
-    subtitle: "Energy & climate policy researcher specialising in India's decarbonisation."
-    content: "A researcher and policy analyst specialising in India's energy transition, carbon markets, and climate-related financial risk. I combine modelling-based research with policy engagement to inform real-world decisions on decarbonisation."
+    subtitle: "I'm an independent energy researcher and policy analyst, specialising in India's energy transition and decarbonisation policy."
+    content: "I work with governments, research organisations, and financial institutions on energy modelling, climate policy analysis, and climate-related financial risk. I bring a decade of experience in quantitative energy system modelling and direct engagement with policymakers across India and Europe."
     image: /images/amanmalik-bio.jpg
     bottomImage:
-      enable: true
+      enable: false
     button:
       enable: true
       name: "CV"
@@ -168,9 +173,9 @@ params:
     title: "About Me"
     image: /images/linkedin3.jpg
     content: |-
-      I am an energy and climate policy researcher with nine years of experience. I've a PhD from the Technical University of Berlin and the Potsdam Institute for Climate Impact Research. My work sits at the intersection of quantitative modelling and policy — using energy system models to inform decisions on India's decarbonisation, carbon markets, and climate-related financial risk.
+      PhD from the Technical University of Berlin and the Potsdam Institute for Climate Impact Research. Until recently, Programme Lead at the Low Carbon Economy team at CEEW in New Delhi; previously researcher and postdoctoral fellow at PIK in Germany. 
 
-      Until recently I was a Programme Lead at the Low Carbon Economy team at the [Council on Energy, Environment and Water (CEEW)](https://www.ceew.in/aman-malik) in New Delhi, and previously worked as a researcher and postdoctoral fellow at the [Potsdam Institute for Climate Impact Research (PIK)](https://www.pik-potsdam.de) in Germany. I take on consulting engagements in energy modelling, climate policy analysis, and transition risk.
+      I take on consulting engagements in energy modelling, climate policy analysis, and transition risk.
     skills:
       enable: true
       title: "Areas of expertise:"
@@ -191,22 +196,22 @@ params:
     intro: "I work with governments, financial institutions, research organisations, and think-tanks on questions at the intersection of energy systems, climate policy, and economics. Engagements typically involve one or more of the following:"
     services:
       - name: "Energy System Modelling"
-        icon: "⚡"
+        icon: "?"
         description: "Scenario development and modelling using tools such as GCAM, REMIND, and state-level energy models. Applications include net-zero pathways, power sector planning, and policy impact assessment."
       - name: "Carbon Markets & ETS"
-        icon: "🌍"
-        description: "Policy design and analysis of carbon pricing mechanisms like emission trading schemes, and carbon credit frameworks — with particular expertise in the Indian context."
+        icon: "??"
+        description: "Policy design and analysis of carbon pricing mechanisms like emission trading schemes, and carbon credit frameworks - with particular expertise in the Indian context."
       - name: "Transition Risk & Climate Finance"
-        icon: "📊"
+        icon: "??"
         description: "Country-specific scenario development to inform climate-related financial risk assessment for banks, regulators, and institutional investors."
       - name: "Policy Analysis & Government Engagement"
-        icon: "📝"
-        description: "Evidence-based policy briefs, research reports on India's energy transition and decarbonisation — delivered directly to government ministries, regulatory bodies, and multilateral institutions including Niti Aayog, the Reserve Bank of India, and the Ministry of Power."
+        icon: "??"
+        description: "Evidence-based policy briefs, research reports on India's energy transition and decarbonisation - delivered directly to government ministries, regulatory bodies, and multilateral institutions including Niti Aayog, the Reserve Bank of India, and the Ministry of Power."
       - name: "Training & Capacity Building"
-        icon: "🎓"
+        icon: "??"
         description: "Guest lectures, workshops, and executive training on energy economics, climate modelling, and decarbonisation policy for government officials, financial institutions, and academic audiences."
       - name: "Research Review"
-        icon: "🔍"
+        icon: "??"
         description: "Peer review of research papers and reports for leading international journals including Nature, Environmental Research Letters, Climate Policy, Energy Policy, Energy Research and Social Science, and Climate Economics."
 
   # Experience
@@ -240,11 +245,11 @@ params:
             content: "Affiliated guest scientist with PIK's Energy Systems group."
           - name: "Postdoctoral Researcher"
             date: "Jan 2022 - Jun 2022"
-            content: "Postdoctoral research in the Energy Systems group, Research Department III — Transformation Pathways."
+            content: "Postdoctoral research in the Energy Systems group, Research Department III - Transformation Pathways."
           - name: "Researcher"
             date: "Oct 2017 - Dec 2021"
             content: |
-              PhD researcher in the International Climate Policy Team, Energy Systems group, Research Department III — Transformation Pathways.
+              PhD researcher in the International Climate Policy Team, Energy Systems group, Research Department III - Transformation Pathways.
 
               - Developed and applied energy system models to assess India's power sector decarbonisation
               - Contributed to multi-model studies on global climate policy and emissions pathways
@@ -264,7 +269,7 @@ params:
         jobs:
           - name: "Student Assistant"
             date: "May 2016 - Sep 2016"
-            content: "Development of SIAMESE — a model to emulate Integrated Assessment Models. Climate Science and Policy Team, Berlin."
+            content: "Development of SIAMESE - a model to emulate Integrated Assessment Models. Climate Science and Policy Team, Berlin."
 
   # Education
   education:
@@ -298,7 +303,7 @@ params:
 
           Thesis: [Kinetics of olivine dissolution in column experiments](https://github.com/amnmalik/Master-thesis)
 
-          Merit scholarship recipient (€3,250), University of Hamburg.
+          Merit scholarship recipient (Euro 3,250), University of Hamburg.
         featuredLink:
           enable: true
           name: "Read thesis"
@@ -312,7 +317,7 @@ params:
         date: "2009 - 2013"
         GPA: "First Division (72.4%)"
 
-  # Publications — custom section
+  # Publications - custom section
   publications:
     enable: true
     title: "Publications"
@@ -330,7 +335,7 @@ params:
           - title: "The Criticality of Country-Specific Scenarios to Inform Transition Risk Assessment for the Financial Sector: A case study for India"
             authors: "K. Dhandhania, A. Malik, R. Varma, V. Chaturvedi"
             journal: "Energy and Climate Change"
-            year: ""
+            year: 2026
             status: "Under Review"
             url: ""
 
@@ -340,7 +345,7 @@ params:
             year: 2024
             url: "https://doi.org/10.1088/1748-9326/ad64ec"
 
-          - title: "Enhanced weathering potentials — the role of in situ CO2 and grain size distribution"
+          - title: "Enhanced weathering potentials - the role of in situ CO2 and grain size distribution"
             authors: "T. Amann, J. Hartmann, R. Hellmann, E.T. Pedrosa, A. Malik"
             journal: "Frontiers in Climate"
             year: 2022
@@ -383,7 +388,7 @@ params:
             url: "https://doi.org/10.1038/s41558-021-00987-x"
 
           - title: "Reducing stranded assets through early action in the Indian power sector"
-            authors: "A. Malik, C. Bertram, J. Després, J. Emmerling, S. Fujimori, A. Garg, et al."
+            authors: "A. Malik, C. Bertram, J. Despr-s, J. Emmerling, S. Fujimori, A. Garg, et al."
             journal: "Environmental Research Letters"
             year: 2020
             url: "https://doi.org/10.1088/1748-9326/ab8033"
@@ -394,7 +399,7 @@ params:
             year: 2020
             url: "https://doi.org/10.1088/1748-9326/ab5d99"
 
-          - title: "Towards optimal 1.5°C and 2°C emission pathways for individual countries: A Finland case study"
+          - title: "Towards optimal 1.5-C and 2-C emission pathways for individual countries: A Finland case study"
             authors: "F. Sferra, M. Krapp, N. Roming, M. Schaeffer, A. Malik, B. Hare, R. Brecha"
             journal: "Energy Policy"
             year: 2019
@@ -465,7 +470,7 @@ params:
             year: 2024
             url: "https://www.moneycontrol.com/news/trends/features/navigating-indias-decarbonisation-challenges-12659191.html"
 
-  # Achievements — Positions, Awards, Honours
+  # Achievements - Positions, Awards, Honours
   achievements:
     enable: true
     title: "Awards & Recognition"
@@ -474,13 +479,13 @@ params:
         content: "Part of CEEW's team on the Reserve Bank of India's Expert Committee on Climate-related Information System."
       - title: "IOP Trusted Reviewer (2023)"
         content: "Recognised by IOP Publishing for exceptionally high level of peer review consistency."
-      - title: "Full Scholarship — IAMC Annual Conference, Venice (2023)"
+      - title: "Full Scholarship - IAMC Annual Conference, Venice (2023)"
         content: "Fully-funded scholarship from EU DG CLIMA to present paper on carbon markets at the Integrated Assessment Modelling Consortium Annual Conference."
-      - title: "Guest Exchange Scholarship — COMMIT Project (2019-20)"
+      - title: "Guest Exchange Scholarship - COMMIT Project (2019-20)"
         content: "Fully-funded 3-month exchange at TERI, New Delhi, hosted by PBL Netherlands."
-      - title: "Merit Scholarship — University of Hamburg (2016)"
-        content: "Merit scholarship worth €3,250 awarded during MSc studies."
-      - title: "Expedition Grant — Students on Ice Antarctic Expedition (2011)"
+      - title: "Merit Scholarship - University of Hamburg (2016)"
+        content: "Merit scholarship worth -3,250 awarded during MSc studies."
+      - title: "Expedition Grant - Students on Ice Antarctic Expedition (2011)"
         content: "US$8,500 grant from Indraprastha University and National Center for Antarctic and Ocean Research for the Antarctic University Expedition."
 
   # Talks & Lectures
@@ -493,10 +498,10 @@ params:
       - /images/linkedin4.jpg
       - /images/linkedin5.jpg
     items:
-      - "Guest lecture, Economics and Geopolitics of Energy, WWF-India and OP Jindal University, Students of LL.M. ELECC 2025-2026 (Apr 2026)"
+      - "Guest lecture, Economics and Geopolitics of Energy, WWF-India and OP Jindal University, Students of LL.M. ELECC 2025 (Apr 2026)"
       - "Panelist, Session on carbon removal in Article 6, CO2 Forward Carbon Removal Summit, Carbon Removal Alliance of India, Delhi (Dec 2025)"
-      - "Guest lecture, Economics of Climate Change, WWF-India and OP Jindal University, Students of LL.M. ELECC 2025-2026 (Oct 2025)"
-      - "Moderator, Panel discussion on Decarbonisation of Economy – Leveraging Carbon Credits, Viksit Gujarat Regional Summit, Ganpat University, Mehsana (Oct 2025)"
+      - "Guest lecture, Economics of Climate Change, WWF-India and OP Jindal University, Students of LL.M. ELECC 2025 (Oct 2025)"
+      - "Moderator, Panel discussion on Decarbonisation of Economy - Leveraging Carbon Credits, Viksit Gujarat Regional Summit, Ganpat University, Mehsana (Oct 2025)"
       - "Guest lecture, Energy Transition and Decarbonisation, IOCL Senior Management Programme with IIM Calcutta (Aug 2025)"
       - "Speaker, India Emissions and Net Zero, Indian Energy Forum, New Delhi (Jul 2025)"
       - "Guest lecture, Decision maker under uncertainty: Insights from modelling, National Thermal Power Corporation (May 2025)"
@@ -504,7 +509,7 @@ params:
       - "Guest lecture, Introduction to Modelling, IIT Roorkee (Jan 2025)"
       - "Speaker, Conference on Joint Response to Climate Crisis, SMU University, Seoul, South Korea (Sep 2024)"
       - "Speaker, Lecture on Climate Change at Rajya Sabha (Upper House) to interns of Members of Parliament, New Delhi (Sep 2024)"
-      - "Speaker, IIT Delhi workshop on Energy and Well-being – Indian Case Study, New Delhi (Sep 2024)"
+      - "Speaker, IIT Delhi workshop on Energy and Well-being - Indian Case Study, New Delhi (Sep 2024)"
       - "Speaker, Surya Foundation Think Tank Strengthening Some Key Areas for Viksit Bharat 2047, New Delhi (Sep 2024)"
       - "Speaker and Panelist, Carbon Markets in India, Centre for Social and Economic Progress, New Delhi (Aug 2024)"
       - "Speaker, State Dialogue on Accelerating Energy Efficiency in Gujarat, Vadodara (Aug 2024)"
@@ -513,9 +518,9 @@ params:
       - "Panelist, Impact of Net-Zero Transition Policies on Clean Jobs, Skilling Needs and Interstate Migration, ICRIER, New Delhi (Jan 2024)"
       - "Speaker, Implications of India's ETS on its net-zero target, Niti Aayog, New Delhi (Jan 2024)"
       - "Oral presentation, Role of ETS in India's Net-zero targets: A modelling-based assessment, IAMC Annual Conference, Venice (Nov 2023)"
-      - "Defense presentation, Barriers to power sector decarbonisation in India, TU Berlin (Mar 2022) — [Slides](https://github.com/amnmalik/PhdDefense/blob/master/malikamanDefense_v4_2022_03_26.pdf)"
-      - "Oral presentation, Assumptions on employment factor approach in energy scenarios, IAMC Annual Conference, Online (Dec 2020) — [Slides](https://github.com/amnmalik/PhdSummary/blob/master/posters_talks_presentations/IAMC-final_malik_aman_2020.pdf)"
-      - "Poster presentation, Not (yet) another coal story: Power-sector lock-ins in India, IAMC Annual Conference, Seville (Nov 2018) — [Slides](https://github.com/amnmalik/PhdSummary/blob/master/posters_talks_presentations/Poster_IAMC__en_V8.pdf)"
+      - "Defense presentation, Barriers to power sector decarbonisation in India, TU Berlin (Mar 2022)"
+      - "Oral presentation, Assumptions on employment factor approach in energy scenarios, IAMC Annual Conference, Online (Dec 2020)"
+      - "Poster presentation, Not (yet) another coal story: Power-sector lock-ins in India, IAMC Annual Conference, Seville (Nov 2018)"
 
   # Contact
   contact:
@@ -558,3 +563,7 @@ params:
     article: "Jan 2, 2006"
     articleList: "Jan 2, 2006"
     articleRecent: "Jan 2, 2006"
+
+
+
+
