@@ -15,8 +15,8 @@ Carbon markets are among the most complex and consequential policy instruments a
 ## Past work
 
 - Led modelling-based research on the implications of India's CCTS for its net-zero strategy, published in Environmental Research Letters (2024)
-- Presented findings on India's ETS at Niti Aayog, the Carbon Markets Association of India, and the Integrated Assessment Modelling Consortium (IAMC)
-- Co-authored op-eds on India's emissions trading system in New Indian Express and Moneycontrol
+- Presented findings on India's CCTS at Niti Aayog, the Carbon Markets Association of India, and the Integrated Assessment Modelling Consortium (IAMC)
+- Co-authored op-eds on India's emissions trading system in New Indian Express
 
 ## Who I work with
 

@@ -51,8 +51,11 @@
                 {{ end }}
                 {{ $yearTalks := $sc.Get "items" }}
 
+                {{ $recentYears := slice "2026" "2025" }}
+                {{ $isRecent := in $recentYears $year }}
+
                 {{ if gt (len $yearTalks) 0 }}
-                <div class="talks-year-group">
+                <div class="talks-year-group{{ if $isRecent }} open{{ end }}" data-year="{{ $year }}">
                     <div class="talks-year-header" onclick="toggleTalksYear(this)">
                         <div>
                             <span class="talks-year-label">{{ $year }}</span>
@@ -71,6 +74,12 @@
                 {{ end }}
                 {{ end }}
 
+                <div class="text-center mt-3">
+                    <button id="talks-toggle-btn" onclick="toggleOlderTalks()" class="btn btn-sm" style="border: 1px solid #2d6a4f; color: #2d6a4f; background: transparent; font-family: 'Source Sans 3', sans-serif;">
+                        Show older talks
+                    </button>
+                </div>
+
             </div>
         </div>
     </div>
@@ -80,5 +89,27 @@
 function toggleTalksYear(header) {
     header.parentElement.classList.toggle('open');
 }
+
+function toggleOlderTalks() {
+    const btn = document.getElementById('talks-toggle-btn');
+    const older = document.querySelectorAll('.talks-year-group:not([data-year="2026"]):not([data-year="2025"])');
+    const isHidden = btn.textContent.trim() === 'Show older talks';
+    older.forEach(g => {
+        if (isHidden) {
+            g.style.display = 'block';
+        } else {
+            g.style.display = 'none';
+            g.classList.remove('open');
+        }
+    });
+    btn.textContent = isHidden ? 'Hide older talks' : 'Show older talks';
+}
+
+// Hide older years on load
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.talks-year-group:not([data-year="2026"]):not([data-year="2025"])').forEach(g => {
+        g.style.display = 'none';
+    });
+});
 </script>
 {{ end }}

@@ -5,7 +5,6 @@
 /* 0. ACCENT COLOR — forest green replacing default blue */
 :root {
     --primary-color: #2d6a4f !important;
-    --text-link-color: #2d6a4f !important;
     --bs-link-color: #2d6a4f !important;
     --bs-link-hover-color: #1e4a37 !important;
 }
@@ -256,56 +255,21 @@ body.dark .writing-post-meta { color: #888 !important; }
     padding-bottom: 1rem;
 }
 #about h3::after {
-    content: '' !important;
-    display: block !important;
-    width: 60px !important;
-    height: 3px !important;
-    background: linear-gradient(to right, #2d6a4f, #52b788) !important;
-    margin: 0.6rem auto 0 !important;
-    border-radius: 2px !important;
-    background-color: unset !important;
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(to right, #2d6a4f, #52b788);
+    margin: 0.6rem auto 0;
+    border-radius: 2px;
 }
 
-/* Education card links — green not blue */
-#education a,
-#education a:link,
-#education a:visited,
-#education .card a,
-#education .card a:link,
-#education .card a:visited,
-#education h6,
-#education .card h6 {
-    color: #2d6a4f !important;
-}
-
-/* Publications ↗ buttons — green not blue */
-#publications .btn-outline-primary {
-    color: #2d6a4f !important;
-    border-color: #2d6a4f !important;
-}
-#publications .btn-outline-primary:hover {
-    background-color: #2d6a4f !important;
-    color: #fff !important;
-}
-
-/* "Under Review" status text — dark readable text in italics, no badge */
-#publications .secondary-font em + ,
-#publications .pub-status {
-    color: #7a5c3a;
-    font-style: italic;
-}
-
-/* Publications sub-group headings — green left border, remove grey bottom */
-#publications h5 {
+/* Publications sub-group headings — replace grey border-bottom with green left border */
+#publications h5.border-bottom {
     border-bottom: none !important;
     border-left: 3px solid #2d6a4f !important;
-    padding-left: 0.75rem !important;
-    color: inherit !important;
-}
-
-/* Dark mode — keep publication sub-headings readable */
-body.dark #publications h5 {
-    color: #e4e6eb !important;
+    padding-left: 0.75rem;
+    color: #1e4a37;
 }
 
 /* Experience — open item company name in green, no blue anywhere */

@@ -37,7 +37,7 @@
 
 .exp-chevron {
     font-size: 0.7rem;
-    color: #aaa;
+    color: #2d6a4f;
     transition: transform 0.2s ease;
     flex-shrink: 0;
     margin-left: 12px;
@@ -98,8 +98,7 @@
         <div class="row justify-content-center">
             <div class="col-sm-12 col-md-8 col-lg-8">
                 {{ range $index, $element := .Site.Params.experience.items }}
-                {{ $open := eq $index 0 }}
-                <div class="exp-item{{ if $open }} open{{ end }}">
+                <div class="exp-item">
                     <div class="exp-header" onclick="toggleExp(this)">
                         <div class="exp-company">
                             <span class="exp-company-name">{{ .company }}</span>

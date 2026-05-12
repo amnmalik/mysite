@@ -7,12 +7,12 @@ Energy system modelling is at the core of my work. I use integrated assessment m
 
 ## What I do
 
-I've worked with tools including **GCAM** (Global Change Assessment Model), **REMIND**, and worked on developing a IAM simulator called SIAMESE to build and analyse scenarios across a range of applications:
+I've worked with two well-known IAMs - **[GCAM](https://jgcri.github.io/gcam-doc/)** (Global Change Assessment Model), **[REMIND](https://www.pik-potsdam.de/en/institute/departments/transformation-pathways/models/remind)**, and worked on developing an IAM simulator called SIAMESE to build and analyse scenarios across a range of applications:
 
 - **Net-zero pathways** — developing long-term decarbonisation roadmaps for countries and sub-national regions, including sector-by-sector analysis of how emissions reduction targets can be met
 - **Power sector planning** — modelling the transition from fossil fuel-based electricity generation to renewable energy, including grid integration, stranded asset risk, and investment requirements
-- **Policy impact assessment** — quantifying the effects of specific policies such as carbon pricing, renewable energy mandates, and subsidy reform on energy systems and emissions
-- **State-level modelling** — India's first detailed state-level energy model (GCAM-India), used to inform climate and energy policy at the sub-national level
+- **Policy impact assessment** — quantifying the effects of specific policies such as carbon pricing, renewable energy mandates, and subsidy reform on energy systems and emissions as well as implications on employment in the energy sector.
+- **State-level modelling** — India's first detailed state-level energy model (GCAM-India), used to inform climate and energy policy at the sub-national level.
 
 ## Past work
 

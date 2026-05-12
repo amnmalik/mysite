@@ -25,9 +25,11 @@ Building the next generation of energy and climate analysts requires more than t
 - Economics of Climate Change and Climate Policy
 - Just transition concepts in climate change
 
+I'm happy to customise content around these themes to suit your audience and context.
+
 ## Who I work with
 
-Universities, professional schools, energy companies, financial institutions, government training programmes, and multilateral organisations.
+Universities, professional schools, energy companies, corporates,  financial institutions, government training programmes, and multilateral organisations.
 
 ---
 

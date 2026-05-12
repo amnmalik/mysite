@@ -4,41 +4,92 @@
     <div class="container">
         <h3 class="text-center">{{ $publications.title | default "Publications" }}</h3>
         {{ if $publications.description }}
-        <p class="text-center secondary-font mb-4">{{ $publications.description | markdownify }}</p>
+        <p class="text-center secondary-font mb-3">{{ $publications.description | markdownify }}</p>
         {{ end }}
+
         <div class="px-0 px-md-3">
 
             {{ range $publications.groups }}
             <div class="mb-5" id="{{ .anchor }}">
                 <h5 class="mb-3 border-bottom pb-2">{{ .type }}</h5>
-                {{ range .items }}
-                <div class="card mb-3 p-3">
-                    <div class="d-flex justify-content-between align-items-start">
-                        <div style="flex: 1;">
-                            {{ if .url }}
-                            <a href="{{ .url }}" target="_blank" class="fw-bold text-decoration-none">{{ .title }}</a>
-                            {{ else }}
-                            <span class="fw-bold">{{ .title }}</span>
-                            {{ end }}
-                            <div class="secondary-font mt-1 fst-italic">{{ .authors }}</div>
-                            <div class="secondary-font mt-1">
-                                {{ if .journal }}<em>{{ .journal }}</em>{{ end }}
-                                {{ if .year }}, {{ .year }}{{ end }}
-                                {{ if .status }}<span class="badge bg-secondary ms-2">{{ .status }}</span>{{ end }}
+
+                {{ if eq .anchor "pub-journal" }}
+                    {{/* Show recent papers (2022+) by default, hide older ones */}}
+                    {{ range .items }}
+                    {{ $recent := ge (.year | int) 2022 }}
+                    <div class="card mb-3 p-3 pub-journal-item{{ if not $recent }} pub-older{{ end }}">
+                        <div class="d-flex justify-content-between align-items-start">
+                            <div style="flex: 1;">
+                                {{ if .url }}
+                                <a href="{{ .url }}" target="_blank" class="fw-bold text-decoration-none">{{ .title }}</a>
+                                {{ else }}
+                                <span class="fw-bold">{{ .title }}</span>
+                                {{ end }}
+                                <div class="secondary-font mt-1 fst-italic">{{ .authors }}</div>
+                                <div class="secondary-font mt-1">
+                                    {{ if and .journal .year }}<em>{{ .journal }}</em>, {{ .year }}{{ else if .journal }}<em>{{ .journal }}</em>{{ else if .year }}{{ .year }}{{ end }}
+                                    {{ if .status }}&nbsp;({{ .status }}){{ end }}
+                                </div>
                             </div>
+                            {{ if .url }}
+                            <div class="ms-3">
+                                <a href="{{ .url }}" target="_blank" class="btn btn-sm btn-outline-primary">↗</a>
+                            </div>
+                            {{ end }}
                         </div>
-                        {{ if .url }}
-                        <div class="ms-3">
-                            <a href="{{ .url }}" target="_blank" class="btn btn-sm btn-outline-primary">↗</a>
-                        </div>
-                        {{ end }}
                     </div>
-                </div>
+                    {{ end }}
+
+                    <div class="text-center mt-2 mb-2">
+                        <button id="pub-toggle-btn" onclick="toggleOlderPubs()" class="btn btn-sm" style="border: 1px solid #2d6a4f; color: #2d6a4f; background: transparent; font-family: 'Source Sans 3', sans-serif;">
+                            Show older papers
+                        </button>
+                    </div>
+
+                {{ else }}
+                    {{ range .items }}
+                    <div class="card mb-3 p-3">
+                        <div class="d-flex justify-content-between align-items-start">
+                            <div style="flex: 1;">
+                                {{ if .url }}
+                                <a href="{{ .url }}" target="_blank" class="fw-bold text-decoration-none">{{ .title }}</a>
+                                {{ else }}
+                                <span class="fw-bold">{{ .title }}</span>
+                                {{ end }}
+                                <div class="secondary-font mt-1 fst-italic">{{ .authors }}</div>
+                                <div class="secondary-font mt-1">
+                                    {{ if and .journal .year }}<em>{{ .journal }}</em>, {{ .year }}{{ else if .journal }}<em>{{ .journal }}</em>{{ else if .year }}{{ .year }}{{ end }}
+                                    {{ if .status }}&nbsp;({{ .status }}){{ end }}
+                                </div>
+                            </div>
+                            {{ if .url }}
+                            <div class="ms-3">
+                                <a href="{{ .url }}" target="_blank" class="btn btn-sm btn-outline-primary">↗</a>
+                            </div>
+                            {{ end }}
+                        </div>
+                    </div>
+                    {{ end }}
                 {{ end }}
+
             </div>
             {{ end }}
 
         </div>
     </div>
 </section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.pub-older').forEach(el => el.style.display = 'none');
+});
+
+function toggleOlderPubs() {
+    const btn = document.getElementById('pub-toggle-btn');
+    const older = document.querySelectorAll('.pub-older');
+    const isHidden = btn.textContent.trim() === 'Show older papers';
+    older.forEach(el => el.style.display = isHidden ? 'block' : 'none');
+    btn.textContent = isHidden ? 'Hide older papers' : 'Show older papers';
+}
+</script>
 {{ end }}

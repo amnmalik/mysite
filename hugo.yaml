@@ -28,8 +28,8 @@ markup:
 Menus:
   main:
     - identifier: consulting
-      name: Consulting
-      title: Consulting
+      name: What I Offer
+      title: What I Offer
       url: /#consulting
       weight: 1
     - identifier: experience
@@ -146,7 +146,7 @@ params:
     enable: true
     intro: "Hi, I'm"
     title: "Aman Malik."
-    subtitle: "I'm an independent energy researcher and policy analyst, specialising in India's energy transition and decarbonisation policy."
+    subtitle: "I'm an independent energy researcher and policy analyst, specialising in energy transition and decarbonisation policy –<br>with particular focus on India."
     content: "I work with governments, research organisations, and financial institutions on energy modelling, climate policy analysis, and climate-related financial risk. I bring a decade of experience in quantitative energy system modelling and direct engagement with policymakers across India and Europe."
     image: /images/amanmalik-bio.jpg
     bottomImage:
@@ -173,7 +173,9 @@ params:
     title: "About Me"
     image: /images/linkedin3.jpg
     content: |-
-      PhD from the Technical University of Berlin and the Potsdam Institute for Climate Impact Research. Until recently, Programme Lead at the Low Carbon Economy team at CEEW in New Delhi; previously researcher and postdoctoral fellow at PIK in Germany. 
+      PhD from the [Technical University of Berlin](https://www.tu.berlin) and the [Potsdam Institute for Climate Impact Research (PIK)](https://www.pik-potsdam.de). Until recently, Programme Lead at the Low Carbon Economy team at the [Council on Energy, Environment and Water (CEEW)](https://www.ceew.in) in New Delhi; previously researcher and postdoctoral fellow at PIK in Germany. 
+      
+      [Outside work](/beyond-work), you can see me mapmaking on openstreetmaps – similar to Wikipedia but for maps. I enjoy being outdoors in nature and the mountains - mainly on foot and by bicycle.
 
       I take on consulting engagements in energy modelling, climate policy analysis, and transition risk.
     skills:
@@ -192,12 +194,12 @@ params:
   # Consulting
   consulting:
     enable: true
-    title: "Consulting"
+    title: "What I Offer"
     intro: "I work with governments, financial institutions, research organisations, and think-tanks on questions at the intersection of energy systems, climate policy, and economics. Engagements typically involve one or more of the following:"
     services:
       - name: "Energy System Modelling"
         icon: "?"
-        description: "Scenario development and modelling using tools such as GCAM, REMIND, and state-level energy models. Applications include net-zero pathways, power sector planning, and policy impact assessment."
+        description: "I've previously worked with two large-scale and well-known Integrated Assessment Modes - GCAM and REMIND. Applications include net-zero pathways, power sector planning, and policy impact assessment."
       - name: "Carbon Markets & ETS"
         icon: "??"
         description: "Policy design and analysis of carbon pricing mechanisms like emission trading schemes, and carbon credit frameworks - with particular expertise in the Indian context."
@@ -206,7 +208,7 @@ params:
         description: "Country-specific scenario development to inform climate-related financial risk assessment for banks, regulators, and institutional investors."
       - name: "Policy Analysis & Government Engagement"
         icon: "??"
-        description: "Evidence-based policy briefs, research reports on India's energy transition and decarbonisation - delivered directly to government ministries, regulatory bodies, and multilateral institutions including Niti Aayog, the Reserve Bank of India, and the Ministry of Power."
+        description: "Evidence-based policy briefs, research reports on India's energy transition and decarbonisation - delivered directly to government ministries, regulatory bodies, and multilateral institutions including Niti Aayog, the Reserve Bank of India, and the Ministry of Power. Worked directly with state government departments on net-zero strategies: with GUVNL in Gujarat and the Planning Department in Uttarakhand."
       - name: "Training & Capacity Building"
         icon: "??"
         description: "Guest lectures, workshops, and executive training on energy economics, climate modelling, and decarbonisation policy for government officials, financial institutions, and academic audiences."
@@ -228,7 +230,7 @@ params:
               Led research on India's energy and climate transition within the Low Carbon Economy team.
 
               - Modelling-based research on India's Carbon Credit Trading Scheme (CCTS)
-              - Co-developing India's first detailed state-level energy model on GCAM
+              - Co-developing India's first detailed state-level energy model based out of GCAM.
               - Net zero strategies for the states of Gujarat and Uttarakhand
               - Led work on transition risk in the financial sector
               - Part of CEEW's expert team for the Reserve Bank of India's Climate-related Information System (2024-2026)
@@ -330,7 +332,7 @@ params:
             authors: "P. Das and A. Malik"
             journal: "Strategic Analysis"
             year: 2025
-            url: ""
+            url: "https://www.tandfonline.com/doi/abs/10.1080/09700161.2025.2545159"
 
           - title: "The Criticality of Country-Specific Scenarios to Inform Transition Risk Assessment for the Financial Sector: A case study for India"
             authors: "K. Dhandhania, A. Malik, R. Varma, V. Chaturvedi"
@@ -484,7 +486,7 @@ params:
       - title: "Guest Exchange Scholarship - COMMIT Project (2019-20)"
         content: "Fully-funded 3-month exchange at TERI, New Delhi, hosted by PBL Netherlands."
       - title: "Merit Scholarship - University of Hamburg (2016)"
-        content: "Merit scholarship worth -3,250 awarded during MSc studies."
+        content: "Merit scholarship worth Euro 3,250 awarded during MSc studies."
       - title: "Expedition Grant - Students on Ice Antarctic Expedition (2011)"
         content: "US$8,500 grant from Indraprastha University and National Center for Antarctic and Ocean Research for the Antarctic University Expedition."
 
@@ -512,14 +514,16 @@ params:
       - "Speaker, IIT Delhi workshop on Energy and Well-being - Indian Case Study, New Delhi (Sep 2024)"
       - "Speaker, Surya Foundation Think Tank Strengthening Some Key Areas for Viksit Bharat 2047, New Delhi (Sep 2024)"
       - "Speaker and Panelist, Carbon Markets in India, Centre for Social and Economic Progress, New Delhi (Aug 2024)"
-      - "Speaker, State Dialogue on Accelerating Energy Efficiency in Gujarat, Vadodara (Aug 2024)"
+      - "Speaker, State Dialogue on Accelerating Energy Efficiency in Gujarat, Vadodara (Aug 2024) — [Watch](https://www.youtube.com/watch?v=7hXzEZrKt-Q&list=PLrbb7ClrFPxnTK6piV4yZuNO2fu6KA_3G&index=7)"
       - "Guest speaker, Webinar on Role of ETS in India's Net-Zero targets, Carbon Markets Association of India, Delhi (Feb 2024)"
       - "Expert speaker, Accelerating the Just Transition of MSMEs: Capacity Development of Policymakers Program, School of Public Policy and UNDP, Lucknow (Feb 2024)"
-      - "Panelist, Impact of Net-Zero Transition Policies on Clean Jobs, Skilling Needs and Interstate Migration, ICRIER, New Delhi (Jan 2024)"
+      - "Panelist, Impact of Net-Zero Transition Policies on Clean Jobs, Skilling Needs and Interstate Migration, ICRIER, New Delhi (Jan 2024) — [Watch](https://www.youtube.com/watch?v=2ZT0ssv9cR8&pp=ygUYYW1hbiBtYWxpayBpY3JpZXIgZW5lcmd5)"
       - "Speaker, Implications of India's ETS on its net-zero target, Niti Aayog, New Delhi (Jan 2024)"
       - "Oral presentation, Role of ETS in India's Net-zero targets: A modelling-based assessment, IAMC Annual Conference, Venice (Nov 2023)"
       - "Defense presentation, Barriers to power sector decarbonisation in India, TU Berlin (Mar 2022)"
+      - "Expert Panel, Climate Action and Renewable Energy in context of a Green Recovery, Africa- EU Climate Partnership, Online (Sept 2020)"
       - "Oral presentation, Assumptions on employment factor approach in energy scenarios, IAMC Annual Conference, Online (Dec 2020)"
+      - "Presentation, Preventing stranded assets and empowering renewables, CD-LINKS Summer School, Venice (July 2019)"
       - "Poster presentation, Not (yet) another coal story: Power-sector lock-ins in India, IAMC Annual Conference, Seville (Nov 2018)"
 
   # Contact

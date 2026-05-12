@@ -22,7 +22,7 @@ In 2023, I was recognised by IOP Publishing as an **IOP Trusted Reviewer** for e
 Beyond journal peer review, I also provide independent review of:
 
 - **Research reports and policy briefs** — pre-publication review for think tanks, research organisations, and government agencies. I've reviewed for several publications within CEEW as well as other think tanks such as ICRIER.
-- **Modelling studies** — technical review of energy system and integrated assessment modelling work, including methodology, assumptions, and interpretation
+- **Modelling studies** — technical review of energy system and integrated assessment modelling work, including methodology, assumptions, and analysis.
 
 
 ## Who I work with
