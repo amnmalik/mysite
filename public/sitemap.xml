@@ -3,7 +3,34 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-04-30T00:00:00+00:00</lastmod>
+    <lastmod>2026-05-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/himachal/</loc>
+    <lastmod>2026-05-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/himalaya/</loc>
+    <lastmod>2026-05-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/maps/</loc>
+    <lastmod>2026-05-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/other-maps-himalaya/</loc>
+    <lastmod>2026-05-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/planning/</loc>
+    <lastmod>2026-05-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/</loc>
+    <lastmod>2026-05-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2026-05-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/trekking/</loc>
+    <lastmod>2026-05-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/uttarakhand/</loc>
+    <lastmod>2026-05-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/dem/</loc>
     <lastmod>2026-04-30T00:00:00+00:00</lastmod>
@@ -17,31 +44,16 @@
     <loc>http://localhost:1313/tags/hiking/</loc>
     <lastmod>2026-04-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/himachal/</loc>
-    <lastmod>2026-04-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/himalaya/</loc>
-    <lastmod>2026-04-30T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/mapping/</loc>
     <lastmod>2026-04-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/projects/dem-sources-himalaya/</loc>
     <lastmod>2026-04-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/maps/</loc>
-    <lastmod>2026-04-30T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/osmand/</loc>
     <lastmod>2026-04-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/</loc>
-    <lastmod>2026-04-30T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/survey-of-india/</loc>
-    <lastmod>2026-04-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2026-04-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/topo/</loc>
@@ -197,9 +209,6 @@
     <loc>http://localhost:1313/writing/trek-to-the-parvati-valley/</loc>
     <lastmod>2012-06-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/trekking/</loc>
-    <lastmod>2012-06-13T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/categories/writing/</loc>
     <lastmod>2012-06-13T00:00:00+00:00</lastmod>
   </url><url>
@@ -252,9 +261,6 @@
     <lastmod>2011-02-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/writing/first-trek-himalayas/</loc>
-    <lastmod>2010-08-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/uttarakhand/</loc>
     <lastmod>2010-08-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/valley-of-flowers/</loc>

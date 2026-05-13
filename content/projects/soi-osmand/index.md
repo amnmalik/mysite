@@ -4,6 +4,7 @@ date: 2026-04-26
 summary: "How to get offline Survey of India 1:50,000 topographic maps working as an overlay on OsmAnd."
 icon: "🗺️"
 tags: ["maps", "osmand", "india", "topo", "offline", "himachal"]
+toc: true
 ---
 
 Survey of India (SOI) publishes detailed 1:50,000 scale topographic maps covering all of India under their Open Series Maps program. These are some of the most detailed official maps available for the Indian subcontinent — showing contours, trails, villages, rivers, and terrain features that simply don't exist in OpenStreetMap or Google Maps, especially in remote mountain areas like Himachal Pradesh.
@@ -14,7 +15,7 @@ For anyone traveling, biking, or trekking in the hills, having these maps offlin
 
 This workflow would not be possible without two open source projects:
 
-- [**india_topo_maps**](https://github.com/ramSeraph/india_topo_maps) by [ramSeraph](https://github.com/ramSeraph) — an extraordinary effort to georeferece, process, and publicly host the entire SOI 1:50,000 Open Series Map collection. The dataset is updated weekly and freely available.
+- [**india_topo_maps**](https://github.com/ramSeraph/india_topo_maps) by [ramSeraph](https://github.com/ramSeraph) — an extraordinary effort to georeference, process, and publicly host the entire SOI 1:50,000 Open Series Map collection. The dataset is updated weekly and freely available.
 - [**mbtiles2osmand**](https://github.com/tarwirdur/mbtiles2osmand) by [tarwirdur](https://github.com/tarwirdur) — a simple but essential Python script for converting MBTiles files into the SQLitedb format that OsmAnd understands.
 
 Both projects are open source and worth a star on GitHub if you find this guide useful.

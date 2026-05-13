@@ -30,7 +30,7 @@
 
 <meta property="og:url" content="http://localhost:1313/projects/topomaps-himalaya/">
   <meta property="og:site_name" content="Aman Malik">
-  <meta property="og:title" content="Topographic Maps of the Indian Himalaya">
+  <meta property="og:title" content="Topographic and Trekking Maps of the Indian Himalaya">
   <meta property="og:description" content="A guide to the main topographic map series covering the Indian Himalaya and how to get them onto your phone.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
@@ -40,13 +40,13 @@
     <meta property="article:tag" content="Himalaya">
     <meta property="article:tag" content="Maps">
     <meta property="article:tag" content="GIS">
-    <meta property="article:tag" content="Osmand">
+    <meta property="article:tag" content="OsmAnd">
     <meta property="article:tag" content="Topo">
     <meta property="article:tag" content="Hiking">
 
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Topographic Maps of the Indian Himalaya">
+  <meta name="twitter:title" content="Topographic and Trekking Maps of the Indian Himalaya">
   <meta name="twitter:description" content="A guide to the main topographic map series covering the Indian Himalaya and how to get them onto your phone.">
 
 
@@ -262,14 +262,6 @@
                     
                     
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="/beyond-work/" title="Beyond Work">
-                            Beyond Work
-                        </a>
-                    </li>
-                    
-                    
-                    
-                    <li class="nav-item navbar-text">
                         <a class="nav-link" href="/#achievements" title="Awards &amp; Recognition">
                             Awards &amp; Recognition
                         </a>
@@ -294,7 +286,15 @@
                     
                     
                     <li class="nav-item navbar-text">
-                        <a class="nav-link" href="" title="Contact">
+                        <a class="nav-link" href="/beyond-work/" title="Beyond Work">
+                            Beyond Work
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#contact" title="Contact">
                             Contact
                         </a>
                     </li>
@@ -398,7 +398,7 @@
     color: #2a2218;
     line-height: 1.8;
     font-size: 1rem;
-    font-weight: 300;
+    font-weight: 400;
   }
 
   .bw-single-content p {
@@ -451,8 +451,7 @@
     color: #1a1612;
   }
   .bw-single-content img {
-    width: 100%;
-    max-width: 580px;
+    max-width: 100%;
     height: auto;
     border-radius: 4px;
     margin: 24px auto;
@@ -510,10 +509,96 @@
   }
 
   .bw-single-footer-back:hover { color: #4a7c59; text-decoration: none; }
+
+   
+  .bw-with-toc {
+    display: flex;
+    gap: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 40px 100px;
+    align-items: flex-start;
+  }
+
+  .bw-toc-sidebar {
+    width: 240px;
+    flex-shrink: 0;
+    position: sticky;
+    top: 80px;
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+    padding-right: 32px;
+    border-right: 1px solid #e2dbd0;
+    margin-right: 56px;
+  }
+
+  .bw-toc-sidebar::-webkit-scrollbar { width: 4px; }
+  .bw-toc-sidebar::-webkit-scrollbar-thumb { background: #c4a882; border-radius: 2px; }
+
+  .bw-toc-label {
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #9a8c7e;
+    margin-bottom: 12px;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  .bw-toc-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .bw-toc-list li {
+    margin-bottom: 2px;
+  }
+
+  .bw-toc-list a {
+    font-size: 0.8rem;
+    color: #6b5e4e;
+    text-decoration: none;
+    border-bottom: none !important;
+    display: block;
+    padding: 4px 0 4px 8px;
+    border-left: 2px solid transparent;
+    line-height: 1.3;
+    transition: color 0.15s, border-color 0.15s;
+  }
+
+  .bw-toc-list a:hover,
+  .bw-toc-list a.toc-active {
+    color: #4a7c59;
+    border-left-color: #4a7c59;
+    text-decoration: none;
+  }
+
+  .bw-toc-main {
+    flex: 1;
+    min-width: 0;
+    max-width: 720px;
+  }
+
+   
+  @media (max-width: 860px) {
+    .bw-toc-sidebar { display: none; }
+    .bw-with-toc { display: block; padding: 60px 24px 100px; }
+  }
 </style>
 
+
+
 <div class="bw-single">
-  <div class="bw-single-inner">
+  
+  <div class="bw-with-toc">
+    
+    <nav class="bw-toc-sidebar" id="bw-toc">
+      <div class="bw-toc-label">Contents</div>
+      <ul class="bw-toc-list" id="bw-toc-list"></ul>
+    </nav>
+    
+    <div class="bw-toc-main">
+  
 
     <a href="http://localhost:1313/projects/" class="bw-single-back">← Projects</a>
 
@@ -540,40 +625,48 @@
       
     </div>
 
-    <h1 class="bw-single-title">Topographic Maps of the Indian Himalaya</h1>
+    <h1 class="bw-single-title">Topographic and Trekking Maps of the Indian Himalaya</h1>
     <div class="bw-single-divider"></div>
 
     <div class="bw-single-content">
-      <p>If you spend any time trying to plan a route into a less-visited corner of the Indian Himalaya, you quickly run into the limits of what Google Maps and OpenStreetMap can tell you. The trail might exist, or it might not - the satellite imagery is ambiguous, the OSM coverage is thin, and the terrain is steep enough that being wrong about a route matters. This is where the old paper map series become genuinely useful, and over the past couple of years I&rsquo;ve been collecting and georeferencing as many of them as I can get hold of.</p>
-<p>What follows is a summary of the main sources I know about, covering maps at 1:250,000 scale or better - anything coarser than that isn&rsquo;t detailed enough to be much help on the ground.</p>
+      <p>If you spend any time trying to explore a route into a less-visited corner of the Indian Himalaya, you quickly run into the limits of what Google Maps and OpenStreetMap can tell you. Satellite imagery is useful in spotting trails but has its limitations in terms of resolution, terrain (difficult to detect in forests), and discontinuity (trails routinely disappear). This is where the topographic paper map series become genuinely useful, for they not only show trails, but names and location of natural features (like springs, waterfalls, caves, boulders, cliffs) as well as human-made features like ruins and mills. Over the past couple of years I&rsquo;ve been collecting and georeferencing as many of them as I can get hold of. Mind you, the location of trails on these maps might not be accurate so don&rsquo;t follow them blindly.</p>
+<p>What follows is a summary of the main sources I know about, covering maps at 1:250,000 scale or better - anything coarser than that isn&rsquo;t much help on the ground.</p>
 <h2 id="survey-of-india---free"><a href="/projects/soi-osmand/">Survey of India - Free</a></h2>
-<p>The Survey of India (SOI) topographic series is the gold standard for the region. Produced by the national survey organisation, these come in two scales: the 1:50,000 sheets, and are extraordinarily detailed, and the 1:25,000 sheets, which go even finer and cover parts of the country at near-engineering survey quality. Note that the latter were produced as part of the National Hydrology Project (NHP), with the main aim of informing local stakeholders in flood assessment, mapping etc and therefore don&rsquo;t have all the features of the standard 1:50K maps. They do have trails, peaks, and camping spots.
-I&rsquo;ve written a detailed blog post on how to get the 1:50K maps on your phone (provide link).</p>
+<p>The Survey of India (SOI) topographic series is the gold standard for the region. Produced by the Survey of India, these come in two scales: the 1:50,000 sheets, and are extraordinarily detailed, and the (more recent) 1:25,000 sheets, which go even finer and cover parts of the country at near-engineering survey quality. The 1:50K include besides trails (that are marked in red dots) - show meadows, waterfalls, peaks, rivers and streams, ridges and contour lines, protected and reserved forests etc. The 1:25K sheets were produced as part of the National Hydrology Project (NHP), with the main aim of informing local stakeholders in flood assessment, mapping etc and therefore don&rsquo;t have all the features of the standard 1:50K maps and don&rsquo;t extend to the whole country. They however do have trails, peaks, and camping spots. Some trails that show on 1:25K are not shown on 1:50K and that&rsquo;s what makes them useful for exploration.</p>
+<p>I&rsquo;ve written a detailed <a href="//projects/soi-osmand/">blog post</a> on how to get the 1:50K maps on your phone and there also provided a link to a ready-to-use file for Kullu district in Himachal (for use on OsmAnd).</p>
 <h2 id="joint-operations-graphics-jog---free"><a href="https://github.com/ramSeraph/american_world_topo_maps">Joint Operations Graphics (JOG) - Free</a></h2>
+<img src="jog.jpg" alt="JOG map" style="max-width: 60%; display: block; margin: 0 auto 24px;">
 <p>The JOG series was produced by the US Defense Mapping Agency (now NGA) as a global 1:250,000 military topographic series. They are freely available - the US government declassified them and they can be downloaded from various archives.</p>
 <p>The cartography is clean and consistent: contour intervals of 100m, with form lines at 50m in gentler terrain. Roads, trails, rivers, settlements, and vegetation cover are all shown. The quality of ground-truth for the Indian Himalaya varies - some sheets are clearly based on aerial photography and are quite accurate, others show the limits of what could be mapped from a distance during the Cold War period.</p>
 <p>The georeferenced and tiled versions of the JOG sheets - are available from <a href="https://libgis.ku.edu/jogs/">The Kansas University Library</a>. Also see <a href="https://github.com/ramSeraph/american_world_topo_maps">ramSeraph&rsquo;s american_world_topo_maps repository</a> on GitHub.</p>
 <h2 id="american-map-service-ams---free"><a href="https://github.com/ramSeraph/american_world_topo_maps">American Map Service (AMS) - Free</a></h2>
+<img src="ams.jpg" alt="AMS map" style="max-width: 60%; display: block; margin: 0 auto 24px;">
 <p>The AMS series, also at 1:250,000, predates the JOG and was the earlier US military mapping effort covering much of the world. For India, these are sometimes referred to as the Series U502 maps. The style is similar to JOG but the ground data is older, often from the 1950s and 1960s, which in some parts of the Himalaya actually means less road infrastructure shown and more of the traditional trail network still visible.</p>
 <p>The AMS and JOG sheets are close enough in scale and style that for most purposes you can use them interchangeably, picking whichever has better coverage for your area. The georeferenced tiles for both series are in the same <a href="https://github.com/ramSeraph/american_world_topo_maps">repository</a>.</p>
 <h2 id="soviet-genshtab-maps---free"><a href="https://github.com/ramSeraph/russian_world_topo_maps">Soviet Genshtab Maps - Free</a></h2>
-<p>The Soviet military mapping programme - Генштаб, usually transliterated as Genshtab - produced topographic maps of essentially the entire world at multiple scales, as part of a systematic Cold War intelligence effort. For the Indian Himalaya, the most useful scale is 1:200,000, which gives slightly more detail than the JOG/AMS series. There are also 1:100,000 and higher resolution sheets but don&rsquo;t cover the Himalaya.</p>
+<img src="soviet.jpg" alt="SOVIET map" style="max-width: 60%; display: block; margin: 0 auto 24px;">
+<p>The Soviet military mapping programme - Генштаб, usually transliterated as Genshtab - produced topographic maps of essentially the entire world at multiple scales, as part of a systematic Cold War intelligence effort. For the Indian Himalaya, the most useful scale is 1:200,000, which gives slightly more detail than the JOG/AMS series. There are also 1:100,000 and higher resolution sheets but don&rsquo;t cover India.</p>
 <p>The Genshtab maps have a following among serious mountain travellers and GIS people for a few reasons. The cartography is detailed and the maps were updated more regularly than many Western equivalents. They show land cover - forest, scrub, bare rock, glacier - with a level of care that the AMS sheets don&rsquo;t match. The main limitation is that they&rsquo;re in Russian, which takes some getting used to, though the symbology is consistent enough that you can work it out fairly quickly.</p>
-<p>The georeferenced versions, tiled and ready for use, are available from <a href="https://github.com/ramSeraph/russian_world_topo_maps">ramSeraph&rsquo;s russian_world_topo_maps repository</a>. Original are here</p>
+<p>The georeferenced versions, tiled and ready for use, are available from <a href="https://github.com/ramSeraph/russian_world_topo_maps">ramSeraph&rsquo;s russian_world_topo_maps repository</a>.</p>
 <h2 id="olizane-maps---paid"><a href="http://www.abram.ch/lzmmaps.php">Olizane Maps - Paid</a></h2>
-<div style="display:flex; gap:10px;">
+<div style="display:flex; gap:10px; max-width:70%; margin: 0 auto 48px;">
   <img src="olizane.png" alt="Olizane Maps" style="width:48%;">
   <img src="olizane2.png" alt="Olizane Maps" style="width:48%;">
 </div>
-Editions Olizane is a Geneva-based publisher that has produced a series of trekking maps covering Ladakh and Zanskar at 1:150,000. These are **commercial maps**, designed for the trekking market, and compared to the military series they have a very different character - clearer layout, modern printing, contours at 100m intervals derived from satellite data, and the key trekking routes marked explicitly.
+<p>Editions Olizane is a Geneva-based publisher that has produced a series of trekking maps covering Ladakh and Zanskar at 1:150,000. These are <strong>commercial maps</strong>, designed for the trekking market, and compared to the military series they have a very different character - clearer layout, modern printing, contours at 100m intervals derived from satellite data, and the key trekking routes marked explicitly.</p>
 <p>The limitation is that Olizane&rsquo;s coverage is concentrated on Ladakh - the map series doesn&rsquo;t extend into Himachal Pradesh or Uttarakhand in any serious way, which is a gap if you&rsquo;re working further south and east. They&rsquo;re also showing their age in places: the third edition came out in 2013, and trail conditions and settlements have changed since then in parts of the region.</p>
 <h2 id="leomann-maps---paid"><a href="https://www.mapsworldwide.com/leomann-maps-m228?ayh_access=SY3RkAVCwZ8dEsHl">Leomann Maps - Paid</a></h2>
-<p><img src="leomann.jpg" alt="Leomann Maps"></p>
+<div style="display:flex; gap:10px; max-width:100%; margin: 0 auto;">
+  <img src="leomann_3.jpg" alt="Leomann Maps" style="width:100%;">
+  <img src="leomann_2.jpg" alt="Leomann Maps" style="width:100%;">
+</div>
 <p>Leomann is a British publisher that produced a series of maps of the Indian Himalaya at roughly 1:200,000-250,000 scale. Their style is distinctive: instead of conventional contour lines, they use a ridge-line drawing approach, showing the mountain topography through hand-drawn representations of spurs, ridges and valleys. Peaks and passes are marked with spot heights.</p>
 <p>This makes Leomann maps visually expressive and quite good for understanding the overall structure of a mountain group, but less precise for navigation than a contour map. They&rsquo;re trekking maps rather than topographic maps in the strict sense - the back of each sheet has written route descriptions and area information. Coverage includes Jammu and Kashmir, Ladakh, Himachal Pradesh, and some cross-border areas into Pakistan.</p>
 <p>They&rsquo;re getting harder to find in print, and as older publications the content doesn&rsquo;t reflect recent changes in road access and settlement.</p>
 <h2 id="getting-them-onto-your-phone">Getting Them Onto Your Phone</h2>
-<p>All of these map series, once georeferenced, can be converted into MBTiles and then into SQLite databases and loaded into OsmAnd as map overlays.</p>
+<p>All of these maps were originally only available as paper maps. This meant that to get them on your phone app, you first had to scan them (either in parts or together using large scanners), then georeference them digitally (convert points on the map to actual geo-location — done either using QGIS manually or, if you are technically inclined, by writing code that automates it), then convert them into a format accepted by the phone app. For OsmAnd this means converting to MBTiles or a similar format, and then to SQLite DB.</p>
+<p><a href="https://github.com/ramSeraph/india_topo_maps">Sreeram</a> has already georeferenced Survey of India, AMS, JOG, and Russian maps and these are available for download on the linked website. The tricky part is selecting only your area of interest. For Survey of India maps, I&rsquo;ve <a href="/projects/soi-osmand/">written a guide on how to do so</a> and a similar procedure can be followed for the other map series.</p>
+<p>Both Olizane and Leomann maps are commercial and require you to purchase the paper maps first, then georeference them yourself. The procedure isn&rsquo;t hard but is time-consuming. If you need help, feel free to reach out.</p>
 
     </div>
 
@@ -581,8 +674,53 @@ Editions Olizane is a Geneva-based publisher that has produced a series of trekk
       <a href="http://localhost:1313/projects/" class="bw-single-footer-back">← Back to Projects</a>
     </div>
 
+  
+    </div>
   </div>
+  
 </div>
+
+
+<script>
+(function () {
+  var content = document.querySelector('.bw-single-content');
+  var tocList = document.getElementById('bw-toc-list');
+  if (!content || !tocList) return;
+
+  var headings = content.querySelectorAll('h2');
+  if (headings.length === 0) return;
+
+  headings.forEach(function (h, i) {
+    
+    if (!h.id) {
+      h.id = 'toc-' + i + '-' + h.textContent.trim().toLowerCase().replace(/[^a-z0-9]+/g, '-');
+    }
+    
+    var text = h.textContent.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1').trim();
+    var li = document.createElement('li');
+    var a = document.createElement('a');
+    a.href = '#' + h.id;
+    a.textContent = text;
+    li.appendChild(a);
+    tocList.appendChild(li);
+  });
+
+  
+  var links = tocList.querySelectorAll('a');
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        links.forEach(function (l) { l.classList.remove('toc-active'); });
+        var active = tocList.querySelector('a[href="#' + entry.target.id + '"]');
+        if (active) active.classList.add('toc-active');
+      }
+    });
+  }, { rootMargin: '0px 0px -60% 0px', threshold: 0 });
+
+  headings.forEach(function (h) { observer.observe(h); });
+})();
+</script>
+
 
   </div><footer><div class="container py-4">
     <div class="row justify-content-center">

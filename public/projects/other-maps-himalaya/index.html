@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
+<link rel="icon" href="/fav.png" type="image/gif">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap"
+>
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap"
+      media="print" onload="this.media='all'" />
+<noscript>
+  <link
+          href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap"
+          rel="stylesheet">
+</noscript>
+
+
+<link rel="stylesheet" href="/css/font.css" media="all">
+
+
+
+<meta property="og:url" content="http://localhost:1313/projects/other-maps-himalaya/">
+  <meta property="og:site_name" content="Aman Malik">
+  <meta property="og:title" content="Other Useful Maps for Planning in the Indian Himalaya">
+  <meta property="og:description" content="A guide to some lesser-known but genuinely useful map resources for the Indian Himalaya — from Harish Kapadia’s expedition sketches to Depi Chaudhry’s trekking maps and the Pahar archive.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="projects">
+    <meta property="article:published_time" content="2026-05-13T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-05-13T00:00:00+00:00">
+    <meta property="article:tag" content="Himalaya">
+    <meta property="article:tag" content="Maps">
+    <meta property="article:tag" content="Trekking">
+    <meta property="article:tag" content="Planning">
+    <meta property="article:tag" content="Himachal">
+    <meta property="article:tag" content="Uttarakhand">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Other Useful Maps for Planning in the Indian Himalaya">
+  <meta name="twitter:description" content="A guide to some lesser-known but genuinely useful map resources for the Indian Himalaya — from Harish Kapadia’s expedition sketches to Depi Chaudhry’s trekking maps and the Pahar archive.">
+
+
+
+
+
+<link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
+<link rel="stylesheet" href="/css/language-switcher.css" media="all">
+<link rel="stylesheet" href="/css/footer.css" media="all">
+
+
+<link rel="stylesheet" href="/css/theme.css" media="all">
+
+<style>
+    :root {
+        --text-color: #343a40;
+        --text-secondary-color: #6c757d;
+        --text-link-color: #007bff;
+        --background-color: #f5f2ed;
+        --secondary-background-color: #f5f2ed;
+        --primary-color: #007bff;
+        --secondary-color: #ede9e1;
+
+         
+        --text-color-dark: #e4e6eb;
+        --text-secondary-color-dark: #b0b3b8;
+        --text-link-color-dark: #ffffff;
+        --background-color-dark: #18191a;
+        --secondary-background-color-dark: #212529;
+        --primary-color-dark: #ffffff;
+        --secondary-color-dark: #212529;
+    }
+    body {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: left;
+    }
+
+    html {
+        background-color: var(--background-color) !important;
+    }
+
+    body::-webkit-scrollbar {
+        height: 0px;
+        width: 8px;
+        background-color: var(--background-color);
+    }
+
+    ::-webkit-scrollbar-track {
+        border-radius: 1rem;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 1rem;
+        background: #b0b0b0;
+        outline: 1px solid var(--background-color);
+    }
+
+    #search-content::-webkit-scrollbar {
+        width: .5em;
+        height: .1em;
+        background-color: var(--background-color);
+    }
+</style>
+
+
+
+
+<link rel="stylesheet" href="/css/custom.css" media="all">
+
+  
+  
+    <link rel="stylesheet" href="/style.css">
+  
+
+  <title>
+  </title>
+</head>
+
+<body class="light">
+  
+  
+<script>
+    let localStorageValue = localStorage.getItem("pref-theme");
+    let mediaQuery = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    switch (localStorageValue) {
+        case "dark":
+            document.documentElement.classList.add('dark');
+            document.body.classList.add('dark');
+            break;
+        case "light":
+            document.body.classList.remove('dark');
+            document.documentElement.classList.remove('dark');
+            break;
+        default:
+            if (mediaQuery) {
+                document.documentElement.classList.add('dark');
+                document.body.classList.add('dark');
+            }
+            break;
+    }
+</script>
+
+
+
+<script>
+    var prevScrollPos = window.pageYOffset;
+    window.addEventListener("scroll", function showHeaderOnScroll() {
+        let profileHeaderElem = document.getElementById("profileHeader");
+        let currentScrollPos = window.pageYOffset;
+        let resetHeaderStyle = false;
+        let showNavBarOnScrollUp =  true ;
+        let showNavBar = showNavBarOnScrollUp ? prevScrollPos > currentScrollPos : currentScrollPos > 0;
+        if (showNavBar) {
+            profileHeaderElem.classList.add("showHeaderOnTop");
+        } else {
+            resetHeaderStyle = true;
+        }
+        if(currentScrollPos === 0) {
+            resetHeaderStyle = true;
+        }
+        if(resetHeaderStyle) {
+            profileHeaderElem.classList.remove("showHeaderOnTop");
+        }
+        prevScrollPos = currentScrollPos;
+    });
+</script>
+
+
+<header id="profileHeader">
+    <nav class="pt-3 navbar navbar-expand-lg animate">
+        <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
+            <a class="navbar-brand primary-font text-wrap" href="/">
+                
+                Aman Malik
+                
+            </a>
+
+            
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <svg aria-hidden="true" height="24" viewBox="0 0 16 16" version="1.1" width="24" data-view-component="true">
+                    <path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"></path>
+                </svg>
+            </button>
+
+            <div class="collapse navbar-collapse text-wrap primary-font" id="navbarContent">
+                <ul class="navbar-nav ms-auto text-center">
+
+                    
+
+                    
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#about" aria-label="about">
+                            About Me
+                        </a>
+                    </li>
+                    
+
+                    
+                    
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#consulting" title="What I Offer">
+                            What I Offer
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li class="nav-item navbar-text dropdown">
+                        <a class="nav-link dropdown-toggle" href="/#publications" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Publications">
+                            Publications
+                        </a>
+                        <div class="dropdown-menu shadow-lg rounded" aria-labelledby="navbarDropdown">
+                            
+                            <a class="dropdown-item text-center nav-link" href="/#pub-journal" title="Journal Articles">
+                                Journal Articles
+                            </a>
+                            
+                            <a class="dropdown-item text-center nav-link" href="/#pub-reports" title="Reports &amp; Book Chapters">
+                                Reports &amp; Book Chapters
+                            </a>
+                            
+                            <a class="dropdown-item text-center nav-link" href="/#pub-working" title="Working Papers">
+                                Working Papers
+                            </a>
+                            
+                            <a class="dropdown-item text-center nav-link" href="/#pub-blogs" title="Policy Blogs">
+                                Policy Blogs
+                            </a>
+                            
+                            <a class="dropdown-item text-center nav-link" href="/#pub-opeds" title="Op-eds &amp; Media">
+                                Op-eds &amp; Media
+                            </a>
+                            
+                        </div>
+                    </li>
+                    
+                    
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#talks" title="Talks &amp; Lectures">
+                            Talks
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#achievements" title="Awards &amp; Recognition">
+                            Awards &amp; Recognition
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#experience" title="Experience">
+                            Experience
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#education" title="Education">
+                            Education
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/beyond-work/" title="Beyond Work">
+                            Beyond Work
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#contact" title="Contact">
+                            Contact
+                        </a>
+                    </li>
+                    
+                    
+
+                    <li class="nav-item navbar-text">
+                        <div class="text-center">
+                            <button id="theme-toggle" type="button" aria-label="Toggle dark mode">
+                                <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                                </svg>
+                                <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="5"></circle>
+                                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                                </svg>
+                            </button>
+                        </div>
+                    </li>
+                    
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<div id="content">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap');
+
+  .bw-single {
+    min-height: 100vh;
+    background: #f7f4ef;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  .bw-single-inner {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 60px 24px 100px;
+  }
+
+  .bw-single-back {
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #9a8c7e;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 40px;
+  }
+
+  .bw-single-back:hover { color: #4a7c59; text-decoration: none; }
+
+  .bw-single-meta {
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #9a8c7e;
+    margin-bottom: 16px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .bw-single-tag {
+    background: #e8e0d5;
+    padding: 2px 8px;
+    border-radius: 2px;
+    font-size: 10px;
+  }
+
+  .bw-single-title {
+    font-family: 'Lora', serif;
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    font-weight: 500;
+    color: #1a1612;
+    line-height: 1.2;
+    margin-bottom: 40px;
+  }
+
+  .bw-single-divider {
+    width: 40px;
+    height: 2px;
+    background: #c4a882;
+    margin-bottom: 40px;
+  }
+
+   
+  .bw-single-content {
+    color: #2a2218;
+    line-height: 1.8;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .bw-single-content p {
+    margin-bottom: 1.5rem;
+  }
+
+  .bw-single-content h2 {
+    font-family: 'Lora', serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #1a1612;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e2dbd0;
+  }
+
+  .bw-single-content h3 {
+    font-family: 'Lora', serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #3a2d1e;
+    margin-top: 1.8rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .bw-single-content a {
+    color: #4a7c59;
+    text-decoration: none;
+    border-bottom: 1px solid #c4a882;
+    transition: border-color 0.15s;
+  }
+
+  .bw-single-content a:hover {
+    border-color: #4a7c59;
+    text-decoration: none;
+  }
+
+  .bw-single-content ul {
+    padding-left: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .bw-single-content ul li {
+    margin-bottom: 0.5rem;
+  }
+
+  .bw-single-content strong {
+    font-weight: 500;
+    color: #1a1612;
+  }
+  .bw-single-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin: 24px auto;
+    display: block;
+  }
+
+   
+  .bw-single-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+  }
+
+  .bw-single-content table td {
+    padding: 10px 16px;
+    border-bottom: 1px solid #e2dbd0;
+    vertical-align: top;
+  }
+
+  .bw-single-content table td:first-child {
+    color: #6b5e4e;
+    font-size: 0.85rem;
+    letter-spacing: 0.02em;
+    width: 45%;
+  }
+
+  .bw-single-content table td:last-child {
+    font-weight: 500;
+    color: #1a1612;
+  }
+
+  .bw-single-content table tr:last-child td {
+    border-bottom: none;
+  }
+
+   
+  .bw-single-content table thead {
+    display: none;
+  }
+
+  .bw-single-footer {
+    margin-top: 60px;
+    padding-top: 24px;
+    border-top: 1px solid #e2dbd0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .bw-single-footer-back {
+    font-size: 0.85rem;
+    color: #9a8c7e;
+    text-decoration: none;
+  }
+
+  .bw-single-footer-back:hover { color: #4a7c59; text-decoration: none; }
+
+   
+  .bw-with-toc {
+    display: flex;
+    gap: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 40px 100px;
+    align-items: flex-start;
+  }
+
+  .bw-toc-sidebar {
+    width: 240px;
+    flex-shrink: 0;
+    position: sticky;
+    top: 80px;
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+    padding-right: 32px;
+    border-right: 1px solid #e2dbd0;
+    margin-right: 56px;
+  }
+
+  .bw-toc-sidebar::-webkit-scrollbar { width: 4px; }
+  .bw-toc-sidebar::-webkit-scrollbar-thumb { background: #c4a882; border-radius: 2px; }
+
+  .bw-toc-label {
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #9a8c7e;
+    margin-bottom: 12px;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  .bw-toc-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .bw-toc-list li {
+    margin-bottom: 2px;
+  }
+
+  .bw-toc-list a {
+    font-size: 0.8rem;
+    color: #6b5e4e;
+    text-decoration: none;
+    border-bottom: none !important;
+    display: block;
+    padding: 4px 0 4px 8px;
+    border-left: 2px solid transparent;
+    line-height: 1.3;
+    transition: color 0.15s, border-color 0.15s;
+  }
+
+  .bw-toc-list a:hover,
+  .bw-toc-list a.toc-active {
+    color: #4a7c59;
+    border-left-color: #4a7c59;
+    text-decoration: none;
+  }
+
+  .bw-toc-main {
+    flex: 1;
+    min-width: 0;
+    max-width: 720px;
+  }
+
+   
+  @media (max-width: 860px) {
+    .bw-toc-sidebar { display: none; }
+    .bw-with-toc { display: block; padding: 60px 24px 100px; }
+  }
+</style>
+
+
+
+<div class="bw-single">
+  
+  <div class="bw-with-toc">
+    
+    <nav class="bw-toc-sidebar" id="bw-toc">
+      <div class="bw-toc-label">Contents</div>
+      <ul class="bw-toc-list" id="bw-toc-list"></ul>
+    </nav>
+    
+    <div class="bw-toc-main">
+  
+
+    <a href="http://localhost:1313/projects/" class="bw-single-back">← Projects</a>
+
+    <div class="bw-single-meta">
+      <span>May 2026</span>
+      
+        
+        <span class="bw-single-tag">himalaya</span>
+        
+        <span class="bw-single-tag">maps</span>
+        
+        <span class="bw-single-tag">trekking</span>
+        
+        <span class="bw-single-tag">planning</span>
+        
+        <span class="bw-single-tag">himachal</span>
+        
+        <span class="bw-single-tag">uttarakhand</span>
+        
+      
+    </div>
+
+    <h1 class="bw-single-title">Other Useful Maps for Planning in the Indian Himalaya</h1>
+    <div class="bw-single-divider"></div>
+
+    <div class="bw-single-content">
+      <p>The topographic series — Survey of India, JOG, AMS, Genshtab — are the foundation for serious route planning. But they were made by governments for governments, and they show the landscape without much regard for how a trekker or climber actually moves through it. A separate tradition of maps has grown up alongside them, made by mountaineers and explorers who knew the terrain from the ground. These are less precise in an engineering sense but often more useful for understanding a route.</p>
+<h2 id="harish-kapadia-maps"><a href="https://www.harishkapadia.com/climbs-explorations/">Harish Kapadia Maps</a></h2>
+<div style="display:flex; gap:10px; max-width:100%; margin: 0 auto 24px;">
+  <img src="hk.jpg" alt="Olizane Maps" style="width:60%;">
+  <img src="hk2.jpg" alt="Olizane Maps" style="width:60%;">
+</div>
+<p>Harish Kapadia spent decades exploring the Indian Himalaya — Spiti, Lahaul, Kullu, Kinnaur, Zanskar, the East Karakoram — and documented his routes in hand-drawn sketch maps that accompany his expedition reports. These are not topographic maps in the technical sense: they don&rsquo;t have contour intervals or precise coordinate grids. What they do have is the knowledge of someone who walked the ground, showing routes, passes, camps, glaciers, and peaks in a way that reflects actual travel rather than aerial survey.</p>
+<p>The maps are organised by region on his website, with dedicated pages for each area he explored — Spiti-Lahaul, Kullu, Kinnaur, Zanskar, Ladakh-Kashmir, East Karakoram, Garhwal, Kumaun, Sikkim, and more. For any of these areas, his sketch maps are worth looking at alongside a topographic sheet, because they show where people actually went and what the key decision points on a route are.</p>
+<p>A parallel and complementary collection is hosted by the Himalayan Club under the name of his son, Lt. Nawang Kapadia, who was also an accomplished mountaineer. The <a href="https://www.himalayanclub.org/resources/maps/">Lt. Nawang Kapadia Map Collection</a> on the Himalayan Club website covers sixteen regions — Sikkim, Kumaun, Garhwal, Kinnaur, Spiti, Pin-Parvati, Kullu-Lahaul, Zanskar, Kishtwar, and the East Karakoram — and all maps are freely downloadable.</p>
+<h2 id="depi-chaudhry--himalayamapscom"><a href="https://www.depichaudhry.com/">Depi Chaudhry — HimalayaMaps.com</a></h2>
+<img src="depi.jpg" alt="DEPI map" style="max-width: 60%; display: block; margin: 0 auto 24px;">
+<p>Depi Chaudhry is a trekker, cyclist, and author who came to mapmaking out of frustration with what existed. As he put it at the launch of his map at the Indian Mountaineering Foundation in Delhi: &ldquo;If someone had a Survey of India map, I would go running to that person, scan bits of it, and try to stitch it together. It used to be a struggle each time you tried planning a trek. There were limitations — if we looked at going from 3000m to 4000m, it would be a straight line.&rdquo;</p>
+<p>He is also the author of <em>Trekking in Western Himalaya</em> (Collins), and the maps reflect the same ground-level knowledge that went into the book. Digital versions were intended to be available through <a href="http://HimalayaMaps.com">HimalayaMaps.com</a>, though as of May 2026 the site appears to be down. A low-resolution preview of the full map is available to <a href="https://pub-aba69cd42a7b4d7aa8b5444fae551046.r2.dev/other-maps/Himalaya%20Trek%20Map%20-%20low%20res.pdf">download here</a>. If you need the high-resolution version (~400 MB) or a georeferenced version suitable for use in QGIS or OsmAnd, feel free to <a href="mailto:aman.malik@posteo.net">get in touch</a>.</p>
+<p>Depi has also shared GPX tracks for almost all the treks covered by his map — <a href="/depi-gpx/">browse and download them here</a>. Almost all of these routes have also been traced onto OpenStreetMap, so they are visible in any app that uses OSM data — including OsmAnd — without needing to load the GPX separately. Both the map and the GPX files are shared courtesy of Depi Chaudhry.</p>
+<h2 id="improved-uttarakhand-map--pahar"><a href="https://pahar.in/improved-uttarakhand-map/">Improved Uttarakhand Map — Pahar</a></h2>
+<img src="pahar_uk.jpg" alt="DEPI map" style="max-width: 60%; display: block; margin: 0 auto 24px;">
+<p>For Uttarakhand specifically, Pahar has produced an improved trekking map that consolidates and corrects trail information across the region. It is one of the better freely available resources for planning routes in Garhwal and Kumaun — areas where the SOI sheets are useful but where trail information on the ground can be patchy.</p>
+<p>The map is available as a <a href="https://pub-aba69cd42a7b4d7aa8b5444fae551046.r2.dev/other-maps/Pahar_UK.zip">zipped tile package for download here</a>. Unzip it and open in Google Earth — it will load as an overlay directly. The original page on the Pahar website is <a href="https://pahar.in/improved-uttarakhand-map/">here</a> but the map isn&rsquo;t available there as of May 2026.</p>
+<h2 id="pahar-maps-archive"><a href="https://pahar.in/maps/">Pahar Maps Archive</a></h2>
+<p>Pahar is a mountaineering and trekking resource site that maintains an extensive archive of historical maps of the Indian Himalaya. The collection draws on older sources — expedition maps, alpine club publications, and maps that have been scanned and made available digitally. For areas with thin coverage in the modern topographic series, or for understanding historical routes and place names, it is worth browsing. The archive spans most of the major ranges and is freely accessible.</p>
+<hr>
+<p><em>This post is a companion to my <a href="/projects/topomaps-himalaya/">overview of topographic map series</a> covering the Survey of India, JOG, AMS, and Soviet Genshtab maps. The two together should give a reasonable picture of what is available for route planning in the Indian Himalaya.</em></p>
+
+    </div>
+
+    <div class="bw-single-footer">
+      <a href="http://localhost:1313/projects/" class="bw-single-footer-back">← Back to Projects</a>
+    </div>
+
+  
+    </div>
+  </div>
+  
+</div>
+
+
+<script>
+(function () {
+  var content = document.querySelector('.bw-single-content');
+  var tocList = document.getElementById('bw-toc-list');
+  if (!content || !tocList) return;
+
+  var headings = content.querySelectorAll('h2');
+  if (headings.length === 0) return;
+
+  headings.forEach(function (h, i) {
+    
+    if (!h.id) {
+      h.id = 'toc-' + i + '-' + h.textContent.trim().toLowerCase().replace(/[^a-z0-9]+/g, '-');
+    }
+    
+    var text = h.textContent.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1').trim();
+    var li = document.createElement('li');
+    var a = document.createElement('a');
+    a.href = '#' + h.id;
+    a.textContent = text;
+    li.appendChild(a);
+    tocList.appendChild(li);
+  });
+
+  
+  var links = tocList.querySelectorAll('a');
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        links.forEach(function (l) { l.classList.remove('toc-active'); });
+        var active = tocList.querySelector('a[href="#' + entry.target.id + '"]');
+        if (active) active.classList.add('toc-active');
+      }
+    });
+  }, { rootMargin: '0px 0px -60% 0px', threshold: 0 });
+
+  headings.forEach(function (h) { observer.observe(h); });
+})();
+</script>
+
+
+  </div><footer><div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-md-4 text-center">
+            &copy; 2026 Aman Malik. All rights reserved.
+        </div>
+    </div>
+</div>
+</footer>
+<script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+<script>
+    if (document.body.className.includes("dark")) {
+        document.body.classList.remove('dark');
+        document.documentElement.classList.remove('dark');
+        localStorage.setItem("pref-theme", 'light');
+    }
+</script>
+
+
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            document.documentElement.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            document.documentElement.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  <section id="search-content" class="py-2">
+    <div class="container" id="search-results"></div>
+  </section>
+</body>
+
+</html>

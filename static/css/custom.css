@@ -177,6 +177,12 @@ input, textarea, select, button {
 
 
 
+/* 8. PROJECTS — heavier body text */
+.bw-single-content p,
+.bw-single-content li {
+    font-weight: 400 !important;
+}
+
 /* 9. WRITING LIST — fix blue inherited link colour */
 .writing-post { color: #2a2218 !important; }
 .writing-post-title { color: #1a1612 !important; }

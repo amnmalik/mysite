@@ -3,6 +3,7 @@ title: "3 Helpful Features to Have While Hiking with OsmAnd, Especially in India
 date: 2026-04-28
 summary: "Three features that significantly improve hiking with OsmAnd in India - a dedicated hiking rendering profile, offline Survey of India topo maps, and a large collection of raster map sources including satellite imagery and Strava heatmaps."
 tags: ["osmand", "hiking", "india", "maps", "himachal", "openstreetmap"]
+toc: true
 ---
 
 OsmAnd is one of the most powerful navigation apps available for offline use, and for hiking in India it is hard to beat. But out of the box, the default setup is not optimised for trails. After using it extensively on hikes in Himachal Pradesh, here are three features I have found genuinely useful - each one addresses a real gap in the default experience.
@@ -27,7 +28,7 @@ This matters a lot in India because many of the trails in OSM in places like Him
 3. Check all boxes to import the Profile and rendering
 4. Done - your new Hiking profile is ready to use
 
-![The Hiking rendering profile showing trails with difficulty colouring and improved POI visibility](Hiking1.png)
+<img src="Hiking1.png" alt="Hiking rendering profile" style="max-width: 60%; display: block; margin: 0 auto;">
 
 ---
 

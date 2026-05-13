@@ -3,9 +3,10 @@ title: "Mapping the Himalaya: Which DEM to Use?"
 date: 2026-04-30
 summary: "A look at the different elevation datasets available for the Himalaya - Cartosat, SRTM, ALOS, and the high-resolution HMA DEMs - and what each is actually good for."
 tags: ["himalaya", "GIS", "mapping", "DEM", "elevation", "himachal"]
+toc: true
 ---
 
-DEMs are the basis for a wide range of applications - from hydrological modelling, to landslide risk analysis. For a hiking enthusiast like me, DEMs are used to generate contour lines, which then go on maps (like osmand) to understand the topography over which you are travelling (like identifying ridges, valleys, passes, and peaks), or to understand the steepness of the terrain. In fact, many hiking routes also often go aong contour lines of same elevation. 
+DEMs are the basis for a wide range of applications - from hydrological modelling to landslide risk analysis. For a hiking enthusiast like me, DEMs are used to generate contour lines, which then go on maps (like OsmAnd) to understand the topography over which you are travelling (identifying ridges, valleys, passes, and peaks), or to understand the steepness of the terrain. In fact, many hiking routes also often follow contour lines of the same elevation.
 
 Over the last few years for various applications, I've ended up with quite a spread of elevation datasets sitting on my hard drive. This blog post is about the different datasets that I could find and some basic information about them that I gathered from the websites. 
 

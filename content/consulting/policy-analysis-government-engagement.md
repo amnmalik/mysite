@@ -18,6 +18,7 @@ Research that stays in journals does not change policy. A central part of my wor
 - Delivered a lecture on climate change at the **Rajya Sabha** (Upper House of Parliament) to interns of Members of Parliament
 - Spoke at the **Indian Energy Forum**, the **Carbon Markets Association of India**, and multiple state-level dialogues in Gujarat and Uttar Pradesh
 - Engaged with **UNDP**, **ICRIER**, and the **School of Public Policy** on just transition and MSME decarbonisation
+- Worked directly with state government departments on net-zero strategies: with GUVNL and GETRI in Gujarat and the Planning Department in Uttarakhand.
 
 ## Who I work with
 

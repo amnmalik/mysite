@@ -91,10 +91,11 @@ Menus:
       name: Beyond Work
       title: Beyond Work
       url: /beyond-work/
-      weight: 4
+      weight: 8
     - identifier: contact
       name: Contact
       title: Contact
+      url: /#contact
       weight: 9
 
 params:
@@ -199,22 +200,22 @@ params:
     services:
       - name: "Energy System Modelling"
         icon: "?"
-        description: "I've previously worked with two large-scale and well-known Integrated Assessment Modes - GCAM and REMIND. Applications include net-zero pathways, power sector planning, and policy impact assessment."
+        description: "Working with Integrated Assessment Modes and other energy system tools. Applications include net-zero pathways, power sector planning, and policy impact assessment."
       - name: "Carbon Markets & ETS"
         icon: "??"
-        description: "Policy design and analysis of carbon pricing mechanisms like emission trading schemes, and carbon credit frameworks - with particular expertise in the Indian context."
+        description: "Policy design and analysis of carbon pricing mechanisms like emission trading schemes and carbon credit frameworks - with particular expertise in the Indian context."
       - name: "Transition Risk & Climate Finance"
         icon: "??"
         description: "Country-specific scenario development to inform climate-related financial risk assessment for banks, regulators, and institutional investors."
       - name: "Policy Analysis & Government Engagement"
         icon: "??"
-        description: "Evidence-based policy briefs, research reports on India's energy transition and decarbonisation - delivered directly to government ministries, regulatory bodies, and multilateral institutions including Niti Aayog, the Reserve Bank of India, and the Ministry of Power. Worked directly with state government departments on net-zero strategies: with GUVNL in Gujarat and the Planning Department in Uttarakhand."
+        description: " Working with government departments, ministries, and regulatory bodies to deliver evidence-based policy briefs, research reports on energy transition and decarbonisation"
       - name: "Training & Capacity Building"
         icon: "??"
         description: "Guest lectures, workshops, and executive training on energy economics, climate modelling, and decarbonisation policy for government officials, financial institutions, and academic audiences."
       - name: "Research Review"
         icon: "??"
-        description: "Peer review of research papers and reports for leading international journals including Nature, Environmental Research Letters, Climate Policy, Energy Policy, Energy Research and Social Science, and Climate Economics."
+        description: "Peer review of research papers and technical reports on energy and climate policy, decarbonisation, implications of energy transition on the economy and carbon markets."
 
   # Experience
   experience:

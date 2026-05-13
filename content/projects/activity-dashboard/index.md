@@ -25,7 +25,7 @@ The Activity Dashboard is a single-page web application that pulls together all 
 
 ## Why I built it
 
-I wanted one place where I could see all my acitivities  all on the same map, zoomable, layered against real topography. Something that would let me revisit a route and actually understand the landscape I moved through, not just see a coloured line on a grey background.
+I wanted one place where I could see all my activities on the same map, zoomable, layered against real topography. Something that would let me revisit a route and actually understand the landscape I moved through, not just see a coloured line on a grey background.
 
 It is also a way of making my trails available to others. Anyone looking at a route I have done in the Kullu valley or Changthang can zoom in, see the terrain, and understand what the road or trail actually looks like.
 

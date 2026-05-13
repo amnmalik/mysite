@@ -5,6 +5,7 @@ summary: "Contributing to the world's largest open map — trails, roads, and pl
 icon: "🗺️"
 tags: ["mapping", "openstreetmap", "open-data"]
 thumbnail: activity.png
+toc: true
 ---
 
 [OpenStreetMap](https://www.openstreetmap.org/user/amnmalik) (OSM) is the Wikipedia of maps — a free, editable map of the world built entirely by volunteers. I have been contributing since April 2020, with a focus on mapping trails, roads, and places in the Indian Himalayas and other areas I have travelled through.
@@ -54,7 +55,9 @@ I map in two ways — as an armchair mapper and as a self-recorder in the field.
 
 **Field recording** means going out with a GPS device and recording tracks directly on trails and roads I travel through — on foot, by bicycle, or by other means. These traces then become the basis for accurate trail mapping, particularly in high-altitude areas where satellite imagery resolution is poor and existing data is sparse.
 
-![OsmAnd running on my phone during a field recording session](osmand.jpeg)
+<img src="osmand.jpeg" alt="AMS map" style="max-width: 60%; display: block; margin: 0 auto 24px;">
+
+
 
 ## Tools
 

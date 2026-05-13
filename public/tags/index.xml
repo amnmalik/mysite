@@ -6,8 +6,50 @@
     <description>Recent content in Tags on Aman Malik</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 30 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 13 May 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Himachal</title>
+      <link>http://localhost:1313/tags/himachal/</link>
+      <pubDate>Wed, 13 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/himachal/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Himalaya</title>
+      <link>http://localhost:1313/tags/himalaya/</link>
+      <pubDate>Wed, 13 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/himalaya/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Maps</title>
+      <link>http://localhost:1313/tags/maps/</link>
+      <pubDate>Wed, 13 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/maps/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Planning</title>
+      <link>http://localhost:1313/tags/planning/</link>
+      <pubDate>Wed, 13 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/planning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Trekking</title>
+      <link>http://localhost:1313/tags/trekking/</link>
+      <pubDate>Wed, 13 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/trekking/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Uttarakhand</title>
+      <link>http://localhost:1313/tags/uttarakhand/</link>
+      <pubDate>Wed, 13 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/uttarakhand/</guid>
+      <description></description>
+    </item>
     <item>
       <title>DEM</title>
       <link>http://localhost:1313/tags/dem/</link>
@@ -37,20 +79,6 @@
       <description></description>
     </item>
     <item>
-      <title>Himachal</title>
-      <link>http://localhost:1313/tags/himachal/</link>
-      <pubDate>Thu, 30 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/himachal/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Himalaya</title>
-      <link>http://localhost:1313/tags/himalaya/</link>
-      <pubDate>Thu, 30 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/himalaya/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Mapping</title>
       <link>http://localhost:1313/tags/mapping/</link>
       <pubDate>Thu, 30 Apr 2026 00:00:00 +0000</pubDate>
@@ -58,14 +86,7 @@
       <description></description>
     </item>
     <item>
-      <title>Maps</title>
-      <link>http://localhost:1313/tags/maps/</link>
-      <pubDate>Thu, 30 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/maps/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Osmand</title>
+      <title>OsmAnd</title>
       <link>http://localhost:1313/tags/osmand/</link>
       <pubDate>Thu, 30 Apr 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/osmand/</guid>
@@ -226,7 +247,7 @@
       <description></description>
     </item>
     <item>
-      <title>Himachal Pradesh</title>
+      <title>Himachal-Pradesh</title>
       <link>http://localhost:1313/tags/himachal-pradesh/</link>
       <pubDate>Fri, 20 Sep 2013 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/himachal-pradesh/</guid>
@@ -324,13 +345,6 @@
       <description></description>
     </item>
     <item>
-      <title>Trekking</title>
-      <link>http://localhost:1313/tags/trekking/</link>
-      <pubDate>Wed, 13 Jun 2012 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/trekking/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Shepherds</title>
       <link>http://localhost:1313/tags/shepherds/</link>
       <pubDate>Fri, 01 Jun 2012 00:00:00 +0000</pubDate>
@@ -405,13 +419,6 @@
       <link>http://localhost:1313/tags/polar/</link>
       <pubDate>Mon, 14 Feb 2011 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/polar/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Uttarakhand</title>
-      <link>http://localhost:1313/tags/uttarakhand/</link>
-      <pubDate>Mon, 09 Aug 2010 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/uttarakhand/</guid>
       <description></description>
     </item>
     <item>
