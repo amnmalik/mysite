@@ -530,7 +530,7 @@ params:
   # Contact
   contact:
     enable: true
-    content: "Available for consulting engagements in energy modelling, climate policy, and transition risk. Feel free to get in touch."
+    content: ""
     btnName: "Email me"
     btnLink: mailto:aman.malik@posteo.net
 
