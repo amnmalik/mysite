@@ -166,7 +166,7 @@ params:
           url: https://github.com/amnmalik
       customIcons:
         - icon: /images/scholar.png
-          url: "https://scholar.google.com/citations?user=inKL_TUAAAAJ&hl=en"
+          url: "https://scholar.google.com/citations?user=4R4fYgwAAAAJ&hl=en"
 
   # About
   about:
@@ -324,7 +324,7 @@ params:
   publications:
     enable: true
     title: "Publications"
-    description: "Peer-reviewed research in energy systems, climate policy, and India's decarbonisation. Full list on [Google Scholar](https://scholar.google.com/citations?user=inKL_TUAAAAJ&hl=en)."
+    description: "Peer-reviewed research in energy systems, climate policy, and India's decarbonisation. Full list on [Google Scholar](https://scholar.google.com/citations?user=4R4fYgwAAAAJ&hl=en)."
     groups:
       - type: "Peer-reviewed Journal Articles"
         anchor: "pub-journal"
