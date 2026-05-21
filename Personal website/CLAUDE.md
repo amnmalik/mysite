@@ -1,0 +1,1 @@
+The mysite folder is my personal website built on hugo
