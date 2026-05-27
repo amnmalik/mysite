@@ -531,7 +531,7 @@ params:
     enable: true
     content: ""
     btnName: "Email me"
-    btnLink: mailto:aman.malik@posteo.net
+    btnLink: mailto:contact@amanmalik.net
 
   footer:
     recentPosts:
@@ -571,3 +571,4 @@ params:
 
 
 
+                                  

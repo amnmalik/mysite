@@ -149,4 +149,4 @@ If you don't want to go through the full workflow, I have pre-processed SQLitedb
 |---|---|---|---|
 | Kullu | Full district at 1:50,000 | 162 MB | [Download](https://pub-aba69cd42a7b4d7aa8b5444fae551046.r2.dev/sqlitemaps/kullu_50k.sqlitedb) |
 
-More districts will be added over time. If you need a specific area, feel free to [get in touch](mailto:aman.malik@posteo.net).
+More districts will be added over time. If you need a specific area, feel free to [get in touch](mailto:contact@amanmalik.net).

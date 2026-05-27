@@ -36,4 +36,4 @@ Academic publishers, think tanks, research organisations, government agencies, a
 
 ---
 
-*Interested in a review engagement? [Get in touch](mailto:aman.malik@posteo.net)*
+*Interested in a review engagement? [Get in touch](mailto:contact@amanmalik.net)*

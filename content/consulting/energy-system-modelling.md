@@ -27,4 +27,4 @@ Governments and state agencies, think-tanks, research institutions, financial re
 
 ---
 
-*Interested in an engagement? [Get in touch](mailto:aman.malik@posteo.net)*
+*Interested in an engagement? [Get in touch](mailto:contact@amanmalik.net)*

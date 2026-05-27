@@ -46,4 +46,4 @@ The dashboard is live and accessible below. It is built as a standalone HTML fil
 
 [Open the Activity Dashboard →](/hikes/)
 
-*[Drop me a line](mailto:aman.malik@posteo.net) if you are interested in the code or want to build something similar.*
+*[Drop me a line](mailto:contact@amanmalik.net) if you are interested in the code or want to build something similar.*

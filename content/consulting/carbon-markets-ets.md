@@ -24,4 +24,4 @@ Government ministries, regulatory bodies, carbon market associations, think tank
 
 ---
 
-*Interested in an engagement? [Get in touch](mailto:aman.malik@posteo.net)*
+*Interested in an engagement? [Get in touch](mailto:contact@amanmalik.net)*
