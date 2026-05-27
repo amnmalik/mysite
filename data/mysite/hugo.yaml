@@ -166,7 +166,6 @@ params:
   about:
     enable: true
     title: "About Me"
-    image: /images/linkedin3.jpg
     content: |-
       I am an energy and climate policy researcher with nine years of experience. I've a PhD from the Technical University of Berlin and the Potsdam Institute for Climate Impact Research. My work sits at the intersection of quantitative modelling and policy — using energy system models to inform decisions on India's decarbonisation, carbon markets, and climate-related financial risk.
 

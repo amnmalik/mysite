@@ -8,12 +8,17 @@ Rigorous peer review is the backbone of credible science. I contribute to this p
 ## Journals I review for
 
 - **Nature**
+- **Nature Communications**
+- **Nature Energy**
 - **Environmental Research Letters**
 - **Environmental Research Letters: Climate**
 - **Climate Policy**
 - **Energy Policy**
+- **Climate Change Economics**
 - **Energy Research and Social Science**
-- **Climate Economics**
+- **Natural Resources Forum**
+
+Full review record on [ORCID](https://orcid.org/0000-0002-7310-8448).
 
 In 2023, I was recognised by IOP Publishing as an **IOP Trusted Reviewer** for exceptionally high level of peer review consistency.
 
