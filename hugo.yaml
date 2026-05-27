@@ -172,7 +172,6 @@ params:
   about:
     enable: true
     title: "About Me"
-    image: /images/linkedin3.jpg
     content: |-
       PhD from the [Technical University of Berlin](https://www.tu.berlin) and the [Potsdam Institute for Climate Impact Research (PIK)](https://www.pik-potsdam.de). Until recently, Programme Lead at the Low Carbon Economy team at the [Council on Energy, Environment and Water (CEEW)](https://www.ceew.in) in New Delhi; previously researcher and postdoctoral fellow at PIK in Germany. 
       
@@ -215,7 +214,7 @@ params:
         description: "Guest lectures, workshops, and executive training on energy economics, climate modelling, and decarbonisation policy for government officials, financial institutions, and academic audiences."
       - name: "Research Review"
         icon: "??"
-        description: "Peer review of research papers and technical reports on energy and climate policy, decarbonisation, implications of energy transition on the economy and carbon markets. I have reviewed manuscripts for *Nature*, *Nature Communications*, *Nature Energy*, *Environmental Research Letters*, *Energy Policy*, *Climate Change Economics*, *Energy Research & Social Science*, and *Natural Resources Forum*. Full review record on [ORCID](https://orcid.org/0000-0002-7310-8448)."
+        description: "Peer review of research papers and technical reports on energy and climate policy, decarbonisation, implications of energy transition on the economy and carbon markets."
 
   # Experience
   experience:
