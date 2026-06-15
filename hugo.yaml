@@ -438,6 +438,13 @@ params:
       - type: "Working Papers & Preprints"
         anchor: "pub-working"
         items:
+          - title: "Climate change impacts on the Indian energy system under net-zero pathways"
+            authors: "R. Varma, S. Pattnaik, A. Malik, V. Chaturvedi, J. Rajbanshi, D. Kumar, S.S. Srivastava"
+            journal: "SSRN Working Paper"
+            year: 2026
+            status: "Under Review"
+            url: "https://doi.org/10.2139/ssrn.6916596"
+
           - title: "Toward Next-Generation Climate Modeling in India: Lessons and Pathways for Action"
             authors: "M. George, P. Das, V. Chaturvedi, A. Malik, J. Rajbanshi, C. Arora, A. Dey, Z. Khan, U. Kumar, N. Kumari, P. Chandrasekaran, M. Sandhani, S. Sharma"
             journal: "SSRN Working Paper"
@@ -509,7 +516,7 @@ params:
       - "Guest lecture, Decision maker under uncertainty: Insights from modelling, National Thermal Power Corporation (May 2025)"
       - "Panelist, Sustainable Futures Collaborative's Tufts Climate Panel Discussion, New Delhi (Mar 2025)"
       - "Guest lecture, Introduction to Modelling, IIT Roorkee (Jan 2025)"
-      - "Speaker, Conference on Joint Response to Climate Crisis, SMU University, Seoul, South Korea (Sep 2024)"
+      - "Speaker, Conference on Joint Response to Climate Crisis, Sookmyung Women's University, Seoul, South Korea (Sep 2024)"
       - "Speaker, Lecture on Climate Change at Rajya Sabha (Upper House) to interns of Members of Parliament, New Delhi (Sep 2024)"
       - "Speaker, IIT Delhi workshop on Energy and Well-being - Indian Case Study, New Delhi (Sep 2024)"
       - "Speaker, Surya Foundation Think Tank Strengthening Some Key Areas for Viksit Bharat 2047, New Delhi (Sep 2024)"
