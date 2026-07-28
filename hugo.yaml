@@ -173,7 +173,7 @@ params:
     enable: true
     title: "About Me"
     content: |-
-      PhD from the [Technical University of Berlin](https://www.tu.berlin) and the [Potsdam Institute for Climate Impact Research (PIK)](https://www.pik-potsdam.de). Until recently, Programme Lead at the Low Carbon Economy team at the [Council on Energy, Environment and Water (CEEW)](https://www.ceew.in) in New Delhi; previously researcher and postdoctoral fellow at PIK in Germany. 
+      PhD from the [Technical University of Berlin](https://www.tu.berlin) and the [Potsdam Institute for Climate Impact Research (PIK)](https://www.pik-potsdam.de). Until recently, Programme Lead for the Low Carbon Economy team at [CEEW](https://www.ceew.in) (Council on Energy, Environment and Water) in New Delhi; previously researcher and postdoctoral fellow at PIK in Germany.
       
       [Outside work](/beyond-work), you can see me mapmaking on openstreetmaps – similar to Wikipedia but for maps. I enjoy being outdoors in nature and the mountains - mainly on foot and by bicycle.
 
@@ -493,8 +493,19 @@ params:
         content: "Fully-funded 3-month exchange at TERI, New Delhi, hosted by PBL Netherlands."
       - title: "Merit Scholarship - University of Hamburg (2016)"
         content: "Merit scholarship worth Euro 3,250 awarded during MSc studies."
+      - title: "Summer Fellowship - Jawaharlal Nehru Center for Advanced Scientific Research (2013)"
+        content: "Summer fellowship at JNCASR, Bangalore."
+      - title: "Bursary of £1,250 - University of Oxford (2012-2013)"
+        content: "Scholarship from the Department of Continuing Education for the online course 'Constructing and Analyzing High Resolution Climate Scenarios'."
       - title: "Expedition Grant - Students on Ice Antarctic Expedition (2011)"
         content: "US$8,500 grant from Indraprastha University and National Center for Antarctic and Ocean Research for the Antarctic University Expedition."
+        older: true
+      - title: "Full Scholarship - GIV Engineering Program, University of Vermont (2009)"
+        content: "Fully funded scholarship to attend an engineering summer school."
+        older: true
+      - title: "Certificate of Merit - Central Board of Secondary Education (2009)"
+        content: "For outstanding academic performance, among the top 0.1% of all successful candidates in Physics in the All India Secondary School Examination."
+        older: true
 
   # Talks & Lectures
   talks:

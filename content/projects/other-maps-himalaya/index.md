@@ -29,7 +29,7 @@ Depi Chaudhry is a trekker, cyclist, and author who came to mapmaking out of fru
 
 He is also the author of *Trekking in Western Himalaya* (Collins), and the maps reflect the same ground-level knowledge that went into the book. Digital versions were intended to be available through [HimalayaMaps.com](http://HimalayaMaps.com), though as of May 2026 the site appears to be down. A low-resolution preview of the full map is available to [download here](https://pub-aba69cd42a7b4d7aa8b5444fae551046.r2.dev/other-maps/Himalaya%20Trek%20Map%20-%20low%20res.pdf). If you need the high-resolution version (~400 MB) or a georeferenced version suitable for use in QGIS or OsmAnd, feel free to [get in touch](mailto:contact@amanmalik.net).
 
-Depi has also shared GPX tracks for almost all the treks covered by his map — [browse and download them here](/depi-gpx/). Almost all of these routes have also been traced onto OpenStreetMap, so they are visible in any app that uses OSM data — including OsmAnd — without needing to load the GPX separately. Both the map and the GPX files are shared courtesy of Depi Chaudhry.
+Depi has also shared GPX tracks for almost all the treks covered by his map — [browse and download them here](https://pub-aba69cd42a7b4d7aa8b5444fae551046.r2.dev/depi-gpx-files/). Almost all of these routes have also been traced onto OpenStreetMap, so they are visible in any app that uses OSM data — including OsmAnd — without needing to load the GPX separately. Both the map and the GPX files are shared courtesy of Depi Chaudhry.
 
 ## [Improved Uttarakhand Map — Pahar](https://pahar.in/improved-uttarakhand-map/)
 

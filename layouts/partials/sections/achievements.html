@@ -7,7 +7,7 @@
             <div class="col-lg-8 col-md-10">
                 <ul class="list-unstyled">
                     {{ range $achievements.items }}
-                    <li class="mb-3 d-flex align-items-start">
+                    <li class="mb-3 d-flex align-items-start achievement-item{{ if .older }} achievement-older{{ end }}"{{ if .older }} style="display:none;"{{ end }}>
                         <span class="me-2 mt-1" style="color: var(--primary-color, #007bff); flex-shrink: 0;">&#8227;</span>
                         <div>
                             <span class="fw-bold">{{ .title }}</span>
@@ -18,8 +18,27 @@
                     </li>
                     {{ end }}
                 </ul>
+                {{ if (where $achievements.items "older" true) }}
+                <div class="text-center mt-2 mb-2">
+                    <button id="achievements-toggle-btn" data-expanded="false" onclick="toggleOlderAchievements(this)" class="btn btn-sm" style="border: 1px solid #2d6a4f; color: #2d6a4f; background: transparent; font-family: 'Source Sans 3', sans-serif;">
+                        Show more
+                    </button>
+                </div>
+                {{ end }}
             </div>
         </div>
     </div>
 </section>
+
+<script>
+function toggleOlderAchievements(btn) {
+    const older = document.querySelectorAll('.achievement-older');
+    const willExpand = btn.getAttribute('data-expanded') !== 'true';
+    older.forEach(function(el) {
+        el.style.setProperty('display', willExpand ? 'flex' : 'none', 'important');
+    });
+    btn.setAttribute('data-expanded', willExpand ? 'true' : 'false');
+    btn.textContent = willExpand ? 'Show less' : 'Show more';
+}
+</script>
 {{ end }}

@@ -14,7 +14,7 @@ What follows is a summary of the main sources I know about, covering maps at 1:2
 
 The Survey of India (SOI) topographic series is the gold standard for the region. Produced by the Survey of India, these come in two scales: the 1:50,000 sheets, and are extraordinarily detailed, and the (more recent) 1:25,000 sheets, which go even finer and cover parts of the country at near-engineering survey quality. The 1:50K include besides trails (that are marked in red dots) - show meadows, waterfalls, peaks, rivers and streams, ridges and contour lines, protected and reserved forests etc. The 1:25K sheets were produced as part of the National Hydrology Project (NHP), with the main aim of informing local stakeholders in flood assessment, mapping etc and therefore don't have all the features of the standard 1:50K maps and don't extend to the whole country. They however do have trails, peaks, and camping spots. Some trails that show on 1:25K are not shown on 1:50K and that's what makes them useful for exploration.
 
-I've written a detailed [blog post](//projects/soi-osmand/) on how to get the 1:50K maps on your phone and there also provided a link to a ready-to-use file for Kullu district in Himachal (for use on OsmAnd).
+I've written a detailed [blog post](/projects/soi-osmand/) on how to get the 1:50K maps on your phone and there also provided a link to a ready-to-use file for Kullu district in Himachal (for use on OsmAnd).
 
 ## [Joint Operations Graphics (JOG) - Free](https://github.com/ramSeraph/american_world_topo_maps)
 
