@@ -338,7 +338,7 @@ params:
             authors: "K. Dhandhania, A. Malik, R. Varma, V. Chaturvedi"
             journal: "Energy and Climate Change"
             year: 2026
-            url: ""
+            url: "https://doi.org/10.1016/j.egycc.2026.100255"
 
           - title: "Implications of an emission trading scheme for India's net-zero strategy: a modelling-based assessment"
             authors: "A. Malik, V. Chaturvedi, M. Sandhani, P. Das, C. Arora, N. Singh, R.Y. Cui, et al."
@@ -409,6 +409,12 @@ params:
       - type: "Reports & Book Chapters"
         anchor: "pub-reports"
         items:
+          - title: "Transition Risk Scenarios for India's Financial Sector: Adapting Global Frameworks to National Realities and Financial Stability Risks"
+            authors: "A. Malik, V. Chaturvedi, R. Varma"
+            journal: "CEEW Issue Brief"
+            year: 2026
+            url: "https://www.ceew.in/publications/climate-transition-scenarios-india-financial-sector"
+
           - title: "Roadmap for a net zero power sector in Gujarat"
             authors: "CEEW, Ahmedabad University, and UNOPS"
             journal: ""
