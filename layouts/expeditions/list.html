@@ -1,0 +1,399 @@
+{{ define "title" }}{{ .Title }} | {{ .Site.Title }}{{ end }}
+{{ define "main" }}
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap');
+
+  .exp-page {
+    min-height: 100vh;
+    background: #f7f4ef;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  .exp-hero {
+    padding: 60px 24px 40px;
+    max-width: 900px;
+    margin: 0 auto;
+    border-bottom: 1px solid #e2dbd0;
+  }
+
+  .exp-back {
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #9a8c7e;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 24px;
+  }
+
+  .exp-back:hover { color: #4a7c59; text-decoration: none; }
+
+  .exp-title {
+    font-family: 'Lora', serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 400;
+    color: #1a1612;
+    margin-bottom: 12px;
+  }
+
+  .exp-desc {
+    font-size: 1rem;
+    color: #6b5e4e;
+    font-weight: 300;
+    line-height: 1.7;
+    max-width: 620px;
+  }
+
+  .exp-note {
+    font-size: 0.8rem;
+    color: #9a8c7e;
+    font-weight: 300;
+    margin-top: 16px;
+    font-style: italic;
+  }
+
+  .exp-table-wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 24px 90px;
+    overflow-x: auto;
+  }
+
+  table.exp-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    border-radius: 4px;
+    overflow: hidden;
+    min-width: 780px;
+  }
+
+  .exp-table caption {
+    caption-side: top;
+    text-align: left;
+    padding: 0 0 12px;
+  }
+
+  .exp-table thead th {
+    text-align: left;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #9a8c7e;
+    font-weight: 500;
+    padding: 14px 18px;
+    border-bottom: 2px solid #ede9e1;
+    background: #fbf9f5;
+    white-space: nowrap;
+  }
+
+  .exp-table tbody td {
+    padding: 16px 18px;
+    border-bottom: 1px solid #ede9e1;
+    font-size: 0.9rem;
+    color: #4a4038;
+    font-weight: 300;
+    vertical-align: top;
+  }
+
+  .exp-table tbody tr:last-child td {
+    border-bottom: none;
+  }
+
+  .exp-table tbody tr:hover {
+    background: #fbf9f5;
+  }
+
+  .exp-name {
+    font-family: 'Lora', serif;
+    font-weight: 500;
+    color: #1a1612;
+    font-size: 0.98rem;
+  }
+
+  .exp-type {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 10px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  .exp-type.hike { background: #e8f0e9; color: #2d4a3e; }
+  .exp-type.cycling { background: #f0e6d8; color: #7a5c3a; }
+  .exp-type.expedition { background: #e2ecf2; color: #1e2d3a; }
+  .exp-type.marathon { background: #f2e2e6; color: #7a2d3a; }
+
+  .exp-links {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    white-space: nowrap;
+  }
+
+  .exp-links a {
+    font-size: 0.8rem;
+    color: #4a7c59;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .exp-links a:hover {
+    text-decoration: underline;
+  }
+
+  .exp-links .cert-link {
+    color: #7a2d3a;
+  }
+
+  .exp-links .exp-media {
+    display: block;
+    margin-top: 4px;
+    font-size: 0.72rem;
+    color: #9a8c7e;
+    font-weight: 300;
+    font-style: italic;
+    white-space: normal;
+    line-height: 1.4;
+  }
+
+  .exp-dash {
+    color: #c9bfae;
+  }
+
+  @media (max-width: 640px) {
+    .exp-table-wrap { padding: 24px 16px 60px; }
+  }
+</style>
+
+<div class="exp-page">
+  <div class="exp-hero">
+    <a href="/beyond-work/" class="exp-back">&larr; Beyond Work</a>
+    <h1 class="exp-title">Expeditions</h1>
+    <p class="exp-desc">
+      A running log of hikes, cycling trips, and races — distance, time, and place, in one table. Where there's a longer story, it's linked; where there's a finisher certificate, that's linked too.
+    </p>
+  </div>
+
+  <div class="exp-table-wrap">
+    <table class="exp-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Location</th>
+          <th>Date</th>
+          <th>Distance</th>
+          <th>Time</th>
+          <th>More</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr>
+          <td class="exp-name">Students on Ice: Antarctic Expedition</td>
+          <td><span class="exp-type expedition">Expedition</span></td>
+          <td>Ushuaia, Argentina &rarr; Antarctic Peninsula</td>
+          <td>Feb 2011</td>
+          <td>~1,000 km by ship (one way)</td>
+          <td><span class="exp-dash">&mdash;</span></td>
+          <td class="exp-links">
+            <a href="/writing/antarctica/">Read &rarr;</a>
+            <a href="/writing/ushuaia/">Read &rarr;</a>
+            <a href="/writing/ronge-island-glaciology/">Read &rarr;</a>
+            <span class="exp-media">In the media: &ldquo;On top of the world,&rdquo; The Pioneer (26 May 2011); &ldquo;<a href="https://timesofindia.indiatimes.com/education/news/expedition-to-the-antarctic/articleshow/8835339.cms" target="_blank" rel="noopener">Conquering Ice</a>,&rdquo; Education Times, Times of India (16 May 2011); &ldquo;Aman Malik gets an opportunity to go to the Polar Regions,&rdquo; Amar Ujala, Youth Section (13 May 2011); Interview, All India Radio, Young Scientist Programme &ndash; &ldquo;Yuva Bharti&rdquo; (Mar 2011)</span>
+            <span class="exp-media">Photography credited in <a href="https://geographyandyou.com/polar-perspectives/science-and-the-antarctic-resource-exploitation-regulatory-lacunae-and-environmental-security" target="_blank" rel="noopener">GeographyandYou, &ldquo;Science and the Antarctic&rdquo;</a> (Jan 2012)</span>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="exp-name">First Trek to the Himalayas</td>
+          <td><span class="exp-type hike">Hike</span></td>
+          <td>Valley of Flowers &amp; Hemkund Sahib, Uttarakhand</td>
+          <td>Aug 2010</td>
+          <td><span class="exp-dash">&mdash;</span></td>
+          <td><span class="exp-dash">&mdash;</span></td>
+          <td class="exp-links"><a href="/writing/first-trek-himalayas/">Read &rarr;</a></td>
+        </tr>
+
+        <tr>
+          <td class="exp-name">Trek to the Parvati Valley</td>
+          <td><span class="exp-type hike">Hike</span></td>
+          <td>Barsheni to Mantalai Lake (4,100 m), Himachal Pradesh</td>
+          <td>1&ndash;13 Jun 2012</td>
+          <td><span class="exp-dash">&mdash;</span></td>
+          <td>13 days</td>
+          <td class="exp-links">
+            <a href="/writing/trek-to-the-parvati-valley/">Read &rarr;</a>
+            <a href="/writing/keval/">Read &rarr;</a>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="exp-name">Alone at the Base Camp</td>
+          <td><span class="exp-type hike">Hike</span></td>
+          <td>Chhota Sigri Glacier, Himachal Pradesh</td>
+          <td>Jul 2011</td>
+          <td><span class="exp-dash">&mdash;</span></td>
+          <td><span class="exp-dash">&mdash;</span></td>
+          <td class="exp-links"><a href="/writing/alone-at-base-camp/">Read &rarr;</a></td>
+        </tr>
+
+        <tr>
+          <td class="exp-name">Basic Course in Skiing</td>
+          <td><span class="exp-type expedition">Expedition</span></td>
+          <td>Atal Bihari Institute of Mountaineering, Manali, Himachal Pradesh</td>
+          <td>Feb 2013</td>
+          <td><span class="exp-dash">&mdash;</span></td>
+          <td><span class="exp-dash">&mdash;</span></td>
+          <td class="exp-links"><span class="exp-dash">&mdash;</span></td>
+        </tr>
+
+        <tr>
+          <td class="exp-name">Basic Course in Mountaineering</td>
+          <td><span class="exp-type expedition">Expedition</span></td>
+          <td>Jawahar Institute of Mountaineering, Pahalgam, Jammu &amp; Kashmir</td>
+          <td>Apr 2014</td>
+          <td><span class="exp-dash">&mdash;</span></td>
+          <td><span class="exp-dash">&mdash;</span></td>
+          <td class="exp-links"><span class="exp-dash">&mdash;</span></td>
+        </tr>
+
+        <tr>
+          <td class="exp-name">Solo Cycling to Bharatpur</td>
+          <td><span class="exp-type cycling">Cycling</span></td>
+          <td>Delhi to Keoladeo National Park, Rajasthan</td>
+          <td>4 Nov 2012</td>
+          <td>205 km</td>
+          <td>12 hrs (10 hrs pedalling)</td>
+          <td class="exp-links"><a href="/writing/solo-cycling-bharatpur/">Read &rarr;</a></td>
+        </tr>
+
+        <tr>
+          <td class="exp-name">Shimla to Keylong via Kaza</td>
+          <td><span class="exp-type cycling">Cycling</span></td>
+          <td>Shimla to Keylong via Kaza, Himachal Pradesh</td>
+          <td>Sep 2013</td>
+          <td>650 km</td>
+          <td>13 days</td>
+          <td class="exp-links">
+            <a href="/writing/shimla-to-keylong/">Read &rarr;</a>
+            <a href="/writing/alphabetical-ode-cyclists/">Read &rarr;</a>
+            <a href="/writing/taleport/">Read &rarr;</a>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="exp-name">Ice Climbing in Praxmar</td>
+          <td><span class="exp-type expedition">Expedition</span></td>
+          <td>Stubai Alps, Austria</td>
+          <td>Feb 2019</td>
+          <td><span class="exp-dash">&mdash;</span></td>
+          <td>8 days</td>
+          <td class="exp-links"><a href="/writing/a-few-days-on-the-ice/">Read &rarr;</a></td>
+        </tr>
+
+        <tr>
+          <td class="exp-name">Berlin to North Cape</td>
+          <td><span class="exp-type cycling">Cycling</span></td>
+          <td>Berlin, Germany to North Cape, Norway</td>
+          <td>Aug 2021</td>
+          <td>2,900 km</td>
+          <td>17 days</td>
+          <td class="exp-links"><span class="exp-dash">&mdash;</span></td>
+        </tr>
+
+        <tr>
+          <td class="exp-name">Berlin to Lisbon</td>
+          <td><span class="exp-type cycling">Cycling</span></td>
+          <td>Berlin, Germany to Lisbon, Portugal</td>
+          <td>Nov&ndash;Dec 2021</td>
+          <td>3,900 km</td>
+          <td>40 days</td>
+          <td class="exp-links"><span class="exp-dash">&mdash;</span></td>
+        </tr>
+
+        <tr>
+          <td class="exp-name">Zanskar &amp; Ladakh</td>
+          <td><span class="exp-type cycling">Cycling</span></td>
+          <td>Delhi &rarr; Keylong &rarr; Zanskar Valley &rarr; Leh &rarr; Tso Kar, Ladakh</td>
+          <td>15&ndash;29 Jun 2022</td>
+          <td>~685 km</td>
+          <td>15 days</td>
+          <td class="exp-links"><span class="exp-dash">&mdash;</span></td>
+        </tr>
+
+        <tr>
+          <td class="exp-name">Singapore, Malaysia &amp; Thailand</td>
+          <td><span class="exp-type cycling">Cycling</span></td>
+          <td>Singapore &rarr; Malaysia &rarr; Prachuap Khiri Khan, Thailand</td>
+          <td>15 Feb&ndash;10 Mar 2026</td>
+          <td>~1,986 km</td>
+          <td>18 riding days</td>
+          <td class="exp-links"><span class="exp-dash">&mdash;</span></td>
+        </tr>
+
+        <tr>
+          <td class="exp-name">Manali Marathon &mdash; Half Marathon</td>
+          <td><span class="exp-type marathon">Marathon</span></td>
+          <td>Manali, Himachal Pradesh</td>
+          <td>1 Oct 2023</td>
+          <td>21.1 km</td>
+          <td>2:29:24</td>
+          <td class="exp-links"><a class="cert-link" href="/files/certificates/manali-marathon-2023-half.pdf" target="_blank" rel="noopener">Certificate &rarr;</a></td>
+        </tr>
+
+        <tr>
+          <td class="exp-name">Manali Marathon &mdash; Full Marathon</td>
+          <td><span class="exp-type marathon">Marathon</span></td>
+          <td>Manali, Himachal Pradesh</td>
+          <td>29 Sep 2024</td>
+          <td>42.2 km</td>
+          <td>5:36:03</td>
+          <td class="exp-links"><a class="cert-link" href="/files/certificates/manali-marathon-2024-full.pdf" target="_blank" rel="noopener">Certificate &rarr;</a></td>
+        </tr>
+
+        <tr>
+          <td class="exp-name">SRUT &mdash; Silk Route Ultra Trail</td>
+          <td><span class="exp-type marathon">Marathon</span></td>
+          <td>Spiti, Himachal Pradesh</td>
+          <td>2024</td>
+          <td>33 km</td>
+          <td>6:18:00</td>
+          <td class="exp-links"><span class="exp-dash">&mdash;</span></td>
+        </tr>
+
+        <tr>
+          <td class="exp-name">Surya Spiti Marathon &mdash; Full Marathon</td>
+          <td><span class="exp-type marathon">Marathon</span></td>
+          <td>Kaza, Spiti, Himachal Pradesh</td>
+          <td>24 Aug 2025</td>
+          <td>42.195 km</td>
+          <td>5:11:47</td>
+          <td class="exp-links"><a class="cert-link" href="/files/certificates/surya-spiti-marathon-2025-full.pdf" target="_blank" rel="noopener">Certificate &rarr;</a></td>
+        </tr>
+
+        <tr>
+          <td class="exp-name">Surya Spiti Marathon &mdash; Kunzum La Challenge</td>
+          <td><span class="exp-type marathon">Marathon</span></td>
+          <td>Kunzum La to Kaza, Spiti, Himachal Pradesh</td>
+          <td>28 Aug 2026</td>
+          <td>77 km</td>
+          <td>10:47:00</td>
+          <td class="exp-links"><span class="exp-dash">&mdash;</span></td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <p class="exp-note">Distance and time left blank where not yet confirmed. Get in touch if you spot something to correct.</p>
+  </div>
+</div>
+{{ end }}
