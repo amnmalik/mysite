@@ -11,4 +11,7 @@ links:
   - label: "Read: A Letter from Tabo, Spiti"
     url: "/writing/tabo-letter/"
     kind: "read"
+  - label: "Read: The Little Solo Adventure"
+    url: "/writing/little-solo-adventure/"
+    kind: "read"
 ---

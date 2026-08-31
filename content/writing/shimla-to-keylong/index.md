@@ -60,3 +60,35 @@ While standing near the dhaba I saw a boy of about my age, staring at me and the
 Tom and I eventually muttered a polite goodbye and we were off. I looked back for an instant and saw him still looking at us, though his mind was somewhere else.
 
 ![image4.png](image4.png)
+
+An attempt at an audacious poem, by AM:
+
+*Baboons bamboozled by the mountains*
+*Decide deciphering the mystery of their heights.*
+*Energetic, ecstatic and quite chaotic,*
+*First felt flying into the limitless sky.*
+
+*Gibberish gnarling dreams you boys should leave,*
+*Hummed homely home-dwellers.*
+*Inspired, inquisitive, intrepid explorers were we,*
+*Jesting joyfully jumped on our bicycles.*
+
+*Keeping keen eyes ahead towards Kaza,*
+*Lost in lumpy, loopy roads,*
+*Mumbling music about the meandering mysteries of life,*
+*Navigating notoriously noxious roads we went on.*
+
+*"Ohhoho! Oblivious, outlandish individuals, where go thee?"*
+*Polite people of the mountains asked us.*
+*Question quietly was answered: "Maybe Keylong, maybe Leh."*
+
+*Rustic roads, romantic regions, rosy faces etched in our memories,*
+*Stunning sunburnt valleys sculptured in our hearts.*
+*Toiling tortuously through thunderous, trumpeting trucks, we were*
+*Unfettered, undeterred, untethered.*
+
+*Vest of valour wear the hill folk,*
+*Wondrous watchmen with eyes above and foot aground,*
+*Xenial spirit adorned in xerophytic surroundings,*
+*Yielding to no one, yearning to succeed,*
+*Zestfully living their lives, sipping tea in a zarf.*
