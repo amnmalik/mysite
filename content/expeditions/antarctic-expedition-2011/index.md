@@ -1,0 +1,27 @@
+---
+title: "Students on Ice: Antarctic Expedition"
+date: 2011-02-01
+exp_type: "expedition"
+exp_type_label: "Expedition"
+location: "Ushuaia, Argentina → Antarctic Peninsula"
+date_display: "Feb 2011"
+distance: "~1,000 km by ship (one way)"
+time_taken: ""
+links:
+  - label: "Read the story"
+    url: "/writing/antarctica/"
+    kind: "read"
+  - label: "Read: Ushuaia"
+    url: "/writing/ushuaia/"
+    kind: "read"
+  - label: "Read: Rongé Island glaciology"
+    url: "/writing/ronge-island-glaciology/"
+    kind: "read"
+  - label: "“Conquering Ice,” Education Times, Times of India (16 May 2011)"
+    url: "https://timesofindia.indiatimes.com/education/news/expedition-to-the-antarctic/articleshow/8835339.cms"
+    kind: "press"
+  - label: "Photography credited in GeographyandYou, “Science and the Antarctic” (Jan 2012)"
+    url: "https://geographyandyou.com/polar-perspectives/science-and-the-antarctic-resource-exploitation-regulatory-lacunae-and-environmental-security"
+    kind: "press"
+media_note: "Also covered in: “On top of the world,” The Pioneer (26 May 2011); “Aman Malik gets an opportunity to go to the Polar Regions,” Amar Ujala, Youth Section (13 May 2011); Interview, All India Radio, Young Scientist Programme – “Yuva Bharti” (Mar 2011) — no links available for these."
+---

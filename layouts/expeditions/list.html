@@ -71,12 +71,6 @@
     min-width: 780px;
   }
 
-  .exp-table caption {
-    caption-side: top;
-    text-align: left;
-    padding: 0 0 12px;
-  }
-
   .exp-table thead th {
     text-align: left;
     font-family: 'DM Sans', sans-serif;
@@ -115,6 +109,21 @@
     font-size: 0.98rem;
   }
 
+  a.exp-name-link {
+    font-family: 'Lora', serif;
+    font-weight: 500;
+    color: #1a1612;
+    font-size: 0.98rem;
+    text-decoration: none;
+    border-bottom: 1px solid #c9bfae;
+  }
+
+  a.exp-name-link:hover {
+    color: #4a7c59;
+    border-bottom-color: #4a7c59;
+    text-decoration: none;
+  }
+
   .exp-type {
     display: inline-block;
     padding: 3px 10px;
@@ -131,39 +140,6 @@
   .exp-type.expedition { background: #e2ecf2; color: #1e2d3a; }
   .exp-type.marathon { background: #f2e2e6; color: #7a2d3a; }
 
-  .exp-links {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    white-space: nowrap;
-  }
-
-  .exp-links a {
-    font-size: 0.8rem;
-    color: #4a7c59;
-    text-decoration: none;
-    font-weight: 500;
-  }
-
-  .exp-links a:hover {
-    text-decoration: underline;
-  }
-
-  .exp-links .cert-link {
-    color: #7a2d3a;
-  }
-
-  .exp-links .exp-media {
-    display: block;
-    margin-top: 4px;
-    font-size: 0.72rem;
-    color: #9a8c7e;
-    font-weight: 300;
-    font-style: italic;
-    white-space: normal;
-    line-height: 1.4;
-  }
-
   .exp-dash {
     color: #c9bfae;
   }
@@ -178,7 +154,7 @@
     <a href="/beyond-work/" class="exp-back">&larr; Beyond Work</a>
     <h1 class="exp-title">Expeditions</h1>
     <p class="exp-desc">
-      A running log of hikes, cycling trips, and races — distance, time, and place, in one table. Where there's a longer story, it's linked; where there's a finisher certificate, that's linked too.
+      A running log of hikes, cycling trips, and races — distance, time, and place, in one table. Where there's more to it, the name links through to a page with the story, certificate, press, or photos.
     </p>
   </div>
 
@@ -192,224 +168,25 @@
           <th>Date</th>
           <th>Distance</th>
           <th>Time</th>
-          <th>More</th>
         </tr>
       </thead>
       <tbody>
-
-<tr>
-          <td class="exp-name">First Trek to the Himalayas</td>
-          <td><span class="exp-type hike">Hike</span></td>
-          <td>Valley of Flowers &amp; Hemkund Sahib, Uttarakhand</td>
-          <td>Aug 2010</td>
-          <td><span class="exp-dash">&mdash;</span></td>
-          <td><span class="exp-dash">&mdash;</span></td>
-          <td class="exp-links"><a href="/writing/first-trek-himalayas/">Read &rarr;</a></td>
-        </tr>
-
+        {{ range .Pages.ByDate }}
         <tr>
-          <td class="exp-name">Students on Ice: Antarctic Expedition</td>
-          <td><span class="exp-type expedition">Expedition</span></td>
-          <td>Ushuaia, Argentina &rarr; Antarctic Peninsula</td>
-          <td>Feb 2011</td>
-          <td>~1,000 km by ship (one way)</td>
-          <td><span class="exp-dash">&mdash;</span></td>
-          <td class="exp-links">
-            <a href="/writing/antarctica/">Read &rarr;</a>
-            <a href="/writing/ushuaia/">Read &rarr;</a>
-            <a href="/writing/ronge-island-glaciology/">Read &rarr;</a>
-            <span class="exp-media">In the media: &ldquo;On top of the world,&rdquo; The Pioneer (26 May 2011); &ldquo;<a href="https://timesofindia.indiatimes.com/education/news/expedition-to-the-antarctic/articleshow/8835339.cms" target="_blank" rel="noopener">Conquering Ice</a>,&rdquo; Education Times, Times of India (16 May 2011); &ldquo;Aman Malik gets an opportunity to go to the Polar Regions,&rdquo; Amar Ujala, Youth Section (13 May 2011); Interview, All India Radio, Young Scientist Programme &ndash; &ldquo;Yuva Bharti&rdquo; (Mar 2011)</span>
-            <span class="exp-media">Photography credited in <a href="https://geographyandyou.com/polar-perspectives/science-and-the-antarctic-resource-exploitation-regulatory-lacunae-and-environmental-security" target="_blank" rel="noopener">GeographyandYou, &ldquo;Science and the Antarctic&rdquo;</a> (Jan 2012)</span>
+          <td>
+            {{ if .Params.links }}
+              <a class="exp-name-link" href="{{ .RelPermalink }}">{{ .Title }}</a>
+            {{ else }}
+              <span class="exp-name">{{ .Title }}</span>
+            {{ end }}
           </td>
+          <td><span class="exp-type {{ .Params.exp_type }}">{{ .Params.exp_type_label }}</span></td>
+          <td>{{ .Params.location }}</td>
+          <td>{{ .Params.date_display }}</td>
+          <td>{{ if .Params.distance }}{{ .Params.distance }}{{ else }}<span class="exp-dash">&mdash;</span>{{ end }}</td>
+          <td>{{ if .Params.time_taken }}{{ .Params.time_taken }}{{ else }}<span class="exp-dash">&mdash;</span>{{ end }}</td>
         </tr>
-
-        <tr>
-          <td class="exp-name">Alone at the Base Camp</td>
-          <td><span class="exp-type hike">Hike</span></td>
-          <td>Chhota Sigri Glacier, Himachal Pradesh</td>
-          <td>Jul 2011</td>
-          <td><span class="exp-dash">&mdash;</span></td>
-          <td><span class="exp-dash">&mdash;</span></td>
-          <td class="exp-links"><a href="/writing/alone-at-base-camp/">Read &rarr;</a></td>
-        </tr>
-
-        <tr>
-          <td class="exp-name">Trek to the Parvati Valley</td>
-          <td><span class="exp-type hike">Hike</span></td>
-          <td>Barsheni to Mantalai Lake (4,100 m), Himachal Pradesh</td>
-          <td>1&ndash;13 Jun 2012</td>
-          <td><span class="exp-dash">&mdash;</span></td>
-          <td>13 days</td>
-          <td class="exp-links">
-            <a href="/writing/trek-to-the-parvati-valley/">Read &rarr;</a>
-            <a href="/writing/keval/">Read &rarr;</a>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="exp-name">Hamta Pass Trek</td>
-          <td><span class="exp-type hike">Hike</span></td>
-          <td>Delhi &rarr; Manali &rarr; Hamta Pass, Himachal Pradesh</td>
-          <td>3&ndash;10 Aug 2012</td>
-          <td><span class="exp-dash">&mdash;</span></td>
-          <td>8 days</td>
-          <td class="exp-links"><span class="exp-dash">&mdash;</span></td>
-        </tr>
-
-        <tr>
-          <td class="exp-name">Solo Cycling to Bharatpur</td>
-          <td><span class="exp-type cycling">Cycling</span></td>
-          <td>Delhi to Keoladeo National Park, Rajasthan</td>
-          <td>4 Nov 2012</td>
-          <td>205 km</td>
-          <td>12 hrs (10 hrs pedalling)</td>
-          <td class="exp-links"><a href="/writing/solo-cycling-bharatpur/">Read &rarr;</a></td>
-        </tr>
-
-        <tr>
-          <td class="exp-name">Basic Course in Skiing</td>
-          <td><span class="exp-type expedition">Expedition</span></td>
-          <td>Atal Bihari Institute of Mountaineering, Manali, Himachal Pradesh</td>
-          <td>Feb 2013</td>
-          <td><span class="exp-dash">&mdash;</span></td>
-          <td><span class="exp-dash">&mdash;</span></td>
-          <td class="exp-links"><span class="exp-dash">&mdash;</span></td>
-        </tr>
-
-        <tr>
-          <td class="exp-name">Shimla to Keylong via Kaza</td>
-          <td><span class="exp-type cycling">Cycling</span></td>
-          <td>Shimla to Keylong via Kaza, Himachal Pradesh</td>
-          <td>Sep 2013</td>
-          <td>650 km</td>
-          <td>13 days</td>
-          <td class="exp-links">
-            <a href="/writing/shimla-to-keylong/">Read &rarr;</a>
-            <a href="/writing/alphabetical-ode-cyclists/">Read &rarr;</a>
-            <a href="/writing/taleport/">Read &rarr;</a>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="exp-name">Solo Spiti Journey</td>
-          <td><span class="exp-type hike">Hike</span></td>
-          <td>Delhi &rarr; Reckong Peo &rarr; Tabo, Spiti, Himachal Pradesh</td>
-          <td>Sep 2014</td>
-          <td><span class="exp-dash">&mdash;</span></td>
-          <td><span class="exp-dash">&mdash;</span></td>
-          <td class="exp-links"><a href="/writing/tabo-letter/">Read &rarr;</a></td>
-        </tr>
-
-        <tr>
-          <td class="exp-name">Basic Course in Mountaineering</td>
-          <td><span class="exp-type expedition">Expedition</span></td>
-          <td>Jawahar Institute of Mountaineering, Pahalgam, Jammu &amp; Kashmir</td>
-          <td>Apr 2014</td>
-          <td><span class="exp-dash">&mdash;</span></td>
-          <td><span class="exp-dash">&mdash;</span></td>
-          <td class="exp-links"><span class="exp-dash">&mdash;</span></td>
-        </tr>
-
-        <tr>
-          <td class="exp-name">Ice Climbing in Praxmar</td>
-          <td><span class="exp-type expedition">Expedition</span></td>
-          <td>Stubai Alps, Austria</td>
-          <td>Feb 2019</td>
-          <td><span class="exp-dash">&mdash;</span></td>
-          <td>8 days</td>
-          <td class="exp-links"><a href="/writing/a-few-days-on-the-ice/">Read &rarr;</a></td>
-        </tr>
-
-        <tr>
-          <td class="exp-name">Berlin to North Cape</td>
-          <td><span class="exp-type cycling">Cycling</span></td>
-          <td>Berlin, Germany to North Cape, Norway</td>
-          <td>Aug 2021</td>
-          <td>2,900 km</td>
-          <td>17 days</td>
-          <td class="exp-links"><span class="exp-dash">&mdash;</span></td>
-        </tr>
-
-        <tr>
-          <td class="exp-name">Berlin to Lisbon</td>
-          <td><span class="exp-type cycling">Cycling</span></td>
-          <td>Berlin, Germany to Lisbon, Portugal</td>
-          <td>Nov&ndash;Dec 2021</td>
-          <td>3,900 km</td>
-          <td>40 days</td>
-          <td class="exp-links"><span class="exp-dash">&mdash;</span></td>
-        </tr>
-
-        <tr>
-          <td class="exp-name">Zanskar &amp; Ladakh</td>
-          <td><span class="exp-type cycling">Cycling</span></td>
-          <td>Delhi &rarr; Keylong &rarr; Zanskar Valley &rarr; Leh &rarr; Tso Kar, Ladakh</td>
-          <td>15&ndash;29 Jun 2022</td>
-          <td>~685 km</td>
-          <td>15 days</td>
-          <td class="exp-links"><span class="exp-dash">&mdash;</span></td>
-        </tr>
-
-        <tr>
-          <td class="exp-name">Manali Marathon &mdash; Half Marathon</td>
-          <td><span class="exp-type marathon">Marathon</span></td>
-          <td>Manali, Himachal Pradesh</td>
-          <td>1 Oct 2023</td>
-          <td>21.1 km</td>
-          <td>2:29:24</td>
-          <td class="exp-links"><a class="cert-link" href="/files/certificates/manali-marathon-2023-half.pdf" target="_blank" rel="noopener">Certificate &rarr;</a></td>
-        </tr>
-
-        <tr>
-          <td class="exp-name">SRUT &mdash; Silk Route Ultra Trail</td>
-          <td><span class="exp-type marathon">Marathon</span></td>
-          <td>Spiti, Himachal Pradesh</td>
-          <td>2024</td>
-          <td>33 km</td>
-          <td>6:18:00</td>
-          <td class="exp-links"><span class="exp-dash">&mdash;</span></td>
-        </tr>
-
-        <tr>
-          <td class="exp-name">Manali Marathon &mdash; Full Marathon</td>
-          <td><span class="exp-type marathon">Marathon</span></td>
-          <td>Manali, Himachal Pradesh</td>
-          <td>29 Sep 2024</td>
-          <td>42.2 km</td>
-          <td>5:36:03</td>
-          <td class="exp-links"><a class="cert-link" href="/files/certificates/manali-marathon-2024-full.pdf" target="_blank" rel="noopener">Certificate &rarr;</a></td>
-        </tr>
-
-        <tr>
-          <td class="exp-name">Surya Spiti Marathon &mdash; Full Marathon</td>
-          <td><span class="exp-type marathon">Marathon</span></td>
-          <td>Kaza, Spiti, Himachal Pradesh</td>
-          <td>24 Aug 2025</td>
-          <td>42.195 km</td>
-          <td>5:11:47</td>
-          <td class="exp-links"><a class="cert-link" href="/files/certificates/surya-spiti-marathon-2025-full.pdf" target="_blank" rel="noopener">Certificate &rarr;</a></td>
-        </tr>
-
-        <tr>
-          <td class="exp-name">Singapore, Malaysia &amp; Thailand</td>
-          <td><span class="exp-type cycling">Cycling</span></td>
-          <td>Singapore &rarr; Malaysia &rarr; Prachuap Khiri Khan, Thailand</td>
-          <td>15 Feb&ndash;10 Mar 2026</td>
-          <td>~1,986 km</td>
-          <td>18 riding days</td>
-          <td class="exp-links"><span class="exp-dash">&mdash;</span></td>
-        </tr>
-
-        <tr>
-          <td class="exp-name">Surya Spiti Marathon &mdash; Kunzum La Challenge</td>
-          <td><span class="exp-type marathon">Marathon</span></td>
-          <td>Kunzum La to Kaza, Spiti, Himachal Pradesh</td>
-          <td>28 Aug 2026</td>
-          <td>77 km</td>
-          <td>10:47:00</td>
-          <td class="exp-links"><span class="exp-dash">&mdash;</span></td>
-        </tr>
-
+        {{ end }}
       </tbody>
     </table>
 
