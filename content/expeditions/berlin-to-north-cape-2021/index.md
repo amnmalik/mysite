@@ -7,5 +7,8 @@ location: "Berlin, Germany to North Cape, Norway"
 date_display: "Aug 2021"
 distance: "2,900 km"
 time_taken: "17 days"
-links: []
+links:
+  - label: "Read the story"
+    url: "/writing/nordkapp/"
+    kind: "read"
 ---

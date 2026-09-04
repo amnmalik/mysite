@@ -7,5 +7,8 @@ location: "Singapore → Malaysia → Prachuap Khiri Khan, Thailand"
 date_display: "15 Feb–10 Mar 2026"
 distance: "~1,986 km"
 time_taken: "18 riding days"
-links: []
+links:
+  - label: "Read the story"
+    url: "/writing/malaysia-thailand-cycling/"
+    kind: "read"
 ---

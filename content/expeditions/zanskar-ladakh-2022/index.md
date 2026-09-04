@@ -7,5 +7,8 @@ location: "Delhi → Keylong → Zanskar Valley → Leh → Tso Kar, Ladakh"
 date_display: "15–29 Jun 2022"
 distance: "~685 km"
 time_taken: "15 days"
-links: []
+links:
+  - label: "Read the story"
+    url: "/writing/zanskar-ladakh/"
+    kind: "read"
 ---
