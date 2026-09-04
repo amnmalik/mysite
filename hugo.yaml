@@ -103,8 +103,7 @@ params:
   description: "Independent energy and climate policy consultant specialising in energy system modelling, transition risk, and decarbonisation policy for India and Europe."
   favicon: "/fav.png"
 
-  customCSS:
-    - css/custom.css
+  customCSS: false
 
   color:
     backgroundColor: "#f5f2ed"
