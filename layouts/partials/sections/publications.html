@@ -15,7 +15,7 @@
 
                 {{ if eq .anchor "pub-journal" }}
                     {{/* Show recent papers (2022+) by default, hide older ones */}}
-                    {{ range .items }}
+                    {{ range sort .items "year" "desc" }}
                     {{ $recent := ge (.year | int) 2022 }}
                     <div class="card mb-3 p-3 pub-journal-item{{ if not $recent }} pub-older{{ end }}">
                         <div class="d-flex justify-content-between align-items-start">
@@ -47,7 +47,7 @@
                     </div>
 
                 {{ else }}
-                    {{ range .items }}
+                    {{ range sort .items "year" "desc" }}
                     <div class="card mb-3 p-3">
                         <div class="d-flex justify-content-between align-items-start">
                             <div style="flex: 1;">
