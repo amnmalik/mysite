@@ -45,7 +45,9 @@
       "Bash(mv '/d/Backups/Lenovobackup_2016-01-10/Documents/Writing, Ideas and Random Projects/Fiction/2011 Antarctica Expedition - Part 2.docx' '/d/Backups/Lenovobackup_2016-01-10/Documents/Writing, Ideas and Random Projects/Travel and Treks/')",
       "Bash(hugo version *)",
       "Bash(/c/Users/amanm/AppData/Local/Hugo/hugo version *)",
-      "Bash(where hugo *)"
+      "Bash(where hugo *)",
+      "PowerShell(Import-Csv *)",
+      "PowerShell(& \"C:\\\\Users\\\\amanm\\\\Documents\\\\Contacts\\\\build_contacts.ps1\")"
     ]
   }
 }
