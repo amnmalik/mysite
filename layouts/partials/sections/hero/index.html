@@ -26,6 +26,14 @@
                             {{ $hero.button.name | default .Site.Params.hero.button.name }}
                         </a>
                         {{ end }}
+                        {{ if .Site.Params.hero.secondButton.enable }}
+                        <a href="{{ .Site.Params.hero.secondButton.url }}" class="btn" style="margin-left: 4px;" {{ cond .Site.Params.hero.secondButton.download "download" "" }}
+                          {{ if .Site.Params.hero.secondButton.newPage | default true }}
+                          target="_blank"
+                          {{ end }}>
+                            {{ $hero.secondButton.name | default .Site.Params.hero.secondButton.name }}
+                        </a>
+                        {{ end }}
                         <a href="mailto:contact@amanmalik.net" class="btn social-icon" style="margin-left: 4px;">
                             <i class="fas fa-envelope"></i>
                         </a>

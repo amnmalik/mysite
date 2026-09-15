@@ -1,7 +1,7 @@
 ---
 title: "A Letter, Late June"
 date: 2014-06-30
-summary: "A handwritten letter written just after a Mountaineering course, a stint on a farm, and travel through South India — on books losing their pull, learning to enjoy ordinary routine, and Murakami. Page 3 of the original letter is missing from the surviving scans; the gap is noted where it falls."
+summary: "A handwritten letter written just after a Mountaineering course, a stint on a farm, and travel through South India"
 tags: ["letters", "reflection", "reading"]
 ---
 

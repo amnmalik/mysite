@@ -157,6 +157,12 @@ params:
       url: "/files/CV_Aman_Malik.pdf"
       download: true
       newPage: false
+    secondButton:
+      enable: true
+      name: "Full CV"
+      url: "/files/CV_Aman_Malik_LongForm.pdf"
+      download: true
+      newPage: false
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-linkedin

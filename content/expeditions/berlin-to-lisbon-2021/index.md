@@ -11,4 +11,7 @@ links:
   - label: "Read the story"
     url: "/writing/berlin-to-lisbon/"
     kind: "read"
+  - label: "Live route (Spotwalla)"
+    url: "https://new.spotwalla.com/trip/f9fe-214fbeef-df0e/view"
+    kind: "map"
 ---

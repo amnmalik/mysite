@@ -11,4 +11,7 @@ links:
   - label: "Read the story"
     url: "/writing/nordkapp/"
     kind: "read"
+  - label: "Live route (Spotwalla)"
+    url: "https://new.spotwalla.com/trip/bb66-f9e53af-c5ef/view"
+    kind: "map"
 ---
