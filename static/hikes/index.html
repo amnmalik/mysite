@@ -5,7 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>My Activities</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
 // ─── OSM IMPORT ──────────────────────────────────────────────────────────────
 function openOsmModal() {
   document.getElementById('osm-user').value = localStorage.getItem('osm_user') || '';
@@ -104,7 +105,7 @@ async function importOsmTraces() {
   :root {
     --bg: #f5f2ed; --surface: #fffefb; --text: #1a1714; --muted: #7a7570;
     --accent: #2d5a3d; --accent-light: #e8f0ea; --border: #e0dbd4;
-    --strava: #fc4c02; --hard: #c0392b; --moderate: #d4820a; --easy: #2d6a4f;
+    --garmin: #0078d4; --hard: #c0392b; --moderate: #d4820a; --easy: #2d6a4f;
     --panel-w: 360px;
   }
   body { font-family: 'DM Sans', sans-serif; background: var(--bg); color: var(--text); height: 100vh; display: flex; flex-direction: column; overflow: hidden; }
@@ -117,9 +118,9 @@ async function importOsmTraces() {
   .topbar-actions { display: flex; gap: 6px; align-items: center; flex-shrink: 0; }
   .btn { padding: 7px 12px; font-size: 12px; font-family: 'DM Sans', sans-serif; border-radius: 6px; cursor: pointer; border: 1px solid var(--border); background: var(--surface); color: var(--text); display: flex; align-items: center; gap: 5px; white-space: nowrap; }
   .btn:hover { background: var(--bg); }
-  .btn-strava { background: var(--strava); color: #fff; border-color: var(--strava); font-weight: 500; }
-  .btn-strava:hover { background: #e04400; }
-  .btn-strava:disabled { background: #aaa; border-color: #aaa; cursor: not-allowed; }
+  .btn-garmin { background: var(--garmin); color: #fff; border-color: var(--garmin); font-weight: 500; }
+  .btn-garmin:hover { background: #005a9e; }
+  .btn-garmin:disabled { background: #aaa; border-color: #aaa; cursor: not-allowed; }
   .btn-green { background: var(--accent); color: #fff; border-color: var(--accent); }
   .btn-green:hover { background: #244d34; }
   .sync-badge { font-size: 11px; padding: 3px 8px; border-radius: 10px; background: var(--accent-light); color: var(--accent); font-weight: 500; }
@@ -156,7 +157,7 @@ async function importOsmTraces() {
   .diff-moderate { background: #fff3e0; color: var(--moderate); }
   .diff-hard { background: #fde8e8; color: var(--hard); }
   .source-tag { font-size: 9px; font-weight: 600; padding: 1px 6px; border-radius: 8px; }
-  .src-strava { background: #fff0eb; color: var(--strava); }
+  .src-garmin { background: #e8f4fd; color: #0078d4; }
   .src-gpx { background: #eff6ff; color: #2563eb; }
   .src-osm { background: #f0fdf4; color: #15803d; }
   .card-metrics { display: grid; grid-template-columns: repeat(4, 1fr); gap: 5px; margin-top: 9px; }
@@ -197,8 +198,8 @@ async function importOsmTraces() {
   .detail-table td:first-child { color: var(--muted); }
   .detail-table td:last-child { text-align: right; font-weight: 500; }
   .detail-table tr:last-child td { border-bottom: none; }
-  .strava-link { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--strava); text-decoration: none; padding: 7px 11px; background: #fff5f0; border-radius: 6px; margin-bottom: 11px; }
-  .strava-link:hover { background: #ffe8df; }
+  .garmin-link { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--garmin); text-decoration: none; padding: 7px 11px; background: #e8f4fd; border-radius: 6px; margin-bottom: 11px; }
+  .garmin-link:hover { background: #d0e8fa; }
 
   /* MODALS */
   .modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.45); display: none; align-items: center; justify-content: center; z-index: 9000; padding: 20px; }
@@ -235,7 +236,7 @@ async function importOsmTraces() {
   /* LOADING */
   .loading-overlay { position: fixed; inset: 0; background: rgba(245,242,237,0.88); display: none; align-items: center; justify-content: center; z-index: 8888; flex-direction: column; gap: 12px; }
   .loading-overlay.open { display: flex; }
-  .spinner { width: 30px; height: 30px; border: 3px solid var(--border); border-top-color: var(--strava); border-radius: 50%; animation: spin 0.8s linear infinite; }
+  .spinner { width: 30px; height: 30px; border: 3px solid var(--border); border-top-color: var(--garmin); border-radius: 50%; animation: spin 0.8s linear infinite; }
   @keyframes spin { to { transform: rotate(360deg); } }
   .loading-text { font-size: 13px; color: var(--muted); }
   .empty-state { text-align: center; padding: 40px 20px; color: var(--muted); font-size: 13px; line-height: 1.8; }
@@ -244,22 +245,6 @@ async function importOsmTraces() {
 </style>
 </head>
 <body>
-
-<!-- ACTIVITY TYPE MODAL -->
-<div class="modal-overlay" id="activityModal">
-  <div class="modal">
-    <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px">
-      <div class="modal-title" style="margin-bottom:0">What to import from Strava?</div>
-      <button onclick="document.getElementById('activityModal').classList.remove('open')" style="background:none;border:none;font-size:20px;cursor:pointer;color:var(--muted);line-height:1;padding:0;flex-shrink:0">×</button>
-    </div>
-    <div class="modal-sub">Select the activity types you want to show. Your selection is saved for future syncs.</div>
-    <div id="activityTypeList"></div>
-    <div class="modal-actions">
-      <button class="btn" onclick="selectAllTypes()">Select all</button>
-      <button class="btn btn-strava" onclick="confirmActivityTypes()">Import selected ↗</button>
-    </div>
-  </div>
-</div>
 
 <!-- GPX IMPORT MODAL -->
 <div class="modal-overlay" id="gpxModal">
@@ -314,8 +299,6 @@ async function importOsmTraces() {
     <span class="sync-badge" id="syncBadge" style="display:none"></span>
     <button class="btn btn-green" onclick="openGpxModal()">+ GPX</button>
     <button class="btn" onclick="openOsmModal()" style="border-color:#7ebc6f;color:#4a7c3f">+ OSM</button>
-    <button class="btn btn-strava" id="syncBtn" onclick="syncStrava()" style="display:none">↻ Strava</button>
-    <button class="btn" id="resetBtn" onclick="resetCredentials()" style="display:none;font-size:11px;color:var(--muted)">Disconnect</button>
   </div>
 </div>
 
@@ -340,7 +323,7 @@ async function importOsmTraces() {
       </div>
       <div class="pill-row">
         <button class="pill active" onclick="setFilter('src','all',this)">All sources</button>
-        <button class="pill" onclick="setFilter('src','strava',this)">Strava</button>
+        <button class="pill" onclick="setFilter('src','garmin',this)">Garmin</button>
         <button class="pill" onclick="setFilter('src','gpx',this)">GPX</button>
         <button class="pill" onclick="setFilter('src','osm',this)">OSM</button>
       </div>
@@ -363,8 +346,6 @@ async function importOsmTraces() {
       <button class="layer-btn" onclick="switchLayer('esri-topo')" id="lb-esri-topo"><div class="layer-thumb">🌍</div>Esri Topo</button>
       <div class="layer-group-label">Street</div>
       <button class="layer-btn" onclick="switchLayer('osm')" id="lb-osm"><div class="layer-thumb">🗺</div>OpenStreetMap</button>
-      <button class="layer-btn" onclick="switchLayer('carto-light')" id="lb-carto-light"><div class="layer-thumb" style="background:#f0f0ee">□</div>Carto Light</button>
-      <button class="layer-btn" onclick="switchLayer('carto-dark')" id="lb-carto-dark"><div class="layer-thumb" style="background:#2a2a2e">□</div>Carto Dark</button>
       </div>
     </div>
   </div>
@@ -382,7 +363,8 @@ async function importOsmTraces() {
 <script>
 // ─── CONFIG ──────────────────────────────────────────────────────────────────
 const TF_KEY = '88ed87f071d64f18abc2c95991ea60b1';
-const BAKED = { clientId: '', clientSecret: '', refreshToken: '' };
+// Data source: static JSON exported from Garmin Connect via hikes_export.py
+const DATA_URL = 'data.json';
 
 const TILES = {
   'topo':        { url: 'https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', opts: { attribution: '© OpenTopoMap', maxZoom: 17 } },
@@ -392,11 +374,15 @@ const TILES = {
   'esri-sat':    { url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', opts: { attribution: '© Esri', maxZoom: 19 } },
   'esri-topo':   { url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}', opts: { attribution: '© Esri', maxZoom: 19 } },
   'osm':         { url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', opts: { attribution: '© OpenStreetMap', maxZoom: 19 } },
-  'carto-light': { url: 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', opts: { attribution: '© CartoDB', maxZoom: 19, subdomains: 'abcd' } },
-  'carto-dark':  { url: 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', opts: { attribution: '© CartoDB', maxZoom: 19, subdomains: 'abcd' } }
 };
 
 const SPORT_ICONS = {
+  // Garmin type keys (lowercase)
+  'hiking':'🥾','walking':'🚶','running':'🏃','trail_running':'🏃',
+  'cycling':'🚴','mountain_biking':'🚵','road_biking':'🚴','gravel_cycling':'🚴',
+  'swimming':'🏊','open_water_swimming':'🏊',
+  'strength_training':'🏋','yoga':'🧘',
+  // Strava type keys (for GPX imports that may carry these)
   'Hike':'🥾','Walk':'🚶','Run':'🏃','TrailRun':'🏃','Trail Run':'🏃',
   'Ride':'🚴','VirtualRide':'🚴','EBikeRide':'🚴','MountainBikeRide':'🚵',
   'Swim':'🏊','NordicSki':'⛷','BackcountrySki':'⛷','Snowshoe':'🏔',
@@ -410,13 +396,10 @@ let activeFilter = { diff: 'all', src: 'all', type: 'all' };
 let activeHikeId = null;
 let map, layerGroup, currentTileLayer;
 let activeLayerKey = 'topo';
-let credentials = null;
-let allFetchedActivities = [];
-let selectedTypes = new Set();
 let pendingGpxFiles = [];
 
 // ─── INIT ────────────────────────────────────────────────────────────────────
-window.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('DOMContentLoaded', async () => {
   map = L.map('map', { zoomControl: true }).setView([32.0, 77.0], 6);
   layerGroup = L.layerGroup().addTo(map);
   switchLayer('topo', false);
@@ -425,21 +408,17 @@ window.addEventListener('DOMContentLoaded', () => {
   gpxHikes = JSON.parse(localStorage.getItem('gpx_hikes') || '[]');
   gpxHikes.forEach(h => { if (h.polyline && !h.coords?.length) h.coords = decodePoly(h.polyline); });
 
-  // Auto-connect with baked credentials
-  credentials = JSON.parse(localStorage.getItem('strava_creds') || 'null') || BAKED;
-  localStorage.setItem('strava_creds', JSON.stringify(credentials));
-  document.getElementById('syncBtn').style.display = 'flex';
-  document.getElementById('resetBtn').style.display = 'flex';
-
-  // Load cached Strava hikes — never auto-sync, only sync when user clicks the button
-  const cached = JSON.parse(localStorage.getItem('strava_hikes') || '[]');
-  if (cached.length) {
-    hikes = cached;
-    hikes.forEach(h => { if (h.polyline) h.coords = decodePoly(h.polyline); });
-    const savedTypes = localStorage.getItem('selected_types');
-    if (savedTypes) selectedTypes = new Set(JSON.parse(savedTypes));
-    else hikes.forEach(h => selectedTypes.add(h.sportType));
-    setSyncBadge(`${hikes.length} from Strava · cached`);
+  // Load Garmin hikes from static JSON
+  try {
+    const r = await fetch(DATA_URL);
+    if (r.ok) {
+      hikes = await r.json();
+      setSyncBadge(`${hikes.length} activities · Garmin`);
+    } else {
+      console.warn('Failed to load hike data:', r.status);
+    }
+  } catch(e) {
+    console.warn('Could not fetch hike data:', e);
   }
   mergeAndRender();
 
@@ -483,9 +462,9 @@ function calcDiff(elevGain, distM) {
   return 'easy';
 }
 function routeColor(h, isActive) {
-  const dark = activeLayerKey === 'carto-dark';
-  if (isActive) return dark ? '#60d4a0' : '#1a3d6b';
-  if (dark) return h.difficulty==='easy'?'#5be0a0':h.difficulty==='moderate'?'#fbbf60':'#ff7070';
+  
+  if (isActive) return '#1a3d6b';
+  
   return h.difficulty==='easy'?'#2d6a4f':h.difficulty==='moderate'?'#c87000':'#c0392b';
 }
 
@@ -524,180 +503,11 @@ function miniSvg(profile, elevMin) {
   </svg>`;
 }
 
-// ─── AUTH ─────────────────────────────────────────────────────────────────────
+// ─── UI HELPERS ──────────────────────────────────────────────────────────────
 function setSyncBadge(text, type='') {
   const b = document.getElementById('syncBadge');
   b.textContent = text; b.className = 'sync-badge'+(type?' '+type:'');
   b.style.display = text ? 'inline' : 'none';
-}
-
-function resetCredentials() {
-  if (!confirm('Disconnect Strava and clear all Strava data?')) return;
-  localStorage.removeItem('strava_creds');
-  localStorage.removeItem('strava_hikes');
-  localStorage.removeItem('selected_types');
-  hikes = [];
-  mergeAndRender();
-}
-
-async function getAccessToken() {
-  const r = await fetch('https://www.strava.com/oauth/token', {
-    method: 'POST', headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ client_id: credentials.clientId, client_secret: credentials.clientSecret, refresh_token: credentials.refreshToken, grant_type: 'refresh_token' })
-  });
-  const data = await r.json();
-  if (!data.access_token) throw new Error('Token refresh failed: ' + JSON.stringify(data));
-  credentials.refreshToken = data.refresh_token;
-  localStorage.setItem('strava_creds', JSON.stringify(credentials));
-  return data.access_token;
-}
-
-async function fetchAllActivities(token) {
-  let page=1, all=[];
-  while(true) {
-    const r = await fetch(`https://www.strava.com/api/v3/athlete/activities?per_page=100&page=${page}`, {
-      headers: { Authorization: `Bearer ${token}` }
-    });
-    const batch = await r.json();
-    if (!Array.isArray(batch) || !batch.length) break;
-    all = all.concat(batch);
-    if (batch.length < 100) break;
-    page++;
-  }
-  return all;
-}
-
-
-async function fetchStreams(activityId) {
-  try {
-    const token = await getAccessToken();
-    const r = await fetch(`https://www.strava.com/api/v3/activities/${activityId}/streams?keys=altitude&key_by_type=true`, {
-      headers: { Authorization: `Bearer ${token}` }
-    });
-    const data = await r.json();
-    if (data?.altitude?.data) {
-      const alts = data.altitude.data;
-      const minAlt = Math.min(...alts);
-      const step = Math.max(1, Math.floor(alts.length/40));
-      return {
-        elevProfile: alts.filter((_,i)=>i%step===0).map(a=>Math.round(a-minAlt)),
-        elevMin: Math.round(minAlt),
-        elevMax: Math.round(Math.max(...alts))
-      };
-    }
-  } catch(e) { console.warn('Stream fetch failed', e); }
-  return null;
-}
-// ─── STRAVA SYNC ─────────────────────────────────────────────────────────────
-async function syncStrava() {
-  const btn = document.getElementById('syncBtn');
-  btn.disabled = true;
-  setSyncBadge('Syncing…', 'syncing');
-  document.getElementById('loadingOverlay').classList.add('open');
-  document.getElementById('loadingText').textContent = 'Fetching your activities from Strava…';
-  try {
-    const token = await getAccessToken();
-    allFetchedActivities = await fetchAllActivities(token);
-
-    // Count by type
-    const typeCounts = {};
-    allFetchedActivities.forEach(a => {
-      const t = a.sport_type || a.type || 'Other';
-      typeCounts[t] = (typeCounts[t] || 0) + 1;
-    });
-
-    document.getElementById('loadingOverlay').classList.remove('open');
-
-    // Load saved type prefs
-    const savedTypes = localStorage.getItem('selected_types');
-    const defaultTypes = savedTypes
-      ? new Set(JSON.parse(savedTypes))
-      : new Set(['Hike','Walk','Run','TrailRun','Trail Run','Ride','MountainBikeRide','EBikeRide']);
-
-    selectedTypes = new Set();
-    const list = document.getElementById('activityTypeList');
-    const sorted = Object.entries(typeCounts).sort((a,b) => b[1]-a[1]);
-    list.innerHTML = sorted.map(([type, count]) => {
-      const sel = defaultTypes.has(type);
-      if (sel) selectedTypes.add(type);
-      return `<div class="type-row${sel?' selected':''}" onclick="toggleType('${type}',this)" id="tr-${type}">
-        <div class="type-check">${sel?'✓':''}</div>
-        <div class="type-icon">${SPORT_ICONS[type]||'🏅'}</div>
-        <div class="type-name">${type}</div>
-        <div class="type-count">${count} ${count===1?'activity':'activities'}</div>
-      </div>`;
-    }).join('');
-
-    document.getElementById('activityModal').classList.add('open');
-  } catch(err) {
-    document.getElementById('loadingOverlay').classList.remove('open');
-    setSyncBadge('Sync failed — check console', 'error');
-    console.error(err);
-    const cached = JSON.parse(localStorage.getItem('strava_hikes')||'[]');
-    if (cached.length) {
-      hikes = cached;
-      hikes.forEach(h => { if (h.polyline) h.coords = decodePoly(h.polyline); });
-      mergeAndRender();
-    }
-  } finally {
-    btn.disabled = false;
-  }
-}
-
-function toggleType(type, el) {
-  if (selectedTypes.has(type)) { selectedTypes.delete(type); el.classList.remove('selected'); el.querySelector('.type-check').textContent = ''; }
-  else { selectedTypes.add(type); el.classList.add('selected'); el.querySelector('.type-check').textContent = '✓'; }
-}
-
-function selectAllTypes() {
-  document.querySelectorAll('.type-row').forEach(el => {
-    const type = el.id.replace('tr-','');
-    selectedTypes.add(type);
-    el.classList.add('selected');
-    el.querySelector('.type-check').textContent = '✓';
-  });
-}
-
-async function confirmActivityTypes() {
-  if (!selectedTypes.size) { alert('Please select at least one activity type.'); return; }
-  localStorage.setItem('selected_types', JSON.stringify([...selectedTypes]));
-  document.getElementById('activityModal').classList.remove('open');
-  document.getElementById('loadingOverlay').classList.add('open');
-  document.getElementById('loadingText').textContent = 'Processing activities…';
-
-  const filtered = allFetchedActivities.filter(a => selectedTypes.has(a.sport_type||a.type));
-  // Merge with existing cached hikes — don't wipe old ones
-  const existingMap = new Map(hikes.map(h => [h.id, h]));
-
-  filtered.forEach(act => {
-    if (existingMap.has(act.id)) return; // already have it, keep existing
-    const coords = act.map?.summary_polyline ? decodePoly(act.map.summary_polyline) : [];
-    existingMap.set(act.id, {
-      id: act.id, name: act.name,
-      date: (act.start_date_local||act.start_date||'').split('T')[0],
-      distance: act.distance||0,
-      elevGain: Math.round(act.total_elevation_gain||0),
-      elevMax: Math.round(act.elev_high||0),
-      elevMin: Math.round(act.elev_low||0),
-      duration: act.moving_time||act.elapsed_time||0,
-      difficulty: calcDiff(act.total_elevation_gain||0, act.distance||0),
-      sportType: act.sport_type||act.type,
-      kudos: act.kudos_count||0,
-      polyline: act.map?.summary_polyline||null,
-      coords, elevProfile: [],
-      stravaId: act.id, source: 'strava'
-    });
-  });
-
-  hikes = [...existingMap.values()];
-
-  // Cache without coords
-  try { localStorage.setItem('strava_hikes', JSON.stringify(hikes.map(h=>({...h,coords:[]})))); }
-  catch(e) { console.warn('localStorage full'); }
-
-  setSyncBadge(`${hikes.length} from Strava · synced just now`);
-  document.getElementById('loadingOverlay').classList.remove('open');
-  mergeAndRender();
 }
 
 // ─── GPX IMPORT ──────────────────────────────────────────────────────────────
@@ -803,10 +613,10 @@ function parseGPX(text, filename) {
   return {
     id: 'gpx_' + Date.now() + '_' + Math.random().toString(36).slice(2,6),
     name: filename.replace(/\.gpx$/i,'').replace(/[_-]/g,' '),
-    date, distance: Math.round(dist*1000), // store in metres like Strava
+    date, distance: Math.round(dist*1000), // store in metres like Garmin
     elevGain: Math.round(elevGain), elevMax: Math.round(elevMax), elevMin: Math.round(elevMin),
     duration, difficulty: calcDiff(Math.round(elevGain), Math.round(dist*1000)),
-    sportType: 'Hike', kudos: 0,
+    sportType: 'Hike',
     polyline, coords, elevProfile,
     source: 'gpx'
   };
@@ -890,7 +700,7 @@ function renderTopbar() {
   const te = all.reduce((s,h)=>s+h.elevGain,0);
   const tt = all.reduce((s,h)=>s+h.duration,0);
   document.getElementById('topbarStats').innerHTML = `
-    <span class="topbar-stat"><strong>${hikes.length}</strong> Strava</span>
+    <span class="topbar-stat"><strong>${hikes.length}</strong> Garmin</span>
     <span class="topbar-stat"><strong>${gpxHikes.length}</strong> GPX</span>
     <span class="topbar-stat"><strong>${(td/1000).toFixed(0)} km</strong> total</span>
     <span class="topbar-stat"><strong>${te.toLocaleString()} m</strong> climbed</span>
@@ -902,7 +712,7 @@ function renderList() {
   const list = getFiltered();
   const container = document.getElementById('hikeList');
   if (!list.length) {
-    container.innerHTML = `<div class="empty-state">No activities found.<br>Try adjusting filters or syncing Strava.</div>`;
+    container.innerHTML = `<div class="empty-state">No activities found.<br>Try adjusting filters or adding a GPX file.</div>`;
     return;
   }
   container.innerHTML = list.map(h => `
@@ -914,7 +724,7 @@ function renderList() {
         </div>
         <div class="card-right">
           <span class="diff-badge diff-${h.difficulty}">${h.difficulty}</span>
-          <span class="source-tag ${h.source==='strava'?'src-strava':h.source==='osm'?'src-osm':'src-gpx'}">${h.source==='strava'?'STRAVA':h.source==='osm'?'OSM':'GPX'}</span>
+          <span class="source-tag ${h.source==='garmin'?'src-garmin':h.source==='osm'?'src-osm':'src-gpx'}">${h.source==='garmin'?'GARMIN':h.source==='osm'?'OSM':'GPX'}</span>
         </div>
       </div>
       <div class="card-metrics">
@@ -974,7 +784,7 @@ function detailHTML(h) {
       <div class="dp-stat"><div class="dp-stat-val">${fmtDur(h.duration)}</div><div class="dp-stat-lbl">moving time</div></div>
       <div class="dp-stat"><div class="dp-stat-val">${fmtPace(h.duration,h.distance)}</div><div class="dp-stat-lbl">min/km</div></div>
     </div>
-    ${h.source==='strava' ? `<a class="strava-link" href="https://www.strava.com/activities/${h.stravaId}" target="_blank">View on Strava ↗</a>` : ''}
+    ${h.source==='garmin' ? `<a class="garmin-link" href="https://connect.garmin.com/modern/activity/${h.id}" target="_blank">View on Garmin Connect ↗</a>` : ''}
     <div class="dp-section-title">Elevation profile</div>
     <div class="dp-elev" id="elev-chart">${miniSvg(h.elevProfile, h.elevMin)}</div>
     <div class="dp-section-title">Details</div>
@@ -983,8 +793,7 @@ function detailHTML(h) {
       <tr><td>Min elevation</td><td>${h.elevMin?h.elevMin+' m':'—'}</td></tr>
       <tr><td>Distance</td><td>${fmtDist(h.distance)} km</td></tr>
       <tr><td>Avg pace</td><td>${fmtPace(h.duration,h.distance)} min/km</td></tr>
-      ${h.source==='strava'?`<tr><td>Kudos</td><td>${h.kudos} 👍</td></tr>`:''}
-      <tr><td>Source</td><td>${h.source==='strava'?'Strava':h.source==='osm'?'OpenStreetMap':'GPX import'}</td></tr>
+      <tr><td>Source</td><td>${h.source==='garmin'?'Garmin Connect':h.source==='osm'?'OpenStreetMap':'GPX import'}</td></tr>
     </table>
     ${h.source==='gpx' ? `<button class="btn" style="color:var(--hard);border-color:#f5c6c6;margin-top:4px;width:100%;justify-content:center" onclick="deleteGpx('${h.id}')">Delete this GPX activity</button>` : ''}
   `;
@@ -998,28 +807,7 @@ async function openDetail(id) {
   document.getElementById('dp-body').innerHTML = detailHTML(h);
   document.getElementById('detailPanel').classList.add('open');
 
-  // Fetch elevation profile on demand for Strava activities
-  if (h.source === 'strava' && (!h.elevProfile || !h.elevProfile.length)) {
-    const chart = document.getElementById('elev-chart');
-    if (chart) chart.innerHTML = '<div style="font-size:11px;color:var(--muted);text-align:center;padding:10px">Loading elevation…</div>';
-    const streams = await fetchStreams(h.stravaId);
-    if (streams) {
-      h.elevProfile = streams.elevProfile;
-      h.elevMin = streams.elevMin;
-      h.elevMax = streams.elevMax;
-      // Update chart in place
-      const chart2 = document.getElementById('elev-chart');
-      if (chart2) chart2.innerHTML = miniSvg(h.elevProfile, h.elevMin);
-      // Cache the fetched elevation back into hikes array
-      const idx = hikes.findIndex(x => x.id == id);
-      if (idx >= 0) {
-        hikes[idx].elevProfile = streams.elevProfile;
-        hikes[idx].elevMin = streams.elevMin;
-        hikes[idx].elevMax = streams.elevMax;
-        try { localStorage.setItem('strava_hikes', JSON.stringify(hikes.map(x=>({...x,coords:[]})))); } catch(e) {}
-      }
-    }
-  }
+  // Elevation data comes from data.json (elevGain) — no on-demand fetch needed
 }
 
 function closeDetail() {
