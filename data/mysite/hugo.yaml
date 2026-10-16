@@ -402,6 +402,12 @@ params:
       - type: "Reports & Book Chapters"
         anchor: "pub-reports"
         items:
+          - title: "Stranded costs and equity in net-zero energy transitions in Asia"
+            authors: "R. Dikshit, A. Malik, V. Chaturvedi"
+            journal: "Finance and Energy Transition in Asia, Routledge (pp. 30-64)"
+            year: 2026
+            url: "https://doi.org/10.4324/9781042018000-3"
+
           - title: "Roadmap for a net zero power sector in Gujarat"
             authors: "CEEW, Ahmedabad University, and UNOPS"
             journal: ""
@@ -557,4 +563,3 @@ params:
     article: "Jan 2, 2006"
     articleList: "Jan 2, 2006"
     articleRecent: "Jan 2, 2006"
-                                  
