@@ -328,6 +328,7 @@ async function importOsmTraces() {
       <div class="layer-switcher-title" style="display:flex;justify-content:space-between;align-items:center;cursor:pointer" onclick="toggleLayerSwitcher()">Map style <span id="ls-toggle">▲</span></div>
       <div class="layer-switcher-body" id="lsBody"><div class="layer-group-label">Topo</div>
       <button class="layer-btn active" onclick="switchLayer('topo')" id="lb-topo"><div class="layer-thumb">🗻</div>OpenTopoMap</button>
+      <button class="layer-btn" onclick="switchLayer('soi-50k')" id="lb-soi-50k"><div class="layer-thumb">🧭</div>SOI 1:50k</button>
       <button class="layer-btn" onclick="switchLayer('tf-outdoors')" id="lb-tf-outdoors"><div class="layer-thumb">🥾</div>TF Outdoors</button>
       <button class="layer-btn" onclick="switchLayer('tf-landscape')" id="lb-tf-landscape"><div class="layer-thumb">🌄</div>TF Landscape</button>
       <button class="layer-btn" onclick="switchLayer('tf-cycle')" id="lb-tf-cycle"><div class="layer-thumb">🚵</div>TF Cycle</button>
@@ -363,6 +364,7 @@ const TILES = {
   'tf-cycle':    { url: `https://tile.thunderforest.com/cycle/{z}/{x}/{y}.png?apikey=${TF_KEY}`, opts: { attribution: '© Thunderforest', maxZoom: 22 } },
   'esri-sat':    { url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', opts: { attribution: '© Esri', maxZoom: 19 } },
   'esri-topo':   { url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}', opts: { attribution: '© Esri', maxZoom: 19 } },
+  'soi-50k':     { url: 'https://indianopenmaps.fly.dev/soi/osm/{z}/{x}/{y}.webp', opts: { attribution: 'Survey of India Open Series Maps via indianopenmaps (ramSeraph/india_topo_maps)', maxNativeZoom: 14, maxZoom: 18 } },
   'osm':         { url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', opts: { attribution: '© OpenStreetMap', maxZoom: 19 } },
 };
 
