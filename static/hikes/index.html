@@ -453,7 +453,7 @@ function switchLayer(key, rerender = true) {
   document.querySelectorAll('.layer-btn').forEach(b => b.classList.remove('active'));
   const btn = document.getElementById('lb-' + key);
   if (btn) btn.classList.add('active');
-  if (rerender) renderMap();
+  // No renderMap() here: it re-fits the view and would zoom out on every style change.
 }
 
 // ─── HELPERS ─────────────────────────────────────────────────────────────────
