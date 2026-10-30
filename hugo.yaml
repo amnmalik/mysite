@@ -102,6 +102,7 @@ params:
   title: "Aman Malik"
   description: "Independent energy and climate policy consultant specialising in energy system modelling, transition risk, and decarbonisation policy for India and Europe."
   favicon: "/fav.png"
+  images: ["/images/amanmalik-bio.jpg"]
 
   customCSS: false
 
@@ -528,10 +529,11 @@ params:
       - /images/linkedin4.jpg
       - /images/linkedin5.jpg
     items:
+      - "Guest lecture, Energy Transition and Decarbonisation, IOCL Senior Management Programme with IIM Calcutta (Sep 2026)"
       - "Guest lecture, Economics and Geopolitics of Energy, WWF-India and OP Jindal University, Students of LL.M. ELECC 2025 (Apr 2026)"
       - "Invited talk, The Emerging Carbon Markets Landscape in India, Centre for Nature-based Climate Solutions, National University of Singapore (Feb 2026)"
       - "Panelist, Session on carbon removal in Article 6, CO2 Forward Carbon Removal Summit, Carbon Removal Alliance of India, Delhi (Dec 2025)"
-      - "Guest lecture, Economics of Climate Change, WWF-India and OP Jindal University, Students of LL.M. ELECC 2025 (Oct 2025)"
+      - "Guest lecture, Economics of Climate Change, WWF-India and OP Jindal University, Students of LL.M. ELECC 2025-2026 (Oct 2025)"
       - "Moderator, Panel discussion on Decarbonisation of Economy - Leveraging Carbon Credits, Viksit Gujarat Regional Summit, Ganpat University, Mehsana (Oct 2025)"
       - "Guest lecture, Energy Transition and Decarbonisation, IOCL Senior Management Programme with IIM Calcutta (Aug 2025)"
       - "Speaker, India Emissions and Net Zero, Indian Energy Forum, New Delhi (Jul 2025)"
@@ -550,8 +552,8 @@ params:
       - "Speaker, Implications of India's ETS on its net-zero target, Niti Aayog, New Delhi (Jan 2024)"
       - "Oral presentation, Role of ETS in India's Net-zero targets: A modelling-based assessment, IAMC Annual Conference, Venice (Nov 2023)"
       - "Defense presentation, Barriers to power sector decarbonisation in India, TU Berlin (Mar 2022)"
-      - "Expert Panel, Climate Action and Renewable Energy in context of a Green Recovery, Africa- EU Climate Partnership, Online (Sept 2020)"
       - "Oral presentation, Assumptions on employment factor approach in energy scenarios, IAMC Annual Conference, Online (Dec 2020)"
+      - "Expert Panel, Climate Action and Renewable Energy in context of a Green Recovery, Africa–EU Climate Partnership, Online (Sept 2020)"
       - "Presentation, Preventing stranded assets and empowering renewables, CD-LINKS Summer School, Venice (July 2019)"
       - "Poster presentation, Not (yet) another coal story: Power-sector lock-ins in India, IAMC Annual Conference, Seville (Nov 2018)"
 
