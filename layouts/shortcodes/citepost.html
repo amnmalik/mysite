@@ -1,0 +1,18 @@
+{{- /* Usage: {{< citepost >}} at the end of a post. Optional: author="Malik, Aman" authorshort="Malik, A." key="malik2026example" */ -}}
+{{- $p := .Page -}}
+{{- $author := .Get "author" | default "Malik, Aman" -}}
+{{- $short := .Get "authorshort" | default "Malik, A." -}}
+{{- $key := .Get "key" | default (printf "malik%d%s" $p.Date.Year (replace $p.File.ContentBaseName "-" "")) -}}
+<section class="citepost">
+<h2 id="cite-this-post">Cite this post</h2>
+<p>Please cite this post as:</p>
+<pre><code>{{ printf "%s (%d). %s. amanmalik.net. %s" $short $p.Date.Year $p.Title $p.Permalink }}</code></pre>
+<p>BibTeX:</p>
+<pre><code>{{ printf "@online{%s," $key }}
+{{ printf "  author = {%s}," $author }}
+{{ printf "  title  = {%s}," $p.Title }}
+{{ printf "  year   = {%d}," $p.Date.Year }}
+{{ printf "  url    = {%s}" $p.Permalink }}
+{{ printf "}" }}</code></pre>
+<p>Please also cite the underlying data sources listed above.</p>
+</section>

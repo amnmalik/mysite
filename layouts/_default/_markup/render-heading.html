@@ -1,0 +1,3 @@
+{{- /* Same output as Hugo's default heading, plus a hover "#" link when the page has anchors: true in front matter. */ -}}
+{{- $id := .Anchor -}}
+<h{{ .Level }} id="{{ $id }}"{{ range $k, $v := .Attributes }}{{ if ne $k "id" }} {{ $k }}="{{ $v }}"{{ end }}{{ end }}>{{ .Text | safeHTML }}{{ if .Page.Params.anchors }}<a class="heading-anchor" href="#{{ $id }}" aria-label="Link to this section"></a>{{ end }}</h{{ .Level }}>

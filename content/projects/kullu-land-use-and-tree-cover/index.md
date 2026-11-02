@@ -6,12 +6,17 @@ tags: ["himalaya", "kullu", "land use", "forests", "remote sensing", "himachal"]
 icon: "🌲"
 thumbnail: fig1_land_cover_worldcover2021.png
 toc: true
+series: "Kullu land and cover"
+anchors: true
+lastmod: 2026-11-02
 draft: false
 ---
 
+{{< byline >}}
+
 I live in the Kullu Valley, and the question I keep coming back to on my hikes is a simple one: what is all this land actually used for, and what is changing? Forests are the obvious part. Apple orchards are the next. Then there are the roads, the new buildings, the snow, and the terraced fields. I wanted numbers for all of it, in hectares, that I could check myself.
 
-This post is the first in a series. It covers two things: what the district is made of, and what has happened to its trees. Cropland, built-up area, snow and ice, and grassland get their own posts later.
+This post is the first in a series. It covers two things: what the district is made of, and what has happened to its trees. [Cropland](/projects/kullu-cropland-and-orchards/), built-up area, snow and ice, and grassland get their own posts later.
 
 > **Short version.** Trees cover about 38% of Kullu, roughly 2,100 km², and WorldCover, GLAD and the Forest Survey of India agree on that. Canopy loss since 2000 is under 1%. Cropland is the weak spot: satellites find under 900 ha where official records show about 39,000 ha, so some farmland is probably being counted as trees.
 
@@ -29,9 +34,9 @@ Satellite datasets are good at showing patterns across a whole district. They ar
 
 Figure 1 is a plain count of land cover for 2021 using ESA WorldCover, a global map made by the European Space Agency at 10 metre resolution [[1]](#src-1). I chose it as the main source because its classes are simple, it's fine-grained enough for a mountain district, and its tree and built-up numbers agree with other sources (more on that in the next section).
 
-![Land cover of Kullu district in 2021](fig1_land_cover_worldcover2021.png)
-
-*Figure 1. Land cover of Kullu district in 2021, from ESA WorldCover.*
+{{< chartfig n="1" src="fig1_land_cover_worldcover2021.png" alt="Land cover of Kullu district in 2021" source="Author's calculations in Google Earth Engine from ESA WorldCover [[1]](#src-1)." data="fig1_data.csv" >}}
+Land cover of Kullu district in 2021, from ESA WorldCover.
+{{< /chartfig >}}
 
 Trees cover about 2,095 km², or 38% of the district [[1]](#src-1). Grassland comes second at about 1,656 km² (30%). Together they account for more than two thirds of Kullu. Next comes bare ground, rock, moss and lichen at 935 km² (17%), and then snow and ice at 768 km² (14%).
 
@@ -49,15 +54,15 @@ WorldCover finds about 880 hectares of cropland [[1]](#src-1). That is a bit ove
 
 The land has not vanished. The satellite is mislabelling it. Terraced fields in Kullu are narrow, often a few metres wide, and many have trees growing on the bunds or apple orchards on them. A 10 metre pixel can't tell a terrace from the hillside around it. And since every pixel gets exactly one label, farmland that gets missed has to be called something else. The likely candidates are tree cover and grassland. I can't prove which from the maps alone.
 
-This matters for the rest of the post, because the tree numbers may include some orchard land. I'll deal with cropland properly in a later post, when I compare it with official sown-area and fruit-area records. For now, read the cropland bar as "much smaller than reality".
+This matters for the rest of the post, because the tree numbers may include some orchard land. I'll deal with cropland properly in [a later post](/projects/kullu-cropland-and-orchards/), when I compare it with official sown-area and fruit-area records. For now, read the cropland bar as "much smaller than reality".
 
 ## Checking the Land Cover Figure Against Other Datasets
 
 A single source can be wrong in ways you can't see. So for the three things I care most about, trees, buildings, and snow, I compared WorldCover with other datasets (Figure 2).
 
-![Tree canopy, built-up area and snow in different datasets](fig2_source_comparison.png)
-
-*Figure 2. Tree canopy, built-up area and snow in Kullu district as measured by different datasets. The hatched bar is a rough estimate, not a measurement.*
+{{< chartfig n="2" src="fig2_source_comparison.png" alt="Tree canopy, built-up area and snow in different datasets" source="ESA WorldCover [[1]](#src-1); Hansen Global Forest Change [[2]](#src-2); GLAD land cover [[3]](#src-3); Global Human Settlement Layer [[4]](#src-4); Google Open Buildings [[5]](#src-5); Forest Survey of India [[8]](#src-8)." >}}
+Tree canopy, built-up area and snow in Kullu district as measured by different datasets. The hatched bar is a rough estimate, not a measurement.
+{{< /chartfig >}}
 
 **Tree canopy** agrees well across the satellite sources. WorldCover (2021) gives 2,095 km² [[1]](#src-1). GLAD, a land cover dataset from the University of Maryland, puts forest in 2000 at about 2,121 km² [[3]](#src-3). The FSI's forest cover for 2023 is 1,995 km² [[8]](#src-8), about 5 to 6% lower.
 
@@ -93,9 +98,9 @@ The FSI also maps from satellites, and it uses the words "tree cover" for someth
 
 The FSI publishes a report every two years, the India State of Forest Report [[8]](#src-8). The first edition that maps forest cover digitally at a useful scale is 2001, so that's where I start the series for Kullu.
 
-![Kullu forest cover in the FSI reports](fig4_fsi_kullu_forest_cover_method_windows.png)
-
-*Figure 3. Kullu's forest cover in the FSI reports, 2001 to 2023. Compare only points within the same method window. Hollow points are baselines that the FSI later restated.*
+{{< chartfig n="3" src="fig4_fsi_kullu_forest_cover_method_windows.png" alt="Kullu forest cover in the FSI reports" source="Forest Survey of India, India State of Forest Report, 2001 to 2023 editions [[8]](#src-8)." data="fig3_data.csv" >}}
+Kullu's forest cover in the FSI reports, 2001 to 2023. Compare only points within the same method window. Hollow points are baselines that the FSI later restated.
+{{< /chartfig >}}
 
 At first look (Figure 3), forest cover fell sharply between the 2001 and 2003 editions and has barely moved since. But the 2001 edition can't be compared with what came after it. The FSI's 2003 report says part of that drop corrects misclassification in the 2001 edition, but it doesn't say how much of it applies to Kullu. I leave 2001 out of everything that follows.
 
@@ -109,9 +114,9 @@ Where does the gain come from? The FSI doesn't say, but it counts orchards. Its 
 
 The FSI also grades its forest cover by canopy density. In the 2023 report [[8]](#src-8) (Figure 4), Kullu has about 635 km² of very dense forest (canopy above 70%), 852 km² of moderately dense forest (40 to 70%), and 508 km² of open forest (10 to 40%). Together that's the 1,995 km².
 
-![Kullu forest cover by density class](fig5_fsi_kullu_density_classes.png)
-
-*Figure 4. Kullu's forest cover by canopy density class in the FSI reports. Compare only within a method window.*
+{{< chartfig n="4" src="fig5_fsi_kullu_density_classes.png" alt="Kullu forest cover by density class" source="Forest Survey of India, India State of Forest Report [[8]](#src-8)." data="fig4_data.csv" >}}
+Kullu's forest cover by canopy density class in the FSI reports. Compare only within a method window.
+{{< /chartfig >}}
 
 Between 2005 and 2009, the dense forest area barely moved, but a lot of what had been classified as moderately dense got reclassified into very dense or open. That wasn't the forest changing. The FSI changed its satellite sensor and its classification algorithm in 2009. Between 2017 and 2021, moderately dense forest increased slightly and open forest dropped noticeably.
 
@@ -152,9 +157,9 @@ The net result is a gain of about 4,265 hectares, or about 2% of the forest that
 
 I split the district into seven elevation bands using SRTM, a radar elevation model [[7]](#src-7). Figure 5 and the table below show the result. Kullu goes from about 740 metres at the lowest point to about 6,396 metres on the highest peaks.
 
-![Forest gain, loss and disturbance by elevation band](fig3_glad_gain_loss_by_elevation.png)
-
-*Figure 5. Forest gain, loss and disturbance in Kullu by elevation band, 2000 to 2020, from GLAD.*
+{{< chartfig n="5" src="fig3_glad_gain_loss_by_elevation.png" alt="Forest gain, loss and disturbance by elevation band" source="Author's calculations in Google Earth Engine from GLAD land cover [[3]](#src-3), with elevation bands from SRTM [[7]](#src-7)." data="fig5_data.csv" >}}
+Forest gain, loss and disturbance in Kullu by elevation band, 2000 to 2020, from GLAD.
+{{< /chartfig >}}
 
 <div style="overflow-x:auto;"><table style="width:100%;border-collapse:collapse;"><tbody>
 <tr><th style="border-bottom:2px solid #d4cabb;padding:8px 10px;text-align:left;font-size:0.8rem;color:#6b5e4e;vertical-align:bottom;">Elevation</th><th style="border-bottom:2px solid #d4cabb;padding:8px 10px;text-align:left;font-size:0.8rem;color:#6b5e4e;vertical-align:bottom;">Forest in 2000 (ha)</th><th style="border-bottom:2px solid #d4cabb;padding:8px 10px;text-align:left;font-size:0.8rem;color:#6b5e4e;vertical-align:bottom;">Gain (ha)</th><th style="border-bottom:2px solid #d4cabb;padding:8px 10px;text-align:left;font-size:0.8rem;color:#6b5e4e;vertical-align:bottom;">Loss (ha)</th><th style="border-bottom:2px solid #d4cabb;padding:8px 10px;text-align:left;font-size:0.8rem;color:#6b5e4e;vertical-align:bottom;">Net change as % of 2000 forest</th><th style="border-bottom:2px solid #d4cabb;padding:8px 10px;text-align:left;font-size:0.8rem;color:#6b5e4e;vertical-align:bottom;">Disturbance (ha)</th></tr>
@@ -219,7 +224,7 @@ I don't think this is real forest. At those heights, near and above the natural 
 
 ## What's Next
 
-The next post is about cropland. The satellite maps find fewer than 900 hectares, the government records find about 39,000, and the area under fruit has grown by about 12,000 hectares since 1990. I want to see whether the land that is missing from the satellite's cropland is the same land that shows up as tree gain. After that comes built-up area, where the building data goes back to 1975 and shows the footprint growing by about 2.3 times since 2000, followed by snow, ice, and grassland.
+The [next post](/projects/kullu-cropland-and-orchards/) is about cropland. The satellite maps find fewer than 900 hectares, the government records find about 39,000, and the area under fruit has grown by about 12,000 hectares since 1990. I want to see whether the land that is missing from the satellite's cropland is the same land that shows up as tree gain. After that comes built-up area, where the building data goes back to 1975 and shows the footprint growing by about 2.3 times since 2000, followed by snow, ice, and grassland.
 
 ## Sources
 
@@ -237,3 +242,7 @@ The next post is about cropland. The satellite maps find fewer than 900 hectares
 12. <span id="src-12"></span>Government of Himachal Pradesh, Economic Survey 2025-26
 13. <span id="src-13"></span>Himachal Pradesh Forest Department, Kullu Forest Division Working Plan (2013)
 14. <span id="src-14"></span>University of Maryland (GLAD), global cropland extent maps, four-year windows from 2000-03 to 2016-19
+
+{{< citepost >}}
+
+{{< seriescards >}}

@@ -1,0 +1,25 @@
+dataset,year,cropland_ha,note
+"Dynamic World (crops class, most common label)",2016,1416,55% of district imaged
+"Dynamic World (crops class, most common label)",2017,1194,54% of district imaged
+"Dynamic World (crops class, most common label)",2018,1763,53% of district imaged
+"Dynamic World (crops class, most common label)",2019,1238,75% of district imaged
+"Dynamic World (crops class, most common label)",2020,1262,84% of district imaged
+"Dynamic World (crops class, most common label)",2021,1339,78% of district imaged
+"Dynamic World (crops class, most common label)",2022,1535,89% of district imaged
+"Dynamic World (crops class, most common label)",2023,952,75% of district imaged
+"Dynamic World (crops class, most common label)",2024,905,87% of district imaged
+"Dynamic World (crops class, most common label)",2025,735,91% of district imaged
+"Esri 10 m land cover (crops, class 5)",2017,2662,
+"Esri 10 m land cover (crops, class 5)",2018,3641,
+"Esri 10 m land cover (crops, class 5)",2019,2069,
+"Esri 10 m land cover (crops, class 5)",2020,1355,
+"Esri 10 m land cover (crops, class 5)",2021,2441,
+"Esri 10 m land cover (crops, class 5)",2022,2261,
+"Esri 10 m land cover (crops, class 5)",2023,1693,
+University of Maryland GLAD cropland,2003,4169,
+University of Maryland GLAD cropland,2007,3117,
+University of Maryland GLAD cropland,2011,2915,
+University of Maryland GLAD cropland,2015,2809,
+University of Maryland GLAD cropland,2019,3047,
+ESA WorldCover v200 (cropland),2021,879,
+ESA WorldCover v200 (cropland),2020,665,

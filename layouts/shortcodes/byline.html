@@ -1,0 +1,3 @@
+{{- /* Usage: {{< byline >}} at the top of a post. Optional: author="Aman Malik". "Last updated" appears when lastmod in front matter differs from date. */ -}}
+{{- $p := .Page -}}
+<p class="byline">By <strong>{{ .Get "author" | default "Aman Malik" }}</strong> &middot; Published {{ $p.Date.Format "2 January 2006" }}{{ if ne ($p.Lastmod.Format "2006-01-02") ($p.Date.Format "2006-01-02") }} &middot; Last updated {{ $p.Lastmod.Format "2 January 2006" }}{{ end }} &middot; <a href="#cite-this-post">Cite this post</a></p>

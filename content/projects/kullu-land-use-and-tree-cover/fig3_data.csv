@@ -1,0 +1,17 @@
+fsi_report_edition,total_forest_cover_km2,percent_of_district_area,reported_change_km2,checked_against,note
+1991,1948,,,FSI original (Table 2.3),Hindi PDF on fsi.nic.in; matches HPCCC
+1993,2044,37.14,,FSI original (Table 2.3),Hindi PDF; matches HPCCC
+1995,2044,,,HPCCC review only,Original not yet checked
+1997,2044,,,HPCCC review only,Original not yet checked
+1999,1974,,,FSI original (Table 3.10.f),Matches HPCCC
+2001,2115,38.43,,FSI original (Table 6.10),First edition using digital mapping at 1:50000; earlier editions used visual interpretation at 1:250000
+2003,1933,35.13,,FSI original (Table 7.10),Hindi PDF; VDF/MDF split not comparable with 2009 onward
+2005,1941,35.27,0,FSI original (Table 8.10c),Satellite data Oct-Dec 2004; VDF/MDF split not comparable with 2009 onward
+2009 edition (labelled 2007 by HPCCC),1958,35.58,0,FSI original (Table 7.10.3),Satellite data Oct 2006-Jan 2007; state VDF jumps from 1097 to 3224 vs 2005 edition
+2011,1959,35.60,1 (OCR; verify),FSI 2011 HP chapter (OCR),
+2013,1959,35.60,0,FSI 2013 states volume,Identical to 2011
+2015,1959,35.60,0,FSI 2015 (OCR),Identical to 2011 and 2013
+2017,1987,36.1,22,FSI 2017 HP chapter (OCR),Change vs updated 2015 baseline
+2019,1976.29,35.91,-10.71,FSI 2019 Vol 2,Change vs 2017
+2021,1975.57,35.90,not legible in OCR,FSI 2021 Ch 13 (OCR),
+2023,1995.36,36.26,0.22,FSI 2023 Vol 2,Change is vs a re-derived 2021 raster; simple subtraction gives +19.79

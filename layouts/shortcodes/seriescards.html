@@ -1,0 +1,25 @@
+{{- /* Usage: {{< seriescards >}} at the end of a post. Lists the other posts with the same "series:" in front matter. Cards use each post's thumbnail (or icon), title, summary and date. */ -}}
+{{- $p := .Page -}}
+{{- with $p.Params.series -}}
+{{- $series := . -}}
+{{- $others := sort (where (where site.RegularPages "Params.series" $series) "Permalink" "ne" $p.Permalink) "Date" -}}
+{{- if $others -}}
+<section class="seriescards">
+<h2 id="continue-reading">Continue reading</h2>
+<p class="sc-series">More in the series: {{ $series }}</p>
+<div class="sc-grid">
+{{- range $others }}
+{{- $thumb := .Resources.GetMatch (.Params.thumbnail | default "none") }}
+<a class="sc-card" href="{{ .RelPermalink }}">
+{{- if $thumb }}<img class="sc-thumb" src="{{ $thumb.RelPermalink }}" alt="" loading="lazy">{{ else if .Params.icon }}<div class="sc-icon">{{ .Params.icon }}</div>{{ end }}
+<div class="sc-body">
+<div class="sc-date">{{ .Date.Format "January 2006" }}</div>
+<div class="sc-title">{{ .Title }}</div>
+{{- with .Params.summary }}<div class="sc-summary">{{ . }}</div>{{ end }}
+</div>
+</a>
+{{- end }}
+</div>
+</section>
+{{- end -}}
+{{- end -}}

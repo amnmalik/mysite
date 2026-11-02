@@ -1,0 +1,19 @@
+{{- /* Usage: {{< chartfig src="fig.png" n="1" alt="..." source="Markdown allowed" data="fig_data.csv" >}}Caption text{{< /chartfig >}}
+     Optional: title="finding as a headline" subtitle="units, years" wide="true" (wider than the text column on large screens). */ -}}
+{{- $src := .Get "src" -}}
+{{- $n := .Get "n" -}}
+<figure class="chartfig{{ if .Get "wide" }} wide{{ end }}"{{ with $n }} id="figure-{{ . }}"{{ end }}>
+{{- with .Get "title" }}
+<div class="cf-title">{{ . }}</div>{{ end }}
+{{- with .Get "subtitle" }}
+<div class="cf-subtitle">{{ . }}</div>{{ end }}
+<a class="cf-zoom" href="{{ $src }}" target="_blank" rel="noopener" title="Open full size"><img src="{{ $src }}" alt="{{ .Get "alt" }}" loading="lazy"></a>
+<figcaption>
+{{ with $n }}<span class="cf-label">Figure {{ . }}.</span> {{ end }}{{ .Inner | markdownify }}
+<div class="cf-meta">
+{{- with .Get "source" }}<span>Source: {{ . | markdownify }}</span>{{ end }}
+{{- with .Get "data" }}<a href="{{ . }}">Data (CSV)</a>{{ end }}
+<a href="{{ $src }}" download>Download image</a>
+</div>
+</figcaption>
+</figure>
