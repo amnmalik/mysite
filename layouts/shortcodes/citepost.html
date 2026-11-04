@@ -6,7 +6,9 @@
 <section class="citepost">
 <h2 id="cite-this-post">Cite this post</h2>
 <p>Please cite this post as:</p>
-<pre><code>{{ printf "%s (%d). %s. amanmalik.net. %s" $short $p.Date.Year $p.Title $p.Permalink }}</code></pre>
+{{- $t := $p.Title -}}
+{{- if not (findRE `[.?!]$` $t) }}{{ $t = printf "%s." $t }}{{ end -}}
+<pre><code>{{ printf "%s (%d). %s amanmalik.net. %s" $short $p.Date.Year $t $p.Permalink }}</code></pre>
 <p>BibTeX:</p>
 <pre><code>{{ printf "@online{%s," $key }}
 {{ printf "  author = {%s}," $author }}
