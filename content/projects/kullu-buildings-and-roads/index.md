@@ -1,8 +1,8 @@
 ---
 article: true
-title: "Buildings and Roads in Kullu: What the Records and the Satellites Say"
+title: "Is Kullu building its way out of the valley?"
 date: 2026-11-04
-summary: "Buildings and roads cover about half a per cent of Kullu district. Both have grown for decades, and a large share of each sits within a few kilometres of the Beas."
+summary: "Buildings and roads cover about half a per cent of Kullu district, and building area has more than doubled since 2000. About half of it still sits along the Beas, but the new growth is moving into the side valleys."
 tags: ["himalaya", "kullu", "built-up area", "buildings", "roads", "beas", "remote sensing", "himachal"]
 icon: "🏘️"
 thumbnail: fig3_density_and_growth_map.png

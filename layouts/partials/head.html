@@ -4,6 +4,24 @@
 <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
 <link rel="icon" href="{{ (.Site.Params.favicon | default "fav.png") | strings.TrimPrefix "/" | relURL }}" type="image/gif">
 <link rel="canonical" href="{{ .Permalink }}">
+{{- /* Home and CV pages set their own description in their layouts */ -}}
+{{- if not (or .IsHome (eq .Layout "cv")) }}
+<meta name="description" content="{{ .Params.description | default .Params.summary | default (.Summary | plainify | truncate 160) | default .Site.Params.description }}">
+{{- end }}
+{{- if and .IsPage (or (eq .Section "writing") .Params.article) }}
+<script type="application/ld+json">
+{{ dict
+  "@context" "https://schema.org"
+  "@type" "BlogPosting"
+  "headline" .Title
+  "description" (.Params.summary | default (.Summary | plainify | truncate 160))
+  "datePublished" (.Date.Format "2006-01-02")
+  "dateModified" (.Lastmod.Format "2006-01-02")
+  "mainEntityOfPage" .Permalink
+  "author" (dict "@type" "Person" "name" .Site.Title "url" .Site.BaseURL)
+  | jsonify | safeJS }}
+</script>
+{{- end }}
 
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
