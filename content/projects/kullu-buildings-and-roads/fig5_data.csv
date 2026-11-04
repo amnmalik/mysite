@@ -1,0 +1,7 @@
+road_class,length_km,width_low_m,width_central_m,width_high_m,area_low_ha,area_central_ha,area_high_ha
+Trunk (incl. trunk_link),199.9,7,8,10,139.9,159.9,199.9
+Secondary,223.3,5.5,6.5,7.5,122.8,145.1,167.5
+Tertiary,357.9,4,5.5,6.5,143.1,196.8,232.6
+Unclassified (rural link),1536.6,2.5,3,3.5,384.2,461.0,537.8
+"Residential, service, other",165.1,2.5,3,3.5,41.3,49.5,57.8
+All motorable roads,2482.8,,,,831.3,1012.4,1195.6

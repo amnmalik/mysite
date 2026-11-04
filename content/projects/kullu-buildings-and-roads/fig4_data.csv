@@ -1,0 +1,19 @@
+source_or_panel,as_on_or_owner,measure_or_category,length_km,note
+PWD district table,2020-10-31,metalled,1469,
+PWD district table,2020-10-31,unmetalled,569,
+PWD district table,2020-10-31,total,2038,
+PWD district table,2024-03-31,metalled,1796,
+PWD district table,2024-03-31,unmetalled,416,
+PWD district table,2024-03-31,total,2212,
+PWD district table,2026-03-31,metalled,1858.824,
+PWD district table,2026-03-31,unmetalled,394.962,
+PWD district table,2026-03-31,total,2253.786,
+PWD district table,2025-03-31,metalled,1843,31 Mar 2025 value seen only in a search snippet
+PWD district table,2025-03-31,unmetalled,398,31 Mar 2025 value seen only in a search snippet
+PWD district table,2025-03-31,total,2241.066,31 Mar 2025 value seen only in a search snippet
+HP Road Safety Book,2017-18,total,2104,lane classes; different basis
+HP Road Safety Book,2018-19,total,2047,lane classes; different basis
+HP Road Safety Book,2019-20,total,2124,lane classes; different basis
+Microsoft road detections,2020-2022,total,1359.6,machine-detected; includes tracks
+Meta AI roads,year assumed (2020),total,1958.2,AI-predicted; year assumed
+OpenStreetMap,2026-11-02,motorable total,2490.8,"trunk, trunk_link, secondary, tertiary, unclassified, residential, service, living_street, road"

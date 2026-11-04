@@ -1,0 +1,23 @@
+dataset,year,built_ha,resolution_m,note
+GHSL GHS-BUILT-S R2023A,1975,467.6,100,building footprint
+GHSL GHS-BUILT-S R2023A,1980,511.9,100,building footprint
+GHSL GHS-BUILT-S R2023A,1985,573.5,100,building footprint
+GHSL GHS-BUILT-S R2023A,1990,652.0,100,building footprint
+GHSL GHS-BUILT-S R2023A,1995,753.4,100,building footprint
+GHSL GHS-BUILT-S R2023A,2000,913.9,100,building footprint
+GHSL GHS-BUILT-S R2023A,2005,1062.9,100,building footprint
+GHSL GHS-BUILT-S R2023A,2010,1300.3,100,building footprint
+GHSL GHS-BUILT-S R2023A,2015,1633.2,100,building footprint
+GHSL GHS-BUILT-S R2023A,2020,2119.1,100,building footprint
+GHSL GHS-BUILT-S 10 m,2018,1971.2,10,building footprint; value from PROVENANCE.md
+ESA WorldCover,2020,2106.9,10,"class 50 built-up; 2020 = v100, 2021 = v200 (different algorithm versions)"
+ESA WorldCover,2021,2466.6,10,"class 50 built-up; 2020 = v100, 2021 = v200 (different algorithm versions)"
+Google Open Buildings v3,2023,1682.8,polygons,"confidence 0.70 or more; 204,691 buildings"
+Google Open Buildings v3,2023,1838.4,polygons,"confidence 0.65 or more; 251,500 buildings"
+Copernicus CGLS-LC100,2015,1072.2,100,class 50 built-up
+Copernicus CGLS-LC100,2016,1072.2,100,class 50 built-up
+Copernicus CGLS-LC100,2017,1072.2,100,class 50 built-up
+Copernicus CGLS-LC100,2018,1073.6,100,class 50 built-up
+Copernicus CGLS-LC100,2019,1075.0,100,class 50 built-up
+World Settlement Footprint 2015,2015,1330.5,10,settlement = 255
+Microsoft Building Footprints,2026,1580.0,polygons,"release of 3 Feb 2026; 150,429 buildings with centroid in Kullu"

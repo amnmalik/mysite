@@ -1,0 +1,26 @@
+series,period_or_year,built_ha_start_or_year,built_ha_end,growth_pct_or_index_2016_100
+GHSL five-year growth,1975-1980,467.6,511.9,9.5
+GHSL five-year growth,1980-1985,511.9,573.5,12.0
+GHSL five-year growth,1985-1990,573.5,652.0,13.7
+GHSL five-year growth,1990-1995,652.0,753.4,15.6
+GHSL five-year growth,1995-2000,753.4,913.9,21.3
+GHSL five-year growth,2000-2005,913.9,1062.9,16.3
+GHSL five-year growth,2005-2010,1062.9,1300.3,22.3
+GHSL five-year growth,2010-2015,1300.3,1633.2,25.6
+GHSL five-year growth,2015-2020,1633.2,2119.1,29.8
+"Open Buildings Temporal, presence above 0.5",2016,1198.8,,100.0
+"Open Buildings Temporal, presence above 0.5",2017,1249.1,,104.2
+"Open Buildings Temporal, presence above 0.5",2018,1298.2,,108.3
+"Open Buildings Temporal, presence above 0.5",2019,1355.7,,113.1
+"Open Buildings Temporal, presence above 0.5",2020,1398.6,,116.7
+"Open Buildings Temporal, presence above 0.5",2021,1428.1,,119.1
+"Open Buildings Temporal, presence above 0.5",2022,1428.8,,119.2
+"Open Buildings Temporal, presence above 0.5",2023,1506.3,,125.7
+"Open Buildings Temporal, presence above 0.7",2016,566.3,,100.0
+"Open Buildings Temporal, presence above 0.7",2017,602.2,,106.3
+"Open Buildings Temporal, presence above 0.7",2018,638.9,,112.8
+"Open Buildings Temporal, presence above 0.7",2019,681.3,,120.3
+"Open Buildings Temporal, presence above 0.7",2020,709.7,,125.3
+"Open Buildings Temporal, presence above 0.7",2021,727.4,,128.4
+"Open Buildings Temporal, presence above 0.7",2022,715.5,,126.3
+"Open Buildings Temporal, presence above 0.7",2023,772.6,,136.4

@@ -1,0 +1,7 @@
+within_m_of_beas_centreline,buildings_within,footprint_ha_within,cumulative_share_of_buildings_pct,cumulative_share_of_footprint_pct,band_share_of_buildings_pct,band_share_of_footprint_pct
+500,34628,344.0,16.9,20.4,16.9,20.4
+1000,60488,581.8,29.6,34.6,12.6,14.1
+1500,73719,692.4,36.0,41.1,6.5,6.6
+2000,79714,737.5,38.9,43.8,2.9,2.7
+2500,84218,770.9,41.1,45.8,2.2,2.0
+3000,87201,793.8,42.6,47.2,1.5,1.4
